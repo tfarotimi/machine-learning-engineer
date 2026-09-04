@@ -1,0 +1,44 @@
+digraph G {
+concentrate=true;
+splines="ortho";
+rankdir="LR";
+subgraph legend{
+    rank = min;
+    label = "legend";
+    Legend [shape=none, margin=0, label = <
+        <table cellspacing="0" cellpadding="0" border="1"><tr><td>Code2flow Legend</td></tr><tr><td>
+        <table cellspacing="0">
+        <tr><td>Regular function</td><td width="50px" bgcolor='#cccccc'></td></tr>
+        <tr><td>Trunk function (nothing calls this)</td><td bgcolor='#966F33'></td></tr>
+        <tr><td>Leaf function (this calls nothing else)</td><td bgcolor='#6db33f'></td></tr>
+        <tr><td>Function call</td><td><font color='black'>&#8594;</font></td></tr>
+        </table></td></tr></table>
+        >];
+}node_e90ca56f [label="47: evaluate_retrieval()" name="evaluate::evaluate_retrieval" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_3f271df2 [label="124: gold_ids()" name="evaluate::gold_ids" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_072fdbd0 [label="134: precision_at_k()" name="evaluate::precision_at_k" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_b2a21e7c [label="142: recall_at_k()" name="evaluate::recall_at_k" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_1a6ea69b [label="151: reciprocal_rank()" name="evaluate::reciprocal_rank" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_4f41c33a [label="129: retrieved_ids()" name="evaluate::retrieved_ids" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_beb087b8 [label="35: retrieve_chunks()" name="retrieve::retrieve_chunks" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_e90ca56f -> node_3f271df2 [color="#CC79A7" penwidth="2"];
+node_e90ca56f -> node_072fdbd0 [color="#CC79A7" penwidth="2"];
+node_e90ca56f -> node_b2a21e7c [color="#CC79A7" penwidth="2"];
+node_e90ca56f -> node_1a6ea69b [color="#CC79A7" penwidth="2"];
+node_e90ca56f -> node_4f41c33a [color="#CC79A7" penwidth="2"];
+node_4f41c33a -> node_beb087b8 [color="#56B4E9" penwidth="2"];
+subgraph cluster_a094f33e {
+    node_e90ca56f node_3f271df2 node_4f41c33a node_072fdbd0 node_b2a21e7c node_1a6ea69b;
+    label="File: evaluate";
+    name="evaluate";
+    style="filled";
+    graph[style=dotted];
+};
+subgraph cluster_ac622e25 {
+    node_beb087b8;
+    label="File: retrieve";
+    name="retrieve";
+    style="filled";
+    graph[style=dotted];
+};
+}

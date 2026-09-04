@@ -1,0 +1,33 @@
+digraph G {
+concentrate=true;
+splines="ortho";
+rankdir="LR";
+subgraph legend{
+    rank = min;
+    label = "legend";
+    Legend [shape=none, margin=0, label = <
+        <table cellspacing="0" cellpadding="0" border="1"><tr><td>Code2flow Legend</td></tr><tr><td>
+        <table cellspacing="0">
+        <tr><td>Regular function</td><td width="50px" bgcolor='#cccccc'></td></tr>
+        <tr><td>Trunk function (nothing calls this)</td><td bgcolor='#966F33'></td></tr>
+        <tr><td>Leaf function (this calls nothing else)</td><td bgcolor='#6db33f'></td></tr>
+        <tr><td>Function call</td><td><font color='black'>&#8594;</font></td></tr>
+        </table></td></tr></table>
+        >];
+}node_2c207597 [label="143: hybrid_rank()" name="retrieve::hybrid_rank" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_da4faf7a [label="108: parse_comunicado_date()" name="retrieve::parse_comunicado_date" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_9d91665c [label="115: parse_query_date()" name="retrieve::parse_query_date" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_60b3755a [label="35: retrieve_chunks()" name="retrieve::retrieve_chunks" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_77b09a28 [label="172: tokenize_stem()" name="retrieve::tokenize_stem" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_2c207597 -> node_77b09a28 [color="#CC79A7" penwidth="2"];
+node_60b3755a -> node_2c207597 [color="#56B4E9" penwidth="2"];
+node_60b3755a -> node_da4faf7a [color="#56B4E9" penwidth="2"];
+node_60b3755a -> node_9d91665c [color="#56B4E9" penwidth="2"];
+subgraph cluster_27b99ee1 {
+    node_60b3755a node_da4faf7a node_9d91665c node_2c207597 node_77b09a28;
+    label="File: retrieve";
+    name="retrieve";
+    style="filled";
+    graph[style=dotted];
+};
+}
