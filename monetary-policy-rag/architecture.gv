@@ -1,0 +1,66 @@
+digraph G {
+concentrate=true;
+splines="ortho";
+rankdir="LR";
+subgraph legend{
+    rank = min;
+    label = "legend";
+    Legend [shape=none, margin=0, label = <
+        <table cellspacing="0" cellpadding="0" border="1"><tr><td>Code2flow Legend</td></tr><tr><td>
+        <table cellspacing="0">
+        <tr><td>Regular function</td><td width="50px" bgcolor='#cccccc'></td></tr>
+        <tr><td>Trunk function (nothing calls this)</td><td bgcolor='#966F33'></td></tr>
+        <tr><td>Leaf function (this calls nothing else)</td><td bgcolor='#6db33f'></td></tr>
+        <tr><td>Function call</td><td><font color='black'>&#8594;</font></td></tr>
+        </table></td></tr></table>
+        >];
+}node_35e51872 [label="8: build_candidate_review()" name="evaluate::build_candidate_review" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_6436cf2d [label="47: evaluate_retrieval()" name="evaluate::evaluate_retrieval" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_9be5975f [label="86: find_candidates_in_comunicado()" name="evaluate::find_candidates_in_comunicado" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_b71d68e6 [label="124: gold_ids()" name="evaluate::gold_ids" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_8ce55136 [label="134: precision_at_k()" name="evaluate::precision_at_k" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_44f46516 [label="142: recall_at_k()" name="evaluate::recall_at_k" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_104717b9 [label="151: reciprocal_rank()" name="evaluate::reciprocal_rank" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_4c9b39a9 [label="129: retrieved_ids()" name="evaluate::retrieved_ids" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_9fe9d8b3 [label="41: assemble_prompt()" name="generate::assemble_prompt" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_2a0eea5e [label="7: generate_response()" name="generate::generate_response" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_09bac25a [label="143: hybrid_rank()" name="retrieve::hybrid_rank" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_bf822459 [label="108: parse_comunicado_date()" name="retrieve::parse_comunicado_date" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_031fdf9c [label="115: parse_query_date()" name="retrieve::parse_query_date" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_48f676bc [label="35: retrieve_chunks()" name="retrieve::retrieve_chunks" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_62f25d59 [label="172: tokenize_stem()" name="retrieve::tokenize_stem" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_35e51872 -> node_9be5975f [color="#56B4E9" penwidth="2"];
+node_6436cf2d -> node_b71d68e6 [color="#0072B2" penwidth="2"];
+node_6436cf2d -> node_8ce55136 [color="#0072B2" penwidth="2"];
+node_6436cf2d -> node_44f46516 [color="#0072B2" penwidth="2"];
+node_6436cf2d -> node_104717b9 [color="#0072B2" penwidth="2"];
+node_6436cf2d -> node_4c9b39a9 [color="#0072B2" penwidth="2"];
+node_9be5975f -> node_09bac25a [color="#CC79A7" penwidth="2"];
+node_4c9b39a9 -> node_48f676bc [color="#E69F00" penwidth="2"];
+node_2a0eea5e -> node_9fe9d8b3 [color="#D55E00" penwidth="2"];
+node_09bac25a -> node_62f25d59 [color="#56B4E9" penwidth="2"];
+node_48f676bc -> node_09bac25a [color="#F0E442" penwidth="2"];
+node_48f676bc -> node_bf822459 [color="#F0E442" penwidth="2"];
+node_48f676bc -> node_031fdf9c [color="#F0E442" penwidth="2"];
+subgraph cluster_0c1de7f4 {
+    node_35e51872 node_6436cf2d node_9be5975f node_b71d68e6 node_4c9b39a9 node_8ce55136 node_44f46516 node_104717b9;
+    label="File: evaluate";
+    name="evaluate";
+    style="filled";
+    graph[style=dotted];
+};
+subgraph cluster_3b13907b {
+    node_2a0eea5e node_9fe9d8b3;
+    label="File: generate";
+    name="generate";
+    style="filled";
+    graph[style=dotted];
+};
+subgraph cluster_1ffb3796 {
+    node_48f676bc node_bf822459 node_031fdf9c node_09bac25a node_62f25d59;
+    label="File: retrieve";
+    name="retrieve";
+    style="filled";
+    graph[style=dotted];
+};
+}

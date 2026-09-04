@@ -1,0 +1,1524 @@
+[
+  {
+    "query": "What is the Federal Reserve's current interest rate?",
+    "query_es": "¿Cuál es la tasa de interés actual de la Reserva Federal?",
+    "difficulty": "irrelevant",
+    "expected_comunicados": [],
+    "candidates": [],
+    "confirmed_related_chunks": []
+  },
+  {
+    "query": "How does the European Central Bank set monetary policy?",
+    "query_es": "¿Cómo establece el Banco Central Europeo la política monetaria?",
+    "difficulty": "irrelevant",
+    "expected_comunicados": [],
+    "candidates": [],
+    "confirmed_related_chunks": []
+  },
+  {
+    "query": "What is the history of the Chilean peso currency design?",
+    "query_es": "¿Cuál es la historia del diseño de la moneda peso chileno?",
+    "difficulty": "irrelevant",
+    "expected_comunicados": [],
+    "candidates": [],
+    "confirmed_related_chunks": []
+  },
+  {
+    "query": "What was the policy interest rate in March 2016?",
+    "query_es": "¿Cuál fue la tasa de interés de política monetaria en marzo de 2016?",
+    "difficulty": "easy",
+    "expected_comunicados": [
+      "2016_marzo"
+    ],
+    "candidates": [
+      {
+        "chunk_id": 0,
+        "name": "2016_marzo",
+        "rrf_score": 0.333,
+        "text_preview": "<s> Jueves 17 de marzo de 2016. Reunión de Política Monetaria – Marzo 2016 En su reunión mensual de política monetaria, el Consejo del Banco Central de Chile acordó mantener la tasa de interés de política monetaria en 3,5%. En lo externo, los mercados financieros han mostrado mayor calma en las últimas semanas, aunque siguen presentes los riesgos de nuevos episodios de inestabilidad. Así, los premios por riesgo se han reducido, al mismo tiempo que los índices bursátiles y los precios de las materias primas han subido. Por otra parte , las proyecciones de crecimiento"
+      },
+      {
+        "chunk_id": 1,
+        "name": "2016_marzo",
+        "rrf_score": 0.268,
+        "text_preview": ", las proyecciones de crecimiento global y de inflación en las economías avanzadas se han vuelto a recortar . En este contexto, l os bancos centrales del mundo desarroll ado han tomado acciones o realizado anuncios que indican mayores grados de expansividad de sus políticas monetarias. Tras la reunión de la Reserva Federal, el dólar tuvo una depreciación adicional y las tasas de interés descendieron. En lo interno, la inflación anual del IPC e IPCSAE sigue por sobre 4%, en línea con lo previsto. Las expectativas de inflación a dos"
+      },
+      {
+        "chunk_id": 2,
+        "name": "2016_marzo",
+        "rrf_score": 0.254,
+        "text_preview": "Las expectativas de inflación a dos años plazo permanecen en 3%. La evolución de estas variables se seguirá monitoreando con especial atención. Los datos de actividad y demanda dan cuenta de un desempeño de la última parte del 2015 más débil que lo previsto en el IPoM de diciembre. Los índices de confianza continúan en niveles pesimistas. La tasa de crecimiento anual del empleo asalariado volvió a descender, pero la tasa de desempleo sigue en niveles bajos. El ritmo de crecimiento anual de los salarios aumentó en enero. La trayectoria futura de la TPM contempla ajustes pausa"
+      }
+    ],
+    "confirmed_related_chunks": [
+      {
+        "chunk_id": 0,
+        "name": "2016_marzo",
+        "rrf_score": 0.333,
+        "text_preview": "<s> Jueves 17 de marzo de 2016. Reunión de Política Monetaria – Marzo 2016 En su reunión mensual de política monetaria, el Consejo del Banco Central de Chile acordó mantener la tasa de interés de política monetaria en 3,5%. En lo externo, los mercados financieros han mostrado mayor calma en las últimas semanas, aunque siguen presentes los riesgos de nuevos episodios de inestabilidad. Así, los premios por riesgo se han reducido, al mismo tiempo que los índices bursátiles y los precios de las materias primas han subido. Por otra parte , las proyecciones de crecimiento"
+      },
+      {
+        "chunk_id": 2,
+        "name": "2016_marzo",
+        "rrf_score": 0.254,
+        "text_preview": "Las expectativas de inflación a dos años plazo permanecen en 3%. La evolución de estas variables se seguirá monitoreando con especial atención. Los datos de actividad y demanda dan cuenta de un desempeño de la última parte del 2015 más débil que lo previsto en el IPoM de diciembre. Los índices de confianza continúan en niveles pesimistas. La tasa de crecimiento anual del empleo asalariado volvió a descender, pero la tasa de desempleo sigue en niveles bajos. El ritmo de crecimiento anual de los salarios aumentó en enero. La trayectoria futura de la TPM contempla ajustes pausa"
+      }
+    ]
+  },
+  {
+    "query": "Did the Council cut or raise the rate in April 2017?",
+    "query_es": "¿El Consejo redujo o aumentó la tasa en abril de 2017?",
+    "difficulty": "easy",
+    "expected_comunicados": [
+      "2017_abril"
+    ],
+    "candidates": [
+      {
+        "chunk_id": 0,
+        "name": "2017_abril",
+        "rrf_score": 0.31,
+        "text_preview": "<s> Jueves 13 de abril de 2017. Reunión de Política Monetaria – Abril 2017 En su reunión mensual de política monetaria, el Consejo del Banco Central de Chile acordó reducir la tasa de interés de política monetaria en 25 puntos base, hasta 2,75%. En el plano externo, las condiciones financieras globales continúan favorables y diversos indicadores apuntan a un escenario de mayor crecimiento e inflación en el mundo desarrollado. Los precios de las materias primas tuvieron movimientos mixtos, destacando el incremento del precio del petróleo. Con todo, persisten riesgos relevantes. En el plano inte"
+      },
+      {
+        "chunk_id": 1,
+        "name": "2017_abril",
+        "rrf_score": 0.31,
+        "text_preview": "s. En el plano interno, las cifras de inflación y actividad estuvieron en línea con lo previsto en el IPoM de marzo. La inflación anual se mantuvo en 2,7% y las expectativas de inflación a fines del horizonte de proyección se ubican en torno a la meta. Las ci fras de actividad y demanda continúan mostrando un débil desempeño. Destaca un deterioro del mercado laboral algo mayor que lo previsto. Para asegurar la convergencia de la inflación a la meta, el Consejo evaluará la necesidad de algún incremento adiciona l del impulso monetario. Su concreción"
+      },
+      {
+        "chunk_id": 2,
+        "name": "2017_abril",
+        "rrf_score": 0.25,
+        "text_preview": "monetario. Su concreción dependerá de las perspectivas de inflación de mediano plazo. Como siempre, reafirma su compromiso de conducir la política monetaria con flexibilidad, de manera que la inflación proyectada se ubique en 3% en el horizonte de política.</s>"
+      }
+    ],
+    "confirmed_related_chunks": [
+      {
+        "chunk_id": 0,
+        "name": "2017_abril",
+        "rrf_score": 0.31,
+        "text_preview": "<s> Jueves 13 de abril de 2017. Reunión de Política Monetaria – Abril 2017 En su reunión mensual de política monetaria, el Consejo del Banco Central de Chile acordó reducir la tasa de interés de política monetaria en 25 puntos base, hasta 2,75%. En el plano externo, las condiciones financieras globales continúan favorables y diversos indicadores apuntan a un escenario de mayor crecimiento e inflación en el mundo desarrollado. Los precios de las materias primas tuvieron movimientos mixtos, destacando el incremento del precio del petróleo. Con todo, persisten riesgos relevantes. En el plano inte"
+      },
+      {
+        "chunk_id": 1,
+        "name": "2017_abril",
+        "rrf_score": 0.31,
+        "text_preview": "s. En el plano interno, las cifras de inflación y actividad estuvieron en línea con lo previsto en el IPoM de marzo. La inflación anual se mantuvo en 2,7% y las expectativas de inflación a fines del horizonte de proyección se ubican en torno a la meta. Las ci fras de actividad y demanda continúan mostrando un débil desempeño. Destaca un deterioro del mercado laboral algo mayor que lo previsto. Para asegurar la convergencia de la inflación a la meta, el Consejo evaluará la necesidad de algún incremento adiciona l del impulso monetario. Su concreción"
+      },
+      {
+        "chunk_id": 2,
+        "name": "2017_abril",
+        "rrf_score": 0.25,
+        "text_preview": "monetario. Su concreción dependerá de las perspectivas de inflación de mediano plazo. Como siempre, reafirma su compromiso de conducir la política monetaria con flexibilidad, de manera que la inflación proyectada se ubique en 3% en el horizonte de política.</s>"
+      }
+    ]
+  },
+  {
+    "query": "What was the inflation rate reported in the December 2018 meeting?",
+    "query_es": "¿Cuál fue la tasa de inflación reportada en la reunión de diciembre de 2018?",
+    "difficulty": "easy",
+    "expected_comunicados": [
+      "2018_diciembre"
+    ],
+    "candidates": [
+      {
+        "chunk_id": 0,
+        "name": "2018_diciembre",
+        "rrf_score": 0.31,
+        "text_preview": "<s> Martes 4 de diciembre de 2018. Reunión de Política Monetaria En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó mantener la tasa de interés de política monetaria en 2,75%. La decisión fue adoptada por la unanimidad de sus miembros. En lo externo, los datos siguen confirmando que el c recimiento mundial está transitando hacia una etapa de menor expansión que en años previos. Desde la Reunión anterior, destacan cifras de actividad menos auspiciosas en la Eurozona y en China, un ajuste a la baja en los precios de los activos riesgosos"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2018_diciembre",
+        "rrf_score": 0.278,
+        "text_preview": "actividad, como los de servicios no regulados del IPCSAE, siguen mostrando una paulatina aceleración. A plaz os más cortos, las expectativas privadas para la inflación han descendido en línea con el menor precio internacional del petróleo y los combustibles, en tanto que a dos años plazo se mantienen en torno a 3%. La decisión del Consejo consideró que el anális is contenido en el IPoM de diciembre, y los datos al cierre estadístico, confirman que la evolución de las condiciones macroeconómicas hace necesaria la reducción del estímulo monetario, proceso que se seguirá implementando con gradual"
+      },
+      {
+        "chunk_id": 4,
+        "name": "2018_diciembre",
+        "rrf_score": 0.268,
+        "text_preview": "confirman la visión de un mercado del trabajo que evoluciona acorde con el ritmo de crecimiento observado desde mediados del 2017. Para el período 2018 -2020, las perspectivas del mercado (EEE) apuntan a una expansión anual del PIB de 4% este año y de 3,5% para el 2019 y 2020. La inflación de octubre (0,4%) estuvo en líne a con lo proyectado, con lo que la inflación anual del IPC bajó a 2,9% y la del IPCSAE se mantuvo en 2,1%. Los precios más sensibles a la brecha de actividad, como los de servicios no"
+      }
+    ],
+    "confirmed_related_chunks": [
+      {
+        "chunk_id": 5,
+        "name": "2018_diciembre",
+        "rrf_score": 0.278,
+        "text_preview": "actividad, como los de servicios no regulados del IPCSAE, siguen mostrando una paulatina aceleración. A plaz os más cortos, las expectativas privadas para la inflación han descendido en línea con el menor precio internacional del petróleo y los combustibles, en tanto que a dos años plazo se mantienen en torno a 3%. La decisión del Consejo consideró que el anális is contenido en el IPoM de diciembre, y los datos al cierre estadístico, confirman que la evolución de las condiciones macroeconómicas hace necesaria la reducción del estímulo monetario, proceso que se seguirá implementando con gradual"
+      },
+      {
+        "chunk_id": 4,
+        "name": "2018_diciembre",
+        "rrf_score": 0.268,
+        "text_preview": "confirman la visión de un mercado del trabajo que evoluciona acorde con el ritmo de crecimiento observado desde mediados del 2017. Para el período 2018 -2020, las perspectivas del mercado (EEE) apuntan a una expansión anual del PIB de 4% este año y de 3,5% para el 2019 y 2020. La inflación de octubre (0,4%) estuvo en líne a con lo proyectado, con lo que la inflación anual del IPC bajó a 2,9% y la del IPCSAE se mantuvo en 2,1%. Los precios más sensibles a la brecha de actividad, como los de servicios no"
+      }
+    ]
+  },
+  {
+    "query": "What rate did the Council set in May 2020?",
+    "query_es": "¿Qué tasa estableció el Consejo en mayo de 2020?",
+    "difficulty": "easy",
+    "expected_comunicados": [
+      "2020_mayo"
+    ],
+    "candidates": [
+      {
+        "chunk_id": 0,
+        "name": "2020_mayo",
+        "rrf_score": 0.333,
+        "text_preview": "<s> Miércoles 6 de mayo de 2020 Reunión de Política Monetaria – mayo 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó mantener la tasa de interés de política monetaria en 0,50%. La decisión fue adoptada por la unanimidad de sus miembros. La evolución de la pandemia del Covid-19 y el efecto de las medidas sanitarias adoptadas para su contención sigue condicionando el escenario macroeconómico a nivel global. Actualmente, el conjunto de proyecciones de organ ismos públicos y privados anticipa una recesión mundial para este año, con caída"
+      },
+      {
+        "chunk_id": 10,
+        "name": "2020_mayo",
+        "rrf_score": 0.286,
+        "text_preview": "años continúan en torno a 3,0%. La decisión del Consejo de mantener la TPM en su mínimo técnico de 0,5%, es concordante con la necesidad que la política monetaria se mantenga en esta posición altamente expansiva por un extenso período de tiempo para asegurar la convergencia de la inflación a la meta de 3% en un horizonte de dos años. El Consejo evaluará opciones para intensificar el impulso monetario y apo yar la estabilidad financiera a través de instrumentos no convencionales en caso de que la evolución de la economía así lo requiera.</s>"
+      },
+      {
+        "chunk_id": 1,
+        "name": "2020_mayo",
+        "rrf_score": 0.225,
+        "text_preview": "mundial para este año, con caídas de la actividad que superan lo considerado en el escenario base del IPoM de marzo. Las primeras cifras del PIB del primer trimestre en las principales economías confirman con tracciones generalizadas, en varios casos más profundas de lo esperado, al mismo tiempo que en diversos países ya se aprecia un significativo aumento del desempleo. Además, es previsible que las prácticas de contención sanitaria se mantendrán durante buena parte del segundo trimestre. En este contexto, los bancos centrales y los gobiernos han continuado reforzando sus políticas de estímul"
+      }
+    ],
+    "confirmed_related_chunks": [
+      {
+        "chunk_id": 0,
+        "name": "2020_mayo",
+        "rrf_score": 0.333,
+        "text_preview": "<s> Miércoles 6 de mayo de 2020 Reunión de Política Monetaria – mayo 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó mantener la tasa de interés de política monetaria en 0,50%. La decisión fue adoptada por la unanimidad de sus miembros. La evolución de la pandemia del Covid-19 y el efecto de las medidas sanitarias adoptadas para su contención sigue condicionando el escenario macroeconómico a nivel global. Actualmente, el conjunto de proyecciones de organ ismos públicos y privados anticipa una recesión mundial para este año, con caída"
+      },
+      {
+        "chunk_id": 10,
+        "name": "2020_mayo",
+        "rrf_score": 0.286,
+        "text_preview": "años continúan en torno a 3,0%. La decisión del Consejo de mantener la TPM en su mínimo técnico de 0,5%, es concordante con la necesidad que la política monetaria se mantenga en esta posición altamente expansiva por un extenso período de tiempo para asegurar la convergencia de la inflación a la meta de 3% en un horizonte de dos años. El Consejo evaluará opciones para intensificar el impulso monetario y apo yar la estabilidad financiera a través de instrumentos no convencionales en caso de que la evolución de la economía así lo requiera.</s>"
+      }
+    ]
+  },
+  {
+    "query": "What was the Council's reasoning for raising rates in January 2022?",
+    "query_es": "¿Cuál fue el razonamiento del Consejo para subir las tasas en enero de 2022?",
+    "difficulty": "medium",
+    "expected_comunicados": [
+      "2022_enero"
+    ],
+    "candidates": [
+      {
+        "chunk_id": 0,
+        "name": "2022_enero",
+        "rrf_score": 0.31,
+        "text_preview": "<s> Miércoles 26 de enero de 2022. Reunión de Política Monetaria – enero 2022 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó incrementar la tasa de interés de política monetaria en 150 puntos base, hasta 5,5%. La decisión fue adoptada por la unanimidad de los Consejeros presentes. En el plano externo, la economía mundial ha perdido algo de dinamismo, pero las perspectivas para el año no muestran mayores cambios. El alza de contagios de Covid-19 ha sido significativa en muchos países y si bien se observa un descenso en la"
+      },
+      {
+        "chunk_id": 4,
+        "name": "2022_enero",
+        "rrf_score": 0.258,
+        "text_preview": "ción efectiva y a expectativas de tasa de política monetaria más e levadas. De todas formas, los niveles de incertidumbre siguen siendo elevados en comparación histórica y las tasas de interés de largo plazo mantienen un diferencial relevante respecto de sus pares externos. En el agregado, los indicadores de actividad y d emanda son coherentes con la parte alta del rango de proyección para el 2021 considerado en el IPoM de diciembre. En noviembre, la actividad aumentó 14,3% anual —0,3% mensual para la serie desestacionalizada—, destacando la contribución de las actividades"
+      },
+      {
+        "chunk_id": 3,
+        "name": "2022_enero",
+        "rrf_score": 0.243,
+        "text_preview": "factores externos como int ernos, aunque con predominio de estos últimos, posiblemente asociado a una disminución de la incertidumbre interna. Desde la Reunión previa, el peso se apreció cerca de 5%, la bolsa subió en torno a 5%, las tasas de interés de largo plazo, aunque con vaive nes, se ubican en niveles similares y el riesgo país (CDS) retrocedió cerca de 10 puntos base (pb). Por otro lado, las tasas de interés de corto plazo subieron, en respuesta a la mayor inflación efectiva y a expectativas de tasa"
+      }
+    ],
+    "confirmed_related_chunks": [
+      {
+        "chunk_id": 0,
+        "name": "2022_enero",
+        "rrf_score": 0.31,
+        "text_preview": "<s> Miércoles 26 de enero de 2022. Reunión de Política Monetaria – enero 2022 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó incrementar la tasa de interés de política monetaria en 150 puntos base, hasta 5,5%. La decisión fue adoptada por la unanimidad de los Consejeros presentes. En el plano externo, la economía mundial ha perdido algo de dinamismo, pero las perspectivas para el año no muestran mayores cambios. El alza de contagios de Covid-19 ha sido significativa en muchos países y si bien se observa un descenso en la"
+      },
+      {
+        "chunk_id": 4,
+        "name": "2022_enero",
+        "rrf_score": 0.258,
+        "text_preview": "ción efectiva y a expectativas de tasa de política monetaria más e levadas. De todas formas, los niveles de incertidumbre siguen siendo elevados en comparación histórica y las tasas de interés de largo plazo mantienen un diferencial relevante respecto de sus pares externos. En el agregado, los indicadores de actividad y d emanda son coherentes con la parte alta del rango de proyección para el 2021 considerado en el IPoM de diciembre. En noviembre, la actividad aumentó 14,3% anual —0,3% mensual para la serie desestacionalizada—, destacando la contribución de las actividades"
+      },
+      {
+        "chunk_id": 3,
+        "name": "2022_enero",
+        "rrf_score": 0.243,
+        "text_preview": "factores externos como int ernos, aunque con predominio de estos últimos, posiblemente asociado a una disminución de la incertidumbre interna. Desde la Reunión previa, el peso se apreció cerca de 5%, la bolsa subió en torno a 5%, las tasas de interés de largo plazo, aunque con vaive nes, se ubican en niveles similares y el riesgo país (CDS) retrocedió cerca de 10 puntos base (pb). Por otro lado, las tasas de interés de corto plazo subieron, en respuesta a la mayor inflación efectiva y a expectativas de tasa"
+      }
+    ]
+  },
+  {
+    "query": "What non-conventional measures did the Bank announce in March 2020?",
+    "query_es": "¿Qué medidas no convencionales anunció el Banco en marzo de 2020?",
+    "difficulty": "medium",
+    "expected_comunicados": [
+      "2020_marzo_a",
+      "2020_marzo_b"
+    ],
+    "candidates": [
+      {
+        "chunk_id": 0,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.292,
+        "text_preview": "<s> Martes 31 de marzo de 2020 Reunión de Política Monetaria – marzo 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó reducir la tasa de interés de política monetaria en 50 puntos base, hasta 0,50%. La decisión fue adoptada por la unanimidad de sus miembros. El escenario externo ha empeorado significativamente tras la rápida expansión global del Covid -19. Las medidas de control sanitario aplicadas en los distintos países han provocado importantes disrupciones de oferta y demanda, cuyos efectos ya se están observando. La incertidumbre sobre la magnitud"
+      },
+      {
+        "chunk_id": 3,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.292,
+        "text_preview": "mitad de marzo que se extenderá durante el segundo trimestre. El mercado ha ido recortando sus proyecciones d e crecimiento para este año y las estimaciones más recientes apuntan a una caída anual. El Gobierno ha anunciado un importante paquete de estímulo al que se suman la reducción de la TPM y las medidas adoptadas por el Banco para facilitar el acceso al crédi to para personas y empresas. El mercado financiero local se ha alineado con estos desarrollos. Así, se han observado importantes correcciones en el IPSA y el tipo de cambio, mientras la liquidez y las"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2020_marzo_a",
+        "rrf_score": 0.22,
+        "text_preview": "Cuarto, se extenderá el plazo del programa de venta de divisas hasta el 9 de enero de 2021. Los detalles operacionales y las fechas específicas de la puesta en marcha de estas medidas serán dados a conocer en los próximos días. El Consejo estima que este conjunto de medidas facilitará el ajuste de la economía al nuevo escenario que enfrenta, mitigando su impacto en hogares y empresas. Futuros cambios en la política monetaria o en las medidas adicionales dependerán de la evolución del panorama macroeconómico, el adecuado funcionamiento de los mercados financieros y el cumplimiento de los objeti"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_marzo_a",
+        "rrf_score": 0.21,
+        "text_preview": "<s> Lunes 16 de marzo de 2020 Reunión de Política Monetaria especial – marzo 2020 En su Sesión Especial de Política Monetaria, el Consejo del Banco Central de Chile acordó reducir la tasa de interés de política monetaria en 75 puntos base, hasta 1%, e implementar un conjunto de medidas adicionales orientadas al buen funcionamiento del mercado financiero. La decisión respecto de la TPM contó con el voto favorable del Presidente señor Marcel, el Vicepresidente señor Vial y el Consejero señor García. Los Consejeros señor Naudon y señora Costa votaron por una reducción de 50 puntos base. La decisi"
+      },
+      {
+        "chunk_id": 1,
+        "name": "2020_marzo_a",
+        "rrf_score": 0.191,
+        "text_preview": "50 puntos base. La decisión acerca de las medidas adicionales fue adoptada por unanimidad. El escenario macroeconómico que enfrenta la economía chilena ha tenido un rápido y significativo deterioro producto de la expansión global del COVID -19 y las turbulencias financieras asociadas, lo que está afectando negativamente a la economía, impactando a hogares y empresas. En respuesta a estos desarrollos, diversos bancos centrales han adelantado sus decisiones de políti ca monetaria y han anunciado una serie de medidas complementarias destinadas a facilitar la provisión de liquidez y el normal func"
+      },
+      {
+        "chunk_id": 8,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.188,
+        "text_preview": "500 millones. El Consejo seguirá implementando las medidas necesarias para promover el adecuado funcionamiento de los mercados financieros, y el cumplimiento de los objetivos de inflación y de estabilidad financiera. El Informe de Política Monetaria de marzo, que contiene las proyecc iones y análisis que sustentan la decisión del Consejo, se publicará mañana miércoles 1 de abril a las 8:30 horas.</s>"
+      }
+    ],
+    "confirmed_related_chunks": [
+      {
+        "chunk_id": 6,
+        "name": "2020_marzo_a",
+        "rrf_score": 0.22,
+        "text_preview": "Cuarto, se extenderá el plazo del programa de venta de divisas hasta el 9 de enero de 2021. Los detalles operacionales y las fechas específicas de la puesta en marcha de estas medidas serán dados a conocer en los próximos días. El Consejo estima que este conjunto de medidas facilitará el ajuste de la economía al nuevo escenario que enfrenta, mitigando su impacto en hogares y empresas. Futuros cambios en la política monetaria o en las medidas adicionales dependerán de la evolución del panorama macroeconómico, el adecuado funcionamiento de los mercados financieros y el cumplimiento de los objeti"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_marzo_a",
+        "rrf_score": 0.21,
+        "text_preview": "<s> Lunes 16 de marzo de 2020 Reunión de Política Monetaria especial – marzo 2020 En su Sesión Especial de Política Monetaria, el Consejo del Banco Central de Chile acordó reducir la tasa de interés de política monetaria en 75 puntos base, hasta 1%, e implementar un conjunto de medidas adicionales orientadas al buen funcionamiento del mercado financiero. La decisión respecto de la TPM contó con el voto favorable del Presidente señor Marcel, el Vicepresidente señor Vial y el Consejero señor García. Los Consejeros señor Naudon y señora Costa votaron por una reducción de 50 puntos base. La decisi"
+      },
+      {
+        "chunk_id": 8,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.188,
+        "text_preview": "500 millones. El Consejo seguirá implementando las medidas necesarias para promover el adecuado funcionamiento de los mercados financieros, y el cumplimiento de los objetivos de inflación y de estabilidad financiera. El Informe de Política Monetaria de marzo, que contiene las proyecc iones y análisis que sustentan la decisión del Consejo, se publicará mañana miércoles 1 de abril a las 8:30 horas.</s>"
+      }
+    ]
+  },
+  {
+    "query": "How did the Council describe labor market conditions in the June 2020 meeting?",
+    "query_es": "¿Cómo describió el Consejo las condiciones del mercado laboral en la reunión de junio de 2020?",
+    "difficulty": "medium",
+    "expected_comunicados": [
+      "2020_junio"
+    ],
+    "candidates": [
+      {
+        "chunk_id": 1,
+        "name": "2020_junio",
+        "rrf_score": 0.292,
+        "text_preview": "casi la mitad de la población nacional. El Imacec de abril dio cuenta de una importante caída de la actividad, que se profundizará en mayo y junio dada la ampliación y duración de las medidas de contención decretadas en eso s meses. El mercado del trabajo también está experimentando un importante deterioro, acompañado de caídas en diversos indicadores de consumo y expectativas en niveles marcadamente pesimistas. Por el lado de la inversión, destaca la sostenida baja de las importaciones de bienes de capital y expectativas empresariales que persisten notoriamente negativas. Con ello, las expect"
+      },
+      {
+        "chunk_id": 11,
+        "name": "2020_junio",
+        "rrf_score": 0.286,
+        "text_preview": "seguirá evaluando opciones para intensificar d icho impulso y apoyar la estabilidad financiera, a través de instrumentos no convencionales. El Informe de Política Monetaria de junio, que contiene las proyecciones y análisis que sustentan estas decisiones del Consejo, se publicará mañana miércoles 17 d e junio a las 8:30 horas.</s>"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_junio",
+        "rrf_score": 0.25,
+        "text_preview": "<s> Martes 16 de junio de 2020 Reunión de Política Monetaria – junio 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó, por unanimidad de sus miembros, mantener la tasa de interés de política monetaria en 0,50%. Asimismo, acordó ampliar las medidas no convencionales de apoyo a la liquidez y el crédito. Los efectos de la pandemia de Covid -19 se han seguido prolongando e intensificando, en particular por la necesidad de decretar cuarentenas e n comunas del país que abarcan a casi la mitad de la población nacional"
+      }
+    ],
+    "confirmed_related_chunks": [
+      {
+        "chunk_id": 1,
+        "name": "2020_junio",
+        "rrf_score": 0.292,
+        "text_preview": "casi la mitad de la población nacional. El Imacec de abril dio cuenta de una importante caída de la actividad, que se profundizará en mayo y junio dada la ampliación y duración de las medidas de contención decretadas en eso s meses. El mercado del trabajo también está experimentando un importante deterioro, acompañado de caídas en diversos indicadores de consumo y expectativas en niveles marcadamente pesimistas. Por el lado de la inversión, destaca la sostenida baja de las importaciones de bienes de capital y expectativas empresariales que persisten notoriamente negativas. Con ello, las expect"
+      }
+    ]
+  },
+  {
+    "query": "What was said about copper prices in the February 2018 meeting?",
+    "query_es": "¿Qué se dijo sobre los precios del cobre en la reunión de febrero de 2018?",
+    "difficulty": "medium",
+    "expected_comunicados": [
+      "2018_febrero"
+    ],
+    "candidates": [
+      {
+        "chunk_id": 3,
+        "name": "2018_febrero",
+        "rrf_score": 0.292,
+        "text_preview": "En el caso del cobre el precio se ubica en torno a US$3,2 la libra y, en el del petróleo, se sitúa entre US$65 y 70 el barril. En el plano local, las condiciones financieras se mantienen favorables. A partir de la segunda quincena de diciembre, las tasas de largo plazo, la bolsa y el tipo de cambio mostraron una reversión relevante de las tendencias que se observaban al momento de la Reunión anterior, en respuesta a una combinación de factores internos y externos. Las tasas de interés de colocaciones persisten en niveles cercanos a sus"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2018_febrero",
+        "rrf_score": 0.278,
+        "text_preview": "<s> Jueves 1 de febrero de 2018. Reunión de Política Monetaria En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó mantener la tasa de interés de política monetaria en 2, 5%, lo que implica mantener la intensidad del impulso monetario. La decisión fue adoptada por la unanimidad de sus miembros. En el ámbito internacional, el escenario relevante para la economía chilena sigue mejorando. En general, las economías desarrolla das continúan mostrando un buen desempeño y el crecimiento esperado para el 2018 ha aumentado en varias de ellas. La inflación, no obstante, sig"
+      },
+      {
+        "chunk_id": 7,
+        "name": "2018_febrero",
+        "rrf_score": 0.254,
+        "text_preview": "últimos meses, del bajo dinamismo de la actividad y del efecto de algunos shocks puntuales. La variación anual del IPCSAE de bienes se ubica en torno a 0% y la de servicios ce rca de 3%. Respecto de los precios más volátiles, la variación anual de los precios de las frutas y verduras volvió a ser levemente positiva. Las expectativas de inflación tuvieron movimientos acotados. Mientras a corto plazo se han ajustado algo a la baja , a dos años plazo no muestran cambios respecto de lo observado en la Reunión anterior. La decisión del Consejo"
+      }
+    ],
+    "confirmed_related_chunks": [
+      {
+        "chunk_id": 3,
+        "name": "2018_febrero",
+        "rrf_score": 0.292,
+        "text_preview": "En el caso del cobre el precio se ubica en torno a US$3,2 la libra y, en el del petróleo, se sitúa entre US$65 y 70 el barril. En el plano local, las condiciones financieras se mantienen favorables. A partir de la segunda quincena de diciembre, las tasas de largo plazo, la bolsa y el tipo de cambio mostraron una reversión relevante de las tendencias que se observaban al momento de la Reunión anterior, en respuesta a una combinación de factores internos y externos. Las tasas de interés de colocaciones persisten en niveles cercanos a sus"
+      }
+    ]
+  },
+  {
+    "query": "How did the policy rate change from March 2020 through July 2020?",
+    "query_es": "¿Cómo cambió la tasa de política monetaria desde marzo de 2020 hasta julio de 2020?",
+    "difficulty": "hard",
+    "expected_comunicados": [
+      "2020_marzo_a",
+      "2020_marzo_b",
+      "2020_mayo",
+      "2020_junio",
+      "2020_julio"
+    ],
+    "candidates": [
+      {
+        "chunk_id": 0,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.254,
+        "text_preview": "<s> Martes 31 de marzo de 2020 Reunión de Política Monetaria – marzo 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó reducir la tasa de interés de política monetaria en 50 puntos base, hasta 0,50%. La decisión fue adoptada por la unanimidad de sus miembros. El escenario externo ha empeorado significativamente tras la rápida expansión global del Covid -19. Las medidas de control sanitario aplicadas en los distintos países han provocado importantes disrupciones de oferta y demanda, cuyos efectos ya se están observando. La incertidumbre sobre la magnitud"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_julio",
+        "rrf_score": 0.217,
+        "text_preview": "<s> Miércoles 15 de julio de 2020 Reunión de Política Monetaria – julio 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó, por unanimidad de sus miembros, mantener la tasa de interés de política monetaria en 0,50%. Asimismo, acordó mantener las medidas no convencionales de apoyo a la liquidez y el crédito. El escenario macroeconómico sigue condicionado por la evolución de la pandemia del Covid-19. En lo interno, las cifras disponibles del s egundo trimestre confirman que la economía sufrió una significativa contracción. El IMACE"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_mayo",
+        "rrf_score": 0.2,
+        "text_preview": "<s> Miércoles 6 de mayo de 2020 Reunión de Política Monetaria – mayo 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó mantener la tasa de interés de política monetaria en 0,50%. La decisión fue adoptada por la unanimidad de sus miembros. La evolución de la pandemia del Covid-19 y el efecto de las medidas sanitarias adoptadas para su contención sigue condicionando el escenario macroeconómico a nivel global. Actualmente, el conjunto de proyecciones de organ ismos públicos y privados anticipa una recesión mundial para este año, con caída"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2020_julio",
+        "rrf_score": 0.192,
+        "text_preview": "s de interés de larg o plazo —BCP 5 y 10 — tuvieron descensos significativos en los días posteriores, ubicándose actualmente entre 15 y 25pb por debajo del nivel previo a la anterior Reunión. Por su lado, la bolsa siguió aumentando y el peso, con vaivenes, se encuentra en nivel es similares a los vigentes al momento de la Reunión previa. Respecto del crédito, en junio, la variación anual de las colocaciones comerciales siguió aumentando, al mismo tiempo que continuó disminuyendo en consumo. Las tasas de interés permanecen bajas en todos"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.162,
+        "text_preview": "ó la Línea de Crédito de Liquidez (LCL) y flexibilizó los requerim ientos de liquidez en materia de descalce de plazos. A la fecha, todas estas medidas se encuentran operativas. A febrero, la inflación anual subió a cerca de 4% y la medida subyacente se mantuvo levemente sobre 2,5%. El nuevo escenario que se ha ido confi gurando reduce de forma relevante las presiones inflacionarias de mediano plazo, dada la apertura de la brecha de actividad que se está produciendo. A ello se suma la significativa caída del precio"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_marzo_a",
+        "rrf_score": 0.159,
+        "text_preview": "<s> Lunes 16 de marzo de 2020 Reunión de Política Monetaria especial – marzo 2020 En su Sesión Especial de Política Monetaria, el Consejo del Banco Central de Chile acordó reducir la tasa de interés de política monetaria en 75 puntos base, hasta 1%, e implementar un conjunto de medidas adicionales orientadas al buen funcionamiento del mercado financiero. La decisión respecto de la TPM contó con el voto favorable del Presidente señor Marcel, el Vicepresidente señor Vial y el Consejero señor García. Los Consejeros señor Naudon y señora Costa votaron por una reducción de 50 puntos base. La decisi"
+      },
+      {
+        "chunk_id": 8,
+        "name": "2020_junio",
+        "rrf_score": 0.154,
+        "text_preview": "s semanas atrás. En este contexto, las diversas medidas de expectativas de inflación dan cuenta de retrocesos en la inflación esperada a un año. A dos año s plazo, las expectativas medidas por la Encuesta de Operadores Financieros se ubicaron bajo 3% y en la Encuesta de Expectativas Económicas se mantuvieron en ese valor. El Consejo estima que la evolución de la economía requiere de una intensificación del impulso monetario. Por ello, junto con mantener la TPM en 0,5% —que corresponde a la actual estimación de su mínimo técnico —, decidió ampliar el uso de instrumentos no"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_junio",
+        "rrf_score": 0.151,
+        "text_preview": "<s> Martes 16 de junio de 2020 Reunión de Política Monetaria – junio 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó, por unanimidad de sus miembros, mantener la tasa de interés de política monetaria en 0,50%. Asimismo, acordó ampliar las medidas no convencionales de apoyo a la liquidez y el crédito. Los efectos de la pandemia de Covid -19 se han seguido prolongando e intensificando, en particular por la necesidad de decretar cuarentenas e n comunas del país que abarcan a casi la mitad de la población nacional"
+      },
+      {
+        "chunk_id": 3,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.144,
+        "text_preview": "mitad de marzo que se extenderá durante el segundo trimestre. El mercado ha ido recortando sus proyecciones d e crecimiento para este año y las estimaciones más recientes apuntan a una caída anual. El Gobierno ha anunciado un importante paquete de estímulo al que se suman la reducción de la TPM y las medidas adoptadas por el Banco para facilitar el acceso al crédi to para personas y empresas. El mercado financiero local se ha alineado con estos desarrollos. Así, se han observado importantes correcciones en el IPSA y el tipo de cambio, mientras la liquidez y las"
+      },
+      {
+        "chunk_id": 2,
+        "name": "2020_mayo",
+        "rrf_score": 0.134,
+        "text_preview": "políticas de estímulo, apuntando a limitar el impacto negativo en la situación de empresas, hogares e instituciones financieras y apoyar la r ecuperación en el segundo semestre del año. Estas medidas también han contribuido a contener el deterioro de las condiciones financieras, pero persiste un alto grado de incertidumbre, tanto en lo sanitario como lo económico. En lo que se refiere al escena rio macroeconómico interno, la caída del Imacec de marzo estuvo en línea con el panorama descrito en el último IPoM, ratificando el inicio del proceso de contracción económica provocado por la"
+      },
+      {
+        "chunk_id": 9,
+        "name": "2020_mayo",
+        "rrf_score": 0.125,
+        "text_preview": ". A marzo, la inflación anual bajó a 3,7% y la medida subyacente se mantuvo en torno a 2,5%. Las presiones inflacionarias de mediano plazo continúan contenidas en concordancia con una mayor apertura de las brechas de actividad como consecuencia de la emergencia sanitaria, que, sumada a la caída del precio del petróleo desde comienzos de año, contrarrestan las presiones de costos de la depreciación cambiaria acumulada . A un año plazo, las medidas de expectativas de inflación se ajustaron a la baja, mientras que a dos años continúan en torno a 3"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2020_marzo_a",
+        "rrf_score": 0.122,
+        "text_preview": "Cuarto, se extenderá el plazo del programa de venta de divisas hasta el 9 de enero de 2021. Los detalles operacionales y las fechas específicas de la puesta en marcha de estas medidas serán dados a conocer en los próximos días. El Consejo estima que este conjunto de medidas facilitará el ajuste de la economía al nuevo escenario que enfrenta, mitigando su impacto en hogares y empresas. Futuros cambios en la política monetaria o en las medidas adicionales dependerán de la evolución del panorama macroeconómico, el adecuado funcionamiento de los mercados financieros y el cumplimiento de los objeti"
+      },
+      {
+        "chunk_id": 2,
+        "name": "2020_julio",
+        "rrf_score": 0.12,
+        "text_preview": "ha permitido iniciar procesos de desconfinamiento en algunas regiones. Diversas fuentes de información cuantitativa y cualitat iva dan cuenta de un significativo deterioro del mercado laboral, donde destaca la caída del empleo, la reducción de las horas trabajadas y de los salarios. Las medidas gubernamentales de mitigación de esta pérdida de ingresos se han ido materializando con mayor fuerza desde junio. La mediana de las expectativas privadas contenidas en la EEE de julio anticipa que el PIB caerá 6,1% este año, en línea con el rango del escenario central del último IPo"
+      },
+      {
+        "chunk_id": 4,
+        "name": "2020_marzo_a",
+        "rrf_score": 0.116,
+        "text_preview": "años. • Monto inicial del préstamo: 3% de la cartera comercial y de consumo informada por la CMF para el día 29 de febrero de 2020 (cartera base). • Monto adicional de préstamo: los recursos adicionales canalizados a través de la FCIC serán proporcionales al incremento de las colocaciones de cada institución, respecto de su cartera base. Este factor de ampliación será mayor para las colocaciones de menor tamaño. • Tasa de interés: las empresas bancarias que hagan uso de esta facilidad pagarán una tasa de interés igual a la TP M vigente al momento de acceder a ella. En"
+      },
+      {
+        "chunk_id": 1,
+        "name": "2020_mayo",
+        "rrf_score": 0.114,
+        "text_preview": "mundial para este año, con caídas de la actividad que superan lo considerado en el escenario base del IPoM de marzo. Las primeras cifras del PIB del primer trimestre en las principales economías confirman con tracciones generalizadas, en varios casos más profundas de lo esperado, al mismo tiempo que en diversos países ya se aprecia un significativo aumento del desempleo. Además, es previsible que las prácticas de contención sanitaria se mantendrán durante buena parte del segundo trimestre. En este contexto, los bancos centrales y los gobiernos han continuado reforzando sus políticas de estímul"
+      }
+    ],
+    "confirmed_related_chunks": [
+      {
+        "chunk_id": 0,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.254,
+        "text_preview": "<s> Martes 31 de marzo de 2020 Reunión de Política Monetaria – marzo 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó reducir la tasa de interés de política monetaria en 50 puntos base, hasta 0,50%. La decisión fue adoptada por la unanimidad de sus miembros. El escenario externo ha empeorado significativamente tras la rápida expansión global del Covid -19. Las medidas de control sanitario aplicadas en los distintos países han provocado importantes disrupciones de oferta y demanda, cuyos efectos ya se están observando. La incertidumbre sobre la magnitud"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_julio",
+        "rrf_score": 0.217,
+        "text_preview": "<s> Miércoles 15 de julio de 2020 Reunión de Política Monetaria – julio 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó, por unanimidad de sus miembros, mantener la tasa de interés de política monetaria en 0,50%. Asimismo, acordó mantener las medidas no convencionales de apoyo a la liquidez y el crédito. El escenario macroeconómico sigue condicionado por la evolución de la pandemia del Covid-19. En lo interno, las cifras disponibles del s egundo trimestre confirman que la economía sufrió una significativa contracción. El IMACE"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_mayo",
+        "rrf_score": 0.2,
+        "text_preview": "<s> Miércoles 6 de mayo de 2020 Reunión de Política Monetaria – mayo 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó mantener la tasa de interés de política monetaria en 0,50%. La decisión fue adoptada por la unanimidad de sus miembros. La evolución de la pandemia del Covid-19 y el efecto de las medidas sanitarias adoptadas para su contención sigue condicionando el escenario macroeconómico a nivel global. Actualmente, el conjunto de proyecciones de organ ismos públicos y privados anticipa una recesión mundial para este año, con caída"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_marzo_a",
+        "rrf_score": 0.159,
+        "text_preview": "<s> Lunes 16 de marzo de 2020 Reunión de Política Monetaria especial – marzo 2020 En su Sesión Especial de Política Monetaria, el Consejo del Banco Central de Chile acordó reducir la tasa de interés de política monetaria en 75 puntos base, hasta 1%, e implementar un conjunto de medidas adicionales orientadas al buen funcionamiento del mercado financiero. La decisión respecto de la TPM contó con el voto favorable del Presidente señor Marcel, el Vicepresidente señor Vial y el Consejero señor García. Los Consejeros señor Naudon y señora Costa votaron por una reducción de 50 puntos base. La decisi"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_junio",
+        "rrf_score": 0.151,
+        "text_preview": "<s> Martes 16 de junio de 2020 Reunión de Política Monetaria – junio 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó, por unanimidad de sus miembros, mantener la tasa de interés de política monetaria en 0,50%. Asimismo, acordó ampliar las medidas no convencionales de apoyo a la liquidez y el crédito. Los efectos de la pandemia de Covid -19 se han seguido prolongando e intensificando, en particular por la necesidad de decretar cuarentenas e n comunas del país que abarcan a casi la mitad de la población nacional"
+      },
+      {
+        "chunk_id": 3,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.144,
+        "text_preview": "mitad de marzo que se extenderá durante el segundo trimestre. El mercado ha ido recortando sus proyecciones d e crecimiento para este año y las estimaciones más recientes apuntan a una caída anual. El Gobierno ha anunciado un importante paquete de estímulo al que se suman la reducción de la TPM y las medidas adoptadas por el Banco para facilitar el acceso al crédi to para personas y empresas. El mercado financiero local se ha alineado con estos desarrollos. Así, se han observado importantes correcciones en el IPSA y el tipo de cambio, mientras la liquidez y las"
+      },
+      {
+        "chunk_id": 2,
+        "name": "2020_mayo",
+        "rrf_score": 0.134,
+        "text_preview": "políticas de estímulo, apuntando a limitar el impacto negativo en la situación de empresas, hogares e instituciones financieras y apoyar la r ecuperación en el segundo semestre del año. Estas medidas también han contribuido a contener el deterioro de las condiciones financieras, pero persiste un alto grado de incertidumbre, tanto en lo sanitario como lo económico. En lo que se refiere al escena rio macroeconómico interno, la caída del Imacec de marzo estuvo en línea con el panorama descrito en el último IPoM, ratificando el inicio del proceso de contracción económica provocado por la"
+      },
+      {
+        "chunk_id": 9,
+        "name": "2020_mayo",
+        "rrf_score": 0.125,
+        "text_preview": ". A marzo, la inflación anual bajó a 3,7% y la medida subyacente se mantuvo en torno a 2,5%. Las presiones inflacionarias de mediano plazo continúan contenidas en concordancia con una mayor apertura de las brechas de actividad como consecuencia de la emergencia sanitaria, que, sumada a la caída del precio del petróleo desde comienzos de año, contrarrestan las presiones de costos de la depreciación cambiaria acumulada . A un año plazo, las medidas de expectativas de inflación se ajustaron a la baja, mientras que a dos años continúan en torno a 3"
+      },
+      {
+        "chunk_id": 4,
+        "name": "2020_marzo_a",
+        "rrf_score": 0.116,
+        "text_preview": "años. • Monto inicial del préstamo: 3% de la cartera comercial y de consumo informada por la CMF para el día 29 de febrero de 2020 (cartera base). • Monto adicional de préstamo: los recursos adicionales canalizados a través de la FCIC serán proporcionales al incremento de las colocaciones de cada institución, respecto de su cartera base. Este factor de ampliación será mayor para las colocaciones de menor tamaño. • Tasa de interés: las empresas bancarias que hagan uso de esta facilidad pagarán una tasa de interés igual a la TP M vigente al momento de acceder a ella. En"
+      },
+      {
+        "chunk_id": 1,
+        "name": "2020_mayo",
+        "rrf_score": 0.114,
+        "text_preview": "mundial para este año, con caídas de la actividad que superan lo considerado en el escenario base del IPoM de marzo. Las primeras cifras del PIB del primer trimestre en las principales economías confirman con tracciones generalizadas, en varios casos más profundas de lo esperado, al mismo tiempo que en diversos países ya se aprecia un significativo aumento del desempleo. Además, es previsible que las prácticas de contención sanitaria se mantendrán durante buena parte del segundo trimestre. En este contexto, los bancos centrales y los gobiernos han continuado reforzando sus políticas de estímul"
+      }
+    ]
+  },
+  {
+    "query": "When did the Council begin raising rates after the pandemic-era cuts, and why?",
+    "query_es": "¿Cuándo comenzó el Consejo a subir las tasas después de los recortes de la era pandémica, y por qué?",
+    "difficulty": "hard",
+    "expected_comunicados": [
+      "2021_julio",
+      "2021_agosto",
+      "2021_diciembre",
+      "2021_octubre"
+    ],
+    "candidates": [
+      {
+        "chunk_id": 6,
+        "name": "2021_diciembre",
+        "rrf_score": 0.31,
+        "text_preview": "tenido un retroceso en lo más reciente, marcado en parte por una mayor preocupación por la inflación. La inflación anual siguió aumentando en los últimos meses, situándose en 6,7% en noviembre. Resalta el alza de los precios volátiles (10,5% anual a noviembre), especialmente de los combustibles, alimentos y servicios que se reactivaron después de la pandemia. La variación anual del IPC subyacente —que excluye los precios volátiles— se ubicó en 4,7% en noviembre, acorde con las proyecciones del IPoM de septiembre. Diversos indicadores"
+      },
+      {
+        "chunk_id": 10,
+        "name": "2021_octubre",
+        "rrf_score": 0.25,
+        "text_preview": "y los costos, así como la significativa depreciación del peso. Además, en los últimos meses el INE ha ido reincorporando a la medición los precios imputados durante la pandemia. En este contexto, las expectativas de inflación han aumentado en todos los plazos. En lo más inmediato, algunas medidas superan las proyecciones del IPoM de septiembre, sobrepasando el 6% para fines de este año. A dos años plazo, la mediana de la EEE y de la Encuesta de Operadores Financieros (EOF) ha subido y permanece por sobre 3% anual."
+      },
+      {
+        "chunk_id": 3,
+        "name": "2021_julio",
+        "rrf_score": 0.185,
+        "text_preview": "mayores registros inflacionarios recientes. Al mismo tiempo, varios bancos centrales —principalmente de países exportadores de materias primas— han anunciado o comenzado a concretar el inicio de un proceso de normalización de su política monetaria. En Chile, se han producido nuevos aumentos de las tasas de mercado desde la Reunión anterior. En el caso de las tasas nominales a dos años plazo se observa un aumento en torno a 110pb, explicado por factores como el cambio en las perspectivas macroeconómicas y de política monetaria. Respecto de las tasas a mayor plazo"
+      },
+      {
+        "chunk_id": 4,
+        "name": "2021_agosto",
+        "rrf_score": 0.178,
+        "text_preview": "a 5% respecto del dólar desde la Reunión pasada. El IPSA mostró algún repunte en semanas recientes, pero persiste por debajo de los valores de la primera parte del año. Por el lado del crédito bancario, la actividad, en general, conse rva un dinamismo acotado, en medio de la mayor liquidez disponible de hogares y empresas. Destaca que el aumento de las tasas de interés de largo plazo ya ha comenzado a traspasarse al mercado hipotecario. En cuanto a la actividad, el PIB del segundo trim estre anotó una variación anual de 18,"
+      },
+      {
+        "chunk_id": 9,
+        "name": "2021_julio",
+        "rrf_score": 0.171,
+        "text_preview": "así como por el retiro de cientos de miles de mujeres del mercado del trabajo debido a responsabilidades familiares. La inflación total subió hasta 3,8% anual en la medición de junio. El principal factor detrás del incremento de la inflación de los últimos meses ha sido el comportamiento del precio de los combustibles, tanto por su aumento de los últimos meses como por su baja base de comparación. El precio de los alimentos, en cambio, ha ido disminuyendo su contribución. La variación anual del IPC subyacente —sin volátiles— es menor, manteniéndose algo por sobre"
+      },
+      {
+        "chunk_id": 3,
+        "name": "2021_agosto",
+        "rrf_score": 0.168,
+        "text_preview": "s de interés del mercado de renta fija consignan alzas adicionales desde la Reunión pasada, sobre todo en la parte corta de la curva nominal. Las tasas a 10 años también subieron, ampliando la distancia con sus pares externos. Esto contrasta con la caíd a significativa de los rendimientos en UF de más corto plazo, ligado al incremento de las expectativas de inflación, especialmente tras la sorpresa en el dato del IPC de julio. El tipo de cambio mantuvo una tendencia al alza, con lo que el peso acumuló una depreciación cercana a 5% respecto del dólar desde"
+      },
+      {
+        "chunk_id": 1,
+        "name": "2021_agosto",
+        "rrf_score": 0.152,
+        "text_preview": "una moderación de la actividad en las principales economías, en un escenario con algo más de preocupación por la expansión de la variante delta del Covid -19. En las economías emergentes, el rezago en la vacunación mantiene un panorama menos auspicioso. Aun así, dadas las presiones inflacionarias, varios bancos centrales se han ido sumando a la normalización del estímulo monetario. Con vaivenes , el precio del cobre se ha mantenido en torno a US$ 4,2 la libra, en tanto los precios del petróleo siguen en niveles elevados. Los mercados financ i"
+      },
+      {
+        "chunk_id": 1,
+        "name": "2021_julio",
+        "rrf_score": 0.142,
+        "text_preview": ", ya sea por la efectividad de sus medidas de contención sanitaria o por el avance del proceso de vacunación, los que han podido continuar con sus planes de reapertura. No obstante, se mantiene un rezago importante de numerosas economías emergentes, mientras que la diseminación de nuevas cepas del Covid-19 se ha erigido como un nuevo factor de riesgo. Los mercados financieros se han visto influidos por los últimos desarrollos epidemiológicos y por las sorpresas en los datos efectivos de las principales economías. Así, las tasas de interés de largo plazo acumulan descensos acotados,"
+      },
+      {
+        "chunk_id": 10,
+        "name": "2021_julio",
+        "rrf_score": 0.141,
+        "text_preview": ", manteniéndose algo por sobre 3% anual. Respecto de las expectativas, a un año plazo la mediana de la Encuesta de Expectativas Económicas (EEE) y la de Operadores Financieros (EOF) subió hasta 3,3 y 3,4% anual. A dos años plazo, ambas encuestas permanecen en torno a 3% anual. El Consejo estima que el conjunto de antecedentes conforma una trayectoria de la economía similar a la prevista en el escenario base del IPoM de junio. Así, la brecha de actividad continuará cerrándose rápidamente, d e la mano de un"
+      },
+      {
+        "chunk_id": 9,
+        "name": "2021_agosto",
+        "rrf_score": 0.131,
+        "text_preview": "este resultado el desfavorable comportamiento de otras variables relevantes para la inflación, como el mayor traspaso cambiario de la depreciación idiosincrática del peso, una oferta global que aún no ha logrado reestablecerse completamente tras la pandemia y el aumento del precio de los combustibles. El Consejo ha respondido a la necesidad de evitar la acumulación de desequilibrios macroeconómicos que, entre otras consecuencias, podría provocar un aumento más persistente de la inflación que la lleve a desviarse de la meta de 3% a dos años plazo. Por ello, el"
+      },
+      {
+        "chunk_id": 3,
+        "name": "2021_diciembre",
+        "rrf_score": 0.128,
+        "text_preview": "un aumento muy superior al de economías comparables. Con vaivenes, el peso volvió a depreciarse respecto de los niveles vigentes al m omento de la reunión previa. La dinámica del crédito bancario sigue dando cuenta de un desempeño acotado de las colocaciones en las diferentes carteras, combinando una demanda y una oferta que se han vuelto más débiles. El endurecimiento de las condicione s de otorgamiento es especialmente visible para los préstamos hipotecarios y otros de más largo plazo. En paralelo, las tasas de interés han seguido subiendo en todos los segmentos. En línea"
+      },
+      {
+        "chunk_id": 11,
+        "name": "2021_octubre",
+        "rrf_score": 0.12,
+        "text_preview": "y permanece por sobre 3% anual. La evolución del escenario macroeconómico ha aumentado los riesgos para la convergencia de la inflación a la meta de 3% dentro del horizonte de política. Si bien la inflación subyacente ha evolucionado dentro de lo previsto, las perspectivas para los próximos meses se han ido elevando, en un contexto en que las expectativas de inflación a dos años pla zo se ubican por sobre la meta de 3%. El Consejo ha decidido adelantar el retiro del estímulo monetario, anticipando que la TPM se ubicará en su nivel neutral antes de lo previsto"
+      }
+    ],
+    "confirmed_related_chunks": [
+      {
+        "chunk_id": 6,
+        "name": "2021_diciembre",
+        "rrf_score": 0.31,
+        "text_preview": "tenido un retroceso en lo más reciente, marcado en parte por una mayor preocupación por la inflación. La inflación anual siguió aumentando en los últimos meses, situándose en 6,7% en noviembre. Resalta el alza de los precios volátiles (10,5% anual a noviembre), especialmente de los combustibles, alimentos y servicios que se reactivaron después de la pandemia. La variación anual del IPC subyacente —que excluye los precios volátiles— se ubicó en 4,7% en noviembre, acorde con las proyecciones del IPoM de septiembre. Diversos indicadores"
+      },
+      {
+        "chunk_id": 10,
+        "name": "2021_octubre",
+        "rrf_score": 0.25,
+        "text_preview": "y los costos, así como la significativa depreciación del peso. Además, en los últimos meses el INE ha ido reincorporando a la medición los precios imputados durante la pandemia. En este contexto, las expectativas de inflación han aumentado en todos los plazos. En lo más inmediato, algunas medidas superan las proyecciones del IPoM de septiembre, sobrepasando el 6% para fines de este año. A dos años plazo, la mediana de la EEE y de la Encuesta de Operadores Financieros (EOF) ha subido y permanece por sobre 3% anual."
+      },
+      {
+        "chunk_id": 3,
+        "name": "2021_julio",
+        "rrf_score": 0.185,
+        "text_preview": "mayores registros inflacionarios recientes. Al mismo tiempo, varios bancos centrales —principalmente de países exportadores de materias primas— han anunciado o comenzado a concretar el inicio de un proceso de normalización de su política monetaria. En Chile, se han producido nuevos aumentos de las tasas de mercado desde la Reunión anterior. En el caso de las tasas nominales a dos años plazo se observa un aumento en torno a 110pb, explicado por factores como el cambio en las perspectivas macroeconómicas y de política monetaria. Respecto de las tasas a mayor plazo"
+      },
+      {
+        "chunk_id": 4,
+        "name": "2021_agosto",
+        "rrf_score": 0.178,
+        "text_preview": "a 5% respecto del dólar desde la Reunión pasada. El IPSA mostró algún repunte en semanas recientes, pero persiste por debajo de los valores de la primera parte del año. Por el lado del crédito bancario, la actividad, en general, conse rva un dinamismo acotado, en medio de la mayor liquidez disponible de hogares y empresas. Destaca que el aumento de las tasas de interés de largo plazo ya ha comenzado a traspasarse al mercado hipotecario. En cuanto a la actividad, el PIB del segundo trim estre anotó una variación anual de 18,"
+      },
+      {
+        "chunk_id": 9,
+        "name": "2021_julio",
+        "rrf_score": 0.171,
+        "text_preview": "así como por el retiro de cientos de miles de mujeres del mercado del trabajo debido a responsabilidades familiares. La inflación total subió hasta 3,8% anual en la medición de junio. El principal factor detrás del incremento de la inflación de los últimos meses ha sido el comportamiento del precio de los combustibles, tanto por su aumento de los últimos meses como por su baja base de comparación. El precio de los alimentos, en cambio, ha ido disminuyendo su contribución. La variación anual del IPC subyacente —sin volátiles— es menor, manteniéndose algo por sobre"
+      },
+      {
+        "chunk_id": 3,
+        "name": "2021_agosto",
+        "rrf_score": 0.168,
+        "text_preview": "s de interés del mercado de renta fija consignan alzas adicionales desde la Reunión pasada, sobre todo en la parte corta de la curva nominal. Las tasas a 10 años también subieron, ampliando la distancia con sus pares externos. Esto contrasta con la caíd a significativa de los rendimientos en UF de más corto plazo, ligado al incremento de las expectativas de inflación, especialmente tras la sorpresa en el dato del IPC de julio. El tipo de cambio mantuvo una tendencia al alza, con lo que el peso acumuló una depreciación cercana a 5% respecto del dólar desde"
+      },
+      {
+        "chunk_id": 1,
+        "name": "2021_agosto",
+        "rrf_score": 0.152,
+        "text_preview": "una moderación de la actividad en las principales economías, en un escenario con algo más de preocupación por la expansión de la variante delta del Covid -19. En las economías emergentes, el rezago en la vacunación mantiene un panorama menos auspicioso. Aun así, dadas las presiones inflacionarias, varios bancos centrales se han ido sumando a la normalización del estímulo monetario. Con vaivenes , el precio del cobre se ha mantenido en torno a US$ 4,2 la libra, en tanto los precios del petróleo siguen en niveles elevados. Los mercados financ i"
+      },
+      {
+        "chunk_id": 1,
+        "name": "2021_julio",
+        "rrf_score": 0.142,
+        "text_preview": ", ya sea por la efectividad de sus medidas de contención sanitaria o por el avance del proceso de vacunación, los que han podido continuar con sus planes de reapertura. No obstante, se mantiene un rezago importante de numerosas economías emergentes, mientras que la diseminación de nuevas cepas del Covid-19 se ha erigido como un nuevo factor de riesgo. Los mercados financieros se han visto influidos por los últimos desarrollos epidemiológicos y por las sorpresas en los datos efectivos de las principales economías. Así, las tasas de interés de largo plazo acumulan descensos acotados,"
+      },
+      {
+        "chunk_id": 10,
+        "name": "2021_julio",
+        "rrf_score": 0.141,
+        "text_preview": ", manteniéndose algo por sobre 3% anual. Respecto de las expectativas, a un año plazo la mediana de la Encuesta de Expectativas Económicas (EEE) y la de Operadores Financieros (EOF) subió hasta 3,3 y 3,4% anual. A dos años plazo, ambas encuestas permanecen en torno a 3% anual. El Consejo estima que el conjunto de antecedentes conforma una trayectoria de la economía similar a la prevista en el escenario base del IPoM de junio. Así, la brecha de actividad continuará cerrándose rápidamente, d e la mano de un"
+      },
+      {
+        "chunk_id": 9,
+        "name": "2021_agosto",
+        "rrf_score": 0.131,
+        "text_preview": "este resultado el desfavorable comportamiento de otras variables relevantes para la inflación, como el mayor traspaso cambiario de la depreciación idiosincrática del peso, una oferta global que aún no ha logrado reestablecerse completamente tras la pandemia y el aumento del precio de los combustibles. El Consejo ha respondido a la necesidad de evitar la acumulación de desequilibrios macroeconómicos que, entre otras consecuencias, podría provocar un aumento más persistente de la inflación que la lleve a desviarse de la meta de 3% a dos años plazo. Por ello, el"
+      },
+      {
+        "chunk_id": 3,
+        "name": "2021_diciembre",
+        "rrf_score": 0.128,
+        "text_preview": "un aumento muy superior al de economías comparables. Con vaivenes, el peso volvió a depreciarse respecto de los niveles vigentes al m omento de la reunión previa. La dinámica del crédito bancario sigue dando cuenta de un desempeño acotado de las colocaciones en las diferentes carteras, combinando una demanda y una oferta que se han vuelto más débiles. El endurecimiento de las condicione s de otorgamiento es especialmente visible para los préstamos hipotecarios y otros de más largo plazo. En paralelo, las tasas de interés han seguido subiendo en todos los segmentos. En línea"
+      },
+      {
+        "chunk_id": 11,
+        "name": "2021_octubre",
+        "rrf_score": 0.12,
+        "text_preview": "y permanece por sobre 3% anual. La evolución del escenario macroeconómico ha aumentado los riesgos para la convergencia de la inflación a la meta de 3% dentro del horizonte de política. Si bien la inflación subyacente ha evolucionado dentro de lo previsto, las perspectivas para los próximos meses se han ido elevando, en un contexto en que las expectativas de inflación a dos años pla zo se ubican por sobre la meta de 3%. El Consejo ha decidido adelantar el retiro del estímulo monetario, anticipando que la TPM se ubicará en su nivel neutral antes de lo previsto"
+      }
+    ]
+  },
+  {
+    "query": "How did the Council's tone on inflation expectations shift between 2020 and 2022?",
+    "query_es": "¿Cómo cambió el tono del Consejo sobre las expectativas de inflación entre 2020 y 2022?",
+    "difficulty": "hard",
+    "expected_comunicados": [
+      "2020_diciembre",
+      "2020_julio",
+      "2020_junio",
+      "2020_marzo_b",
+      "2020_mayo",
+      "2020_octubre",
+      "2020_enero",
+      "2020_septiembre",
+      "2021_agosto",
+      "2021_diciembre",
+      "2021_enero",
+      "2021_julio",
+      "2021_junio",
+      "2021_marzo",
+      "2021_mayo",
+      "2021_octubre",
+      "2022_diciembre",
+      "2022_enero",
+      "2022_julio",
+      "2022_junio",
+      "2022_marzo",
+      "2022_mayo",
+      "2022_octubre",
+      "2022_septiembre"
+    ],
+    "candidates": [
+      {
+        "chunk_id": 8,
+        "name": "2020_junio",
+        "rrf_score": 0.197,
+        "text_preview": "s semanas atrás. En este contexto, las diversas medidas de expectativas de inflación dan cuenta de retrocesos en la inflación esperada a un año. A dos año s plazo, las expectativas medidas por la Encuesta de Operadores Financieros se ubicaron bajo 3% y en la Encuesta de Expectativas Económicas se mantuvieron en ese valor. El Consejo estima que la evolución de la economía requiere de una intensificación del impulso monetario. Por ello, junto con mantener la TPM en 0,5% —que corresponde a la actual estimación de su mínimo técnico —, decidió ampliar el uso de instrumentos no"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2022_octubre",
+        "rrf_score": 0.182,
+        "text_preview": "<s> Miércoles 12 de octubre de 2022. Reunión de Política Monetaria – octubre 2022 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó aumentar la tasa de interés de política monetaria en 50 puntos base, hasta 11,25%. La decisión fue adoptada por la unanimidad de sus miembros. Las perspectivas de crecimiento mundial y las condiciones financieras internacionales se han deteriorado. La inflación mundial ha seguido dando señales de mayor persistencia, los bancos centrales han continuado elevando sus tasas de referencia y las expectativas de mercado apuntan a un prolon"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2022_junio",
+        "rrf_score": 0.171,
+        "text_preview": "El resto de los componentes subyacentes no mostró mayores d iferencias con lo esperado. Las expectativas de inflación provenientes de las encuestas — EEE y EOF— permanecen por sobre 3% a dos años plazo. Dados los antecedentes contenidos en el IPoM de junio, el Consejo estima que para asegurar la convergencia de la i nflación a 3% en el horizonte de dos años, serán necesarios ajustes adicionales de menor magnitud en la TPM. El Consejo se mantendrá atento a la evolución de la inflación y sus determinantes, pues los riesgos siguen siendo elevado"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2022_diciembre",
+        "rrf_score": 0.151,
+        "text_preview": "<s> Martes 6 de diciembre de 2022. Reunión de Política Monetaria – diciembre 2022 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó mantener la tasa de interés de política monetaria en 11,25%. La decisión fue adoptada por la unanimidad de sus miembros. A pesar del retroceso reciente en algunas economías, las presiones inflacionarias a nivel mundial continúan elevadas. Los bancos centrales de las economías desarrolladas han seguido subiendo sus tasas de referencia y las expectativas de mercado anticipan que su ajuste monetario será prolongado. En este escenario"
+      },
+      {
+        "chunk_id": 7,
+        "name": "2022_marzo",
+        "rrf_score": 0.143,
+        "text_preview": "que las percepciones de los consumidores y los empresarios sobre la situación económica se han vuelto más pesimistas. La inflación anual aumentó hasta 7,8% a febrero, casi un punto porcentual por sobre lo previsto en el IPoM de diciembre, con una diferencia que respondió en parte importante a una mayor inflación subyacente, especialmente de los bienes. Las perspectivas de inflación de corto plazo han vuelto a aumentar, acercando la inflación anual a cifras de 10%. Las expectativas de inflación a dos años plazo permanecen por sobre 3% desde hace varios meses,"
+      },
+      {
+        "chunk_id": 7,
+        "name": "2021_diciembre",
+        "rrf_score": 0.136,
+        "text_preview": "M de septiembre. Diversos indicadores de expectativas de inflación han aumentado en los últimos meses y, si bien prevén una moderación de la misma hacia el 2023, a 24 meses plazo se ubican por sobre 3%. El Consejo prevé que la TPM seguirá aumentando en el corto plazo, ubicándose por sobre su nivel neutral nominal —aquel que es coherente con la meta de inflación de 3%— durante gran parte del horizonte de política monetaria. Esto ayudará a que la economía resuelva los desequilibrios que ha acumulado, los que han contribuido al rápido aumento de la inflación."
+      },
+      {
+        "chunk_id": 0,
+        "name": "2022_junio",
+        "rrf_score": 0.134,
+        "text_preview": "<s> Martes 7 de junio de 2022. Reunión de Política Monetaria – junio 2022 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó incrementar la tasa de interés de política monetaria en 75 puntos base, hasta 9%. La decisión fue adoptada por la unanimidad de los Consejeros. La inflación mundial y sus perspectivas han seguido subiendo, dando cuenta de aumentos de precios más generalizados y persistentes. Destaca el impacto de la prolongación de la invasión de Rusia a Ucrania en el alza de los precios de las materias primas,"
+      },
+      {
+        "chunk_id": 11,
+        "name": "2021_octubre",
+        "rrf_score": 0.126,
+        "text_preview": "y permanece por sobre 3% anual. La evolución del escenario macroeconómico ha aumentado los riesgos para la convergencia de la inflación a la meta de 3% dentro del horizonte de política. Si bien la inflación subyacente ha evolucionado dentro de lo previsto, las perspectivas para los próximos meses se han ido elevando, en un contexto en que las expectativas de inflación a dos años pla zo se ubican por sobre la meta de 3%. El Consejo ha decidido adelantar el retiro del estímulo monetario, anticipando que la TPM se ubicará en su nivel neutral antes de lo previsto"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2022_marzo",
+        "rrf_score": 0.123,
+        "text_preview": "<s> Martes 29 de marzo de 2022. Reunión de Política Monetaria – marzo 2022 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó incrementar la tasa de interés de política monetaria en 150 puntos base, hasta 7%. La decisión fue adoptada por la unanimidad de los Consejeros. La inflación mundial ha seguido subiendo, llevando a la Fed y otras autoridades a acelerar la normalización de los estímulos, a pesar de que las perspect ivas de crecimiento mundial han disminuido. En este contexto, las tasas de interés de largo plazo han"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2022_mayo",
+        "rrf_score": 0.116,
+        "text_preview": "<s> Jueves 5 de mayo de 2022. Reunión de Política Monetaria – mayo 2022 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó incrementar la tasa de interés de política monetaria en 125 puntos base, hast a 8,25%. La decisión fue adoptada por la unanimidad de sus miembros. La inflación mundial ha seguido aumentando y los bancos centrales han intensificado el retiro de los estímulos monetarios. Esto se ha dado en un escenario en que los precios de las materias primas y los alimentos se han mantenido elevados y en que los confin"
+      },
+      {
+        "chunk_id": 9,
+        "name": "2020_julio",
+        "rrf_score": 0.115,
+        "text_preview": "inflación medidas por la Encuesta de Expectativas Económicas (EEE) y de Operadores Financieros (EOF) no han mostrado mayores cambios. A un año plazo, ambas se ubican por debajo de 3%, mientras que a dos años plazo, la EOF antic ipa un valor de 2,6% y la EEE uno de 3%. El Consejo reitera que mantendrá un elevado impulso monetario por un período prolongado de tiempo, de modo de asegurar el cumplimiento de sus objetivos. En particular, estima que la TPM permanecerá en su mínimo téc nico durante todo el horizont"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2022_septiembre",
+        "rrf_score": 0.113,
+        "text_preview": ". Las expectativas de inflación de las encuestas —EEE y EOF— se han ajustado al alza. Con esta decisión, la TPM se ubica en torno al nivel máximo que considera el escenario central del IPoM de septiembre. Los próximos movimientos de la tasa dependerán de la evolución del escenario macroeconómico y sus implicancias para la convergencia de la inflación a la meta. El Consejo permanecerá especialmente atento a los riesgos al alza para la inflación, tanto por el elevado nivel que ésta ha alcanzado como por el hecho de que las expectativas de inflación a dos años plazo"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2022_enero",
+        "rrf_score": 0.101,
+        "text_preview": "<s> Miércoles 26 de enero de 2022. Reunión de Política Monetaria – enero 2022 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó incrementar la tasa de interés de política monetaria en 150 puntos base, hasta 5,5%. La decisión fue adoptada por la unanimidad de los Consejeros presentes. En el plano externo, la economía mundial ha perdido algo de dinamismo, pero las perspectivas para el año no muestran mayores cambios. El alza de contagios de Covid-19 ha sido significativa en muchos países y si bien se observa un descenso en la"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2022_julio",
+        "rrf_score": 0.101,
+        "text_preview": "<s> Miércoles 13 de julio de 2022. Reunión de Política Monetaria – julio 2022 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó incrementar la tasa de interés de política monetaria en 75 puntos base, hasta 9,75%. La decisión fue adoptada por la unanimidad de los Consejeros. La inflación mundial ha continuado subiendo y los bancos centrales han seguido aumentando las tasas de referencia, o señalizando un alza más rápida ante la mayor persistencia inflacionaria. Destaca la Reserva Federal de Estados Unidos, que sorprendió con un incremento mayor"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2020_septiembre",
+        "rrf_score": 0.094,
+        "text_preview": "las garantías estatales y cambios regulatorios. La s tasas de interés del mercado de crédito no muestran cambios significativos. En julio, la inflación total y subyacente se ubicaron en 2,5% anual, valores similares a los de meses previos. En lo inmediato, la inflación se reducirá algo menos que lo previsto producto del efecto transitorio en el consumo que tiene el conjunto de medidas de apoyo a los ingresos. A mediano plazo, las presiones continúan reducidas. Para dentro de un año, las expectativas de inflación contenidas en la Encuesta de Expectativas Económicas"
+      },
+      {
+        "chunk_id": 7,
+        "name": "2020_enero",
+        "rrf_score": 0.091,
+        "text_preview": "s adoptadas. En el IPoM de marzo se evaluará la situación macroeconómica y sus implicancias para la inflación y la trayectoria de la política monetaria. El Consejo reafirma su compromiso de conducir la política monetaria con flexibilidad, de manera que la inflación proyectada se ubique en 3% en el horizonte de dos años.</s>"
+      },
+      {
+        "chunk_id": 8,
+        "name": "2020_diciembre",
+        "rrf_score": 0.087,
+        "text_preview": "Más allá de estos vai venes de corto plazo, a mediano plazo las presiones inflacionarias siguen contenidas, prevaleciendo el cierre paulatino de la amplia brecha de actividad que se abrió en meses pasados. Las expectativas de mercado han recogido la transitoriedad de los movimi entos en los precios, observándose cambios a plazos más cortos y estabilidad en torno a 3% a dos años plazo. El Consejo reitera que mantendrá un elevado impulso monetario por un período prolongado de tiempo, de modo de asegurar la consolidación de la recu peración económica y el cumplimiento de"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2022_septiembre",
+        "rrf_score": 0.086,
+        "text_preview": "<s> Martes 6 de septiembre de 2022. Reunión de Política Monetaria – septiembre 2022 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó incrementar la tasa de interés de política monetaria en 100 puntos base, hasta 10,75%. La decisión fue adoptada con los votos de la Presidenta señora Costa y los Consejeros señores Naudon y Céspedes. El Vicepresidente señor García votó por aumentar la TPM en 125 puntos base. La Consejera señora Griffith-Jones votó por aumentarla en 75 puntos base. La inflación mundial ha seguido aumentando"
+      },
+      {
+        "chunk_id": 2,
+        "name": "2021_agosto",
+        "rrf_score": 0.076,
+        "text_preview": "elevados. Los mercados financ ieros internacionales mantienen un tono positivo, más allá de movimientos asociados a la evolución de la pandemia o a cambios en las expectativas para la política monetaria en EE.UU., observándose nuevas bajas de las tasas de interés de largo plazo y aumen tos de las bolsas en las economías desarrolladas. En Chile, el desempeño de los mercados financieros continúa ampliamente dominado por factores idiosincráticos, entre los que destaca la posibilidad de nuevos retiros masivos de ahorros previsionales. Las tasas de interés del mercado de rent"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2020_enero",
+        "rrf_score": 0.076,
+        "text_preview": "la depreciación idios incrática que el peso ha acumulado desde octubre siguen vigentes. Por otra, las perspectivas para la actividad siguen débiles y su recuperación continúa dependiendo de la respuesta de los agentes económicos al nuevo escenario. Las expectativas de inflación se mantienen en torno a 3% a dos años plazo. La decisión de mantener la TPM en su nivel actual es coherente con preservar la expansividad de la política monetaria, en línea con el mensaje entregado por el Consejo en diciembre, considerada la evolución de l escenario macro y el conjunto de medidas extraordinarias adoptad"
+      },
+      {
+        "chunk_id": 8,
+        "name": "2022_enero",
+        "rrf_score": 0.075,
+        "text_preview": "la actividad y de la inflación se ubica algo por encima de lo previsto en el IPoM de diciembre y las presiones inflacionarias derivadas del escenario internacional han aumentado. La decisión del Consejo es coherente con una trayectoria de política monetaria que, en el corto plazo, se ubicaría en torno al borde superior del corredor de tasa considerado en el IPoM pasado. Una nueva evaluación de este se realizará en el próximo IPoM.</s>"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_junio",
+        "rrf_score": 0.074,
+        "text_preview": "<s> Martes 16 de junio de 2020 Reunión de Política Monetaria – junio 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó, por unanimidad de sus miembros, mantener la tasa de interés de política monetaria en 0,50%. Asimismo, acordó ampliar las medidas no convencionales de apoyo a la liquidez y el crédito. Los efectos de la pandemia de Covid -19 se han seguido prolongando e intensificando, en particular por la necesidad de decretar cuarentenas e n comunas del país que abarcan a casi la mitad de la población nacional"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2022_julio",
+        "rrf_score": 0.073,
+        "text_preview": "en niveles negativos. Los indicadores de confianza de los consumidores y de las empresas siguen en terreno negativo. La inflación total ha seguido aumentando y alcanzó 12,5% anual en junio, mientras que el componente subyacente subió a 9,9% anual. Los últimos datos de inflación han estado prácticamente en línea con lo previsto en el IPoM de junio, con sorpresas acotadas a productos específicos, mayormente volátiles. Las expectativas de inflación de las encuestas —EEE y EOF— se han ajustado al alza. El escenario macroeconómico presenta riesgos elevados. El de"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_octubre",
+        "rrf_score": 0.072,
+        "text_preview": "<s> Jueves 15 de octubre de 2020 Reunión de Política Monetaria – octubre 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó mantener la tasa de interés de política monetaria en 0,50%. Asimismo, acordó mantener las medidas no convencionales de apoyo a la liquidez y el crédito. La decisión fue adoptada por la unanimidad de sus miembros. En el ámbito externo, los indicadores coyunturales dan cuenta de una cierta moderación de la velocidad de re cuperación de la actividad, especialmente en las economías desarrolladas. Esto ocurre en un contexto en"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_mayo",
+        "rrf_score": 0.071,
+        "text_preview": "<s> Miércoles 6 de mayo de 2020 Reunión de Política Monetaria – mayo 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó mantener la tasa de interés de política monetaria en 0,50%. La decisión fue adoptada por la unanimidad de sus miembros. La evolución de la pandemia del Covid-19 y el efecto de las medidas sanitarias adoptadas para su contención sigue condicionando el escenario macroeconómico a nivel global. Actualmente, el conjunto de proyecciones de organ ismos públicos y privados anticipa una recesión mundial para este año, con caída"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_enero",
+        "rrf_score": 0.07,
+        "text_preview": "<s> Miércoles 29 de enero de 2020 Reunión de Política Monetaria – enero 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó mantener la tasa de interés de política monetaria en 1,75%. La decisión fue adoptada por la unanimidad de sus miembros. En el escenario externo, la firma de una primera fase de acuerdo comercial entre China y EE.UU., y las mejores cifras de actividad en las principales economías incidieron positivamente sobre los mercados financieros y los precios de las materias primas. Sin embargo, la aparición del Coronavirus en China"
+      },
+      {
+        "chunk_id": 7,
+        "name": "2020_diciembre",
+        "rrf_score": 0.066,
+        "text_preview": "la estabilidad de los mercados financieros y la eficiencia del proceso de formación de precios. El IPC de noviembr e estuvo por debajo de lo esperado, compensando, en parte, dos meses de sorpresas en la dirección c ontraria. Con esto, la inflación total bajó a 2,7% anual, mientras que su componente subyacente se mantuvo en 3,2%. Esto se ha dado en un contexto en que los shocks sobre el consumo, junto con una lenta reposición de inventarios, ha provocado movimientos s ignificativos en algunos precios. Más allá de estos vai venes"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_julio",
+        "rrf_score": 0.064,
+        "text_preview": "<s> Miércoles 15 de julio de 2020 Reunión de Política Monetaria – julio 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó, por unanimidad de sus miembros, mantener la tasa de interés de política monetaria en 0,50%. Asimismo, acordó mantener las medidas no convencionales de apoyo a la liquidez y el crédito. El escenario macroeconómico sigue condicionado por la evolución de la pandemia del Covid-19. En lo interno, las cifras disponibles del s egundo trimestre confirman que la economía sufrió una significativa contracción. El IMACE"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.061,
+        "text_preview": "<s> Martes 31 de marzo de 2020 Reunión de Política Monetaria – marzo 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó reducir la tasa de interés de política monetaria en 50 puntos base, hasta 0,50%. La decisión fue adoptada por la unanimidad de sus miembros. El escenario externo ha empeorado significativamente tras la rápida expansión global del Covid -19. Las medidas de control sanitario aplicadas en los distintos países han provocado importantes disrupciones de oferta y demanda, cuyos efectos ya se están observando. La incertidumbre sobre la magnitud"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2022_diciembre",
+        "rrf_score": 0.061,
+        "text_preview": "la baja creación de empleo, la caída de los salarios reales y el pesimismo de los consumidores. En octubre, la inflación total y subyacente se ubicaron en 12,8 y 10,8% a nual, respectivamente. Ambas cifras fueron menores a las del mes previo. En el dato de octubre destacó la desaceleración de los bienes subyacentes, ítems que mostraron una variación negativa durante ese mes. Las expectativas de inflación a dos años plazo continúan por sobre 3%. Comunicado de Prensa La política monetaria ha hecho un ajuste significativo y está propiciando"
+      },
+      {
+        "chunk_id": 4,
+        "name": "2022_enero",
+        "rrf_score": 0.06,
+        "text_preview": "ción efectiva y a expectativas de tasa de política monetaria más e levadas. De todas formas, los niveles de incertidumbre siguen siendo elevados en comparación histórica y las tasas de interés de largo plazo mantienen un diferencial relevante respecto de sus pares externos. En el agregado, los indicadores de actividad y d emanda son coherentes con la parte alta del rango de proyección para el 2021 considerado en el IPoM de diciembre. En noviembre, la actividad aumentó 14,3% anual —0,3% mensual para la serie desestacionalizada—, destacando la contribución de las actividades"
+      },
+      {
+        "chunk_id": 9,
+        "name": "2021_agosto",
+        "rrf_score": 0.06,
+        "text_preview": "este resultado el desfavorable comportamiento de otras variables relevantes para la inflación, como el mayor traspaso cambiario de la depreciación idiosincrática del peso, una oferta global que aún no ha logrado reestablecerse completamente tras la pandemia y el aumento del precio de los combustibles. El Consejo ha respondido a la necesidad de evitar la acumulación de desequilibrios macroeconómicos que, entre otras consecuencias, podría provocar un aumento más persistente de la inflación que la lleve a desviarse de la meta de 3% a dos años plazo. Por ello, el"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_septiembre",
+        "rrf_score": 0.059,
+        "text_preview": "<s> Martes 1 de septiembre de 2020 Reunión de Política Monetaria – septiembre 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó mantener la tasa de interés de política monetaria en 0,50%. Asimismo, determinó mantener las medidas no convencionales de apoyo a la liquidez y el crédito. La decisión fue ad optada por la unanimidad de sus miembros. En el escenario externo, los datos más recientes confirman una recuperación de la actividad mundial tras los mínimos alcanzados entre abril y mayo. Ello, en un contexto en que la respuesta sanitaria a la pandemia"
+      },
+      {
+        "chunk_id": 7,
+        "name": "2022_enero",
+        "rrf_score": 0.059,
+        "text_preview": "impulsada tanto por los precios de los bienes —que sorprendieron al alza— como de los servicios. En el componente volátil, continuó destacando la contribución de los combustibles y la evolución de algunos ítems puntuales. Las expectativas privadas de inflación permanecen sobre 3% a dos años plazo. Los riesgos para la evolución de la inflación siguen siendo significativos y su eventual concreción se torna especialmente relevante en un contexto en que tanto la variación anual del IPC como sus perspectivas ya son elevadas. En particular, la evolución reciente de la actividad y de la inflación"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2020_enero",
+        "rrf_score": 0.056,
+        "text_preview": ". En este escenario, las expectativas de crecimiento de la EEE de enero disminuyeron hasta 1,2 y 2,5% anual para este año y el próximo, respectivamente. En los últimos meses, la inflación anual subió a 3% y la medida subyacente se mantuvo en torno a 2,5%. Ambo s registros estuvieron por debajo de lo esperado en el IPoM de diciembre. La evolución de la inflación sigue estando expuesta a fuerzas contrapuestas, cuya incidencia relativa aún es incierta. Por una parte, las presiones inherentes a la depreciación idios in"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2022_octubre",
+        "rrf_score": 0.056,
+        "text_preview": "meta en el horizonte de política de dos años. Los riesgos del escenario macroeconómico son elevados y sus implicancias de corto y mediano plazo deben ser evaluadas cuidadosamente. El Consejo permanecerá atento al desarrollo de estos eventos y reafirma su compromiso de conducir la política monetaria con flexibilidad, de manera que la inflación proyectada se ubique en 3% en el horizonte de política.</s>"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2022_mayo",
+        "rrf_score": 0.054,
+        "text_preview": "se revisa a la baja para el período 2022 -2025. En el mercado laboral, el aumento del empleo se ha ido ralentizando desde fines d el año pasado, en un contexto en que distintos indicadores dan cuenta de una Comunicado de Prensa demanda menos dinámica y una oferta que, aunque con alguna mejoría, sigue acotada. Las expectativas de consumidores (IPEC) y empresas (IMCE) han seguido deteriorándose. La inflación de marzo fue significativamente mayor a lo previsto en el último IPoM, con lo que variación anual del IPC subió a 9,4% —7,"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_diciembre",
+        "rrf_score": 0.053,
+        "text_preview": "<s> Lunes 7 de diciembre de 2020 Reunión de Política Monetaria – diciembre 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó mantener la tasa de interés de política monetaria en 0,50%. Asimismo, determinó mantener las medidas no convencionales de apoyo a la liquidez y el crédito. La decisión fue ad optada por la unanimidad de sus miembros. En el ámbito externo, los indicadores recientes dan cue nta de que el proceso de recuperación sigue su ma rcha, aunque con diferencias entre países y sectores económicos. Resalta el buen desempeño de China y"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2022_octubre",
+        "rrf_score": 0.053,
+        "text_preview": ". La inflación subyacente, en cambio, aumentó hasta 11,1% anual. Respecto del IPoM, la inflación acumulada en los últimos dos meses ha sido superior a lo previsto, principalmente por el mayor aumento de los precios de algunos alimentos. Las expectativas de inflación a dos años plazo continúan por sobre 3%. Comunicado de Prensa El Consejo estima que la TPM ha llegado al nivel máximo del ciclo iniciado en julio de 2021 y que se mantendrá en este valor por el tiempo necesario para asegurar la convergencia de la inflación a la meta en el horizonte de política"
+      },
+      {
+        "chunk_id": 7,
+        "name": "2021_marzo",
+        "rrf_score": 0.052,
+        "text_preview": "La variación anual del IPC subyacente —sin volátiles— se ha mantenido estable respecto de diciembre. Respecto de las expectativas, a un año plazo, la mediana de la Encuesta de Expectativas Económicas (EEE) permanece en 3%, en tanto la Encuesta de Operadores Financieros (EOF) subió a 3,2%. A dos años plazo, ambas encuestas continúan en 3%. El Consejo considera que, si bien las perspectivas para la economía han mejorado, la convergencia de la inflación a la meta en el horizonte de política"
+      },
+      {
+        "chunk_id": 7,
+        "name": "2021_octubre",
+        "rrf_score": 0.052,
+        "text_preview": "privadas para el crecimiento de este año han seguido incrementándose, hasta 11% en la Encuesta de Expectativas Económicas (EEE) de octubre. Para los años 2022 y 20 23, el desempeño esperado de la economía se reduce de forma importante, a cifras del orden de 2% en cada uno. La confianza empresarial (IMCE) se ubica en terreno optimista, considerándose mayores contrataciones en el corto plazo, aunque también muestra aum entos de costos y escasez de inventarios. En los consumidores (IPEC), la confianza registra una leve caída, afectada especialmente por el aumento de la infla"
+      },
+      {
+        "chunk_id": 7,
+        "name": "2021_enero",
+        "rrf_score": 0.052,
+        "text_preview": "seguirá prevaleciendo el cierre paulatin o de la brecha de actividad, conteniendo las presiones inflacionarias a ese horizonte. Respecto de las expectativas de mercado, tanto a uno y dos años plazo, la Encuesta de Expectativas Económicas (EEE) y la Encuesta de Operadores Financieros (EOF) se ubican en 3% anual. El Consejo reitera que mantendrá un a política monetaria altamente expansiva, combinando una TPM en su mínimo de 0,5% y medidas no convencionales. En particular, la TPM seguirá en ese nivel durante gran parte del horizont"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2022_diciembre",
+        "rrf_score": 0.05,
+        "text_preview": "un ajuste significativo y está propiciando la resolución de los desequilibrios presentes en la economía. No obstante, la inflación sigue siendo muy elevada y la convergencia a la meta de 3% aún está sujeta a riesgos. El Consejo mantendrá la TPM en 11,25% hasta que el estado de la macroeconomía indique que dicho proceso se ha consolidado.</s>"
+      },
+      {
+        "chunk_id": 2,
+        "name": "2021_enero",
+        "rrf_score": 0.049,
+        "text_preview": "de los fluj os de capital hacia las economías emergentes, mejoras generalizadas de las bolsas y aumentos de los precios de las materias primas, resaltando la fuerte recuperación del petróleo y el alza del cobre hasta los US$3,6 la libra. Los mercados financieros local es, en general, se han acoplado al tono más positivo de sus pares internacionales. Resaltan las ganancias que acumula el IPSA y la apreciación del peso respecto de sus niveles promedio del año pasado . En esta última ha influido en gran parte la sostenida r ecuperación"
+      },
+      {
+        "chunk_id": 3,
+        "name": "2021_agosto",
+        "rrf_score": 0.048,
+        "text_preview": "s de interés del mercado de renta fija consignan alzas adicionales desde la Reunión pasada, sobre todo en la parte corta de la curva nominal. Las tasas a 10 años también subieron, ampliando la distancia con sus pares externos. Esto contrasta con la caíd a significativa de los rendimientos en UF de más corto plazo, ligado al incremento de las expectativas de inflación, especialmente tras la sorpresa en el dato del IPC de julio. El tipo de cambio mantuvo una tendencia al alza, con lo que el peso acumuló una depreciación cercana a 5% respecto del dólar desde"
+      },
+      {
+        "chunk_id": 8,
+        "name": "2020_octubre",
+        "rrf_score": 0.048,
+        "text_preview": "mercado, a un año plazo la mediana de la EEE prevé una inflación de 2,7% anual y la de la Encuesta de Operadores Financieros (EOF) una de 2,5% anual, mientras que a dos años plazo continúan en torno a 3%. El Consejo reitera que mant endrá un elevado impulso monetario por un período prolongado de tiempo, de modo de asegurar el cumplimiento de sus objetivos. En particular, prevé que la TPM seguirá en su nivel mínimo durante gran parte del horizonte de política monetaria de dos años y ma ntendrá las medidas no convencionales vigentes"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2021_marzo",
+        "rrf_score": 0.047,
+        "text_preview": "<s> Martes 30 de marzo de 2021 Reunión de Política Monetaria – marzo 2021 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó mantener la tasa de interés de política monetaria en 0,50%. Asimismo, no realizó cambios en las medidas no convencionales de apoyo a la liquidez y el crédito. La decisión fue adoptada por la unanimidad de sus miembros. En el plano externo, el cierre del 2020 mostró indicadores por sobre lo previsto, probablemente asociado a una mejor adaptación de la economía mundial a la pandemia, en un contexto en que la situación sanitaria es comple"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2021_junio",
+        "rrf_score": 0.045,
+        "text_preview": "mejoran de forma importante las perspectivas para la actividad en 2021, en un contexto en que las condiciones externas son algo más favorables. Comunicado de Prensa En cuanto al crédito bancario, la actividad del programa Fogape-Reactiva continúa aumentando. No obstante, en el agregado, la variación anual de las colocaciones comerciales se ubica en tasas negativas, lo que se explica en buena parte por efecto base de comparación. En esto último influye el impulso que proveyeron las líneas Covid durante el 2020. Por el lado de los hogares, resalta que la contracción a nual de la"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2022_enero",
+        "rrf_score": 0.045,
+        "text_preview": "ndo la contribución de las actividades de servicios y, en menor medida, del comercio. En la demanda, resalta el sostenido dinamismo de las importaciones de todo tipo de bienes. Las expectativas privadas (EEE) siguen previendo tasas de expansión del PIB en torno a 2% para el 2022 y 2023. El merc ado laboral continúa registrando una recuperación paulatina, con una oferta que se mantiene contenida de parte de los hogares y altos niveles de demanda por trabajo de las empresas. El crédito bancario, en general, conserva un dinamismo acotado, primando factores Comunicado de Prensa"
+      },
+      {
+        "chunk_id": 8,
+        "name": "2022_julio",
+        "rrf_score": 0.044,
+        "text_preview": "PM para asegurar la convergencia de la inflación a 3% en dos años. Su magnitud dependerá de las implicancias de la evolución del escenario para el logro de la meta de inflación, situación que será analizada en el IPoM de septiembre.</s>"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2021_enero",
+        "rrf_score": 0.044,
+        "text_preview": "mayores restricciones sanitarias desde diciembre se han reflejado en los indicadores de expectativas de empresas y hogares. El año 2020 cerró con una inflación total de 3% anual —3,3% en la medida subyacente. El registro mensual de diciembre —0,3%— respondió principalmente a algunos bienes de alta demanda que, en medio de una l enta reposición de inventarios y aumentos en los costos de transporte , han continuado impulsando la inflación en lo más reciente. Por el contrario, la parte de servicios persiste relativamente débil. A mediano plazo seguirá prevaleciendo el cierre paulat"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.042,
+        "text_preview": "se suma la significativa caída del precio del petróleo, que contrarresta las presiones de costos der ivadas de la depreciación cambiaria. Las expectativas de inflación de mercado conocidas en los últimos días han reducido los valores esperados a un año plazo, mientras que a dos años plazo se mantienen en 3%. La decisión del Consejo de ubicar la TPM en su mínimo técnico de 0,5% se enmarca en un escenario en que las presiones inflacionarias de mediano plazo se han reducido de manera sustantiva y en que la superación de la crisis sanitaria tendrá efectos importantes en la actividad y el empleo"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2022_junio",
+        "rrf_score": 0.042,
+        "text_preview": "ización de la creación de empleo. Las expectativas empresariales y de consumidores siguen deteriorándose. Comunicado de Prensa La inflación total siguió subiendo, alcanzando a 10,5% anual en abril, con una variación del componente subyacente que se ubicó en 8,3% anual. El IPC de abril nuevamente fue mayor a lo previsto en el IPoM de marzo, volviendo a destacar el alza de los precios de los alimentos <unk>volátiles y subyacentes<unk> y de otros componentes volátiles, incluyendo los combustibles. El resto de los componentes subya"
+      },
+      {
+        "chunk_id": 7,
+        "name": "2020_septiembre",
+        "rrf_score": 0.042,
+        "text_preview": "de Expectativas Económicas (EEE) se mantienen en 2,5% y en 2,3% en la Encuesta de Operadores Financieros (EOF). A dos años, ambas encuestas se ubican en torno a 3%. El Consejo reitera que mantendrá un elevado impulso monetario por un período prolongado de tiempo, de modo d e asegurar el cumplimiento de sus objetivos. En particular, prevé que la TPM seguirá en su nivel mínimo durante gran parte del horizonte de política monetaria de dos años y mantendrá las actuales medidas no convencionales. En particular, continuará con el programa"
+      },
+      {
+        "chunk_id": 4,
+        "name": "2022_mayo",
+        "rrf_score": 0.041,
+        "text_preview": ". En cuanto a la actividad, considerados los Imacec publicados, la actividad habría crecido 7,9% en el primer trimestre de 2022, algo por sobre lo estimado en el IPoM, principalmente por el resultado de marzo. Por el lado de la demanda, los indicadores de corto plazo muestran que el consumo sigue resiliente, mientras que la inversión se debilita. En esta última, si bien las importaciones de capital permanecen elevadas, la mayoría de los indicadores asociados a la construcción han continuado decayendo y la información de los catastros se revisa a la baja para"
+      },
+      {
+        "chunk_id": 9,
+        "name": "2020_mayo",
+        "rrf_score": 0.041,
+        "text_preview": ". A marzo, la inflación anual bajó a 3,7% y la medida subyacente se mantuvo en torno a 2,5%. Las presiones inflacionarias de mediano plazo continúan contenidas en concordancia con una mayor apertura de las brechas de actividad como consecuencia de la emergencia sanitaria, que, sumada a la caída del precio del petróleo desde comienzos de año, contrarrestan las presiones de costos de la depreciación cambiaria acumulada . A un año plazo, las medidas de expectativas de inflación se ajustaron a la baja, mientras que a dos años continúan en torno a 3"
+      },
+      {
+        "chunk_id": 8,
+        "name": "2021_diciembre",
+        "rrf_score": 0.041,
+        "text_preview": "rápido aumento de la inflación. Con ello la brecha de actividad se cerrará gradualmente, colaborando a que la dinámica inflacionaria reciente no tenga un impacto persistente sobre el proceso de formación de precios. El IPoM que se publicará mañana contiene los detalles del escenario central, las sensibilidades y riesgos en torno a este, y sus implicancias para la evolución futura de la TPM.</s>"
+      },
+      {
+        "chunk_id": 11,
+        "name": "2020_diciembre",
+        "rrf_score": 0.041,
+        "text_preview": "horas del miércoles 23 de diciembre de 2020. La próxima Reunión de Política Monetaria se efectuará el martes 26 y miércole s 27 de enero de 2021 y el comunicado respectivo será publicado a partir de las 18 horas de ese último día.</s>"
+      },
+      {
+        "chunk_id": 10,
+        "name": "2021_julio",
+        "rrf_score": 0.041,
+        "text_preview": ", manteniéndose algo por sobre 3% anual. Respecto de las expectativas, a un año plazo la mediana de la Encuesta de Expectativas Económicas (EEE) y la de Operadores Financieros (EOF) subió hasta 3,3 y 3,4% anual. A dos años plazo, ambas encuestas permanecen en torno a 3% anual. El Consejo estima que el conjunto de antecedentes conforma una trayectoria de la economía similar a la prevista en el escenario base del IPoM de junio. Así, la brecha de actividad continuará cerrándose rápidamente, d e la mano de un"
+      },
+      {
+        "chunk_id": 8,
+        "name": "2020_julio",
+        "rrf_score": 0.041,
+        "text_preview": "de los hogares disminuyó sustancialmente, tanto para consumo como vivienda. En empresas, sigue resaltando un aumento en la demanda por fondos para cubrir necesidades de capital de trabajo y una caída en los requeridos para financiar proyectos de inversión. A junio, la inflación anual bajó a 2,6% y la medida subyacente —IPC sin volátiles — se redujo a 2,5%. Las presiones inflacionarias continúan reducidas ante el abrupto aumento de la brecha de actividad en los últimos meses. En este c ontexto, las expectativas de inflación medidas por la Encu"
+      },
+      {
+        "chunk_id": 3,
+        "name": "2022_enero",
+        "rrf_score": 0.04,
+        "text_preview": "factores externos como int ernos, aunque con predominio de estos últimos, posiblemente asociado a una disminución de la incertidumbre interna. Desde la Reunión previa, el peso se apreció cerca de 5%, la bolsa subió en torno a 5%, las tasas de interés de largo plazo, aunque con vaive nes, se ubican en niveles similares y el riesgo país (CDS) retrocedió cerca de 10 puntos base (pb). Por otro lado, las tasas de interés de corto plazo subieron, en respuesta a la mayor inflación efectiva y a expectativas de tasa"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2022_marzo",
+        "rrf_score": 0.039,
+        "text_preview": "iva dado el escenario de mayor inflación y el aumento de las tasas benchmark de más largo plazo. Comunicado de Prensa Respecto de la actividad, el cierre de las Cuentas Nacionales de 2021 — acorde con la nueva compilación de referencia 2018 — arrojo un aumento de 11,7% en el PIB, dentro del rango proyectado en el IPoM de diciembre. El desempeño de la demanda intern a en el cuarto trimestre, y los datos disponibles de comienzos de año, apuntan a que la economía ya estaría en una senda de reducción de los elevados niveles de gasto del año pasado. Destaca el"
+      },
+      {
+        "chunk_id": 4,
+        "name": "2021_marzo",
+        "rrf_score": 0.039,
+        "text_preview": "as permanecen bajas en perspectiva histórica. En lo interno, los datos de fines del 2020 y comienzos del 2021 evidencian un crecimiento de la economía superior al previsto en el IPoM de diciembre. El comercio continuó siendo el sect or que muestra la mayor recuperación, seguido por la industria. Aunque a un ritmo más lento, los servicios y la construcción también se recuperaron respecto de sus peores niveles de mediados del año. En el mercado laboral se observó un aumento de las horas trabajadas y del empleo, aunque su evolución va rezagada respecto de la actividad. La aplicación de mayores re"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.038,
+        "text_preview": "ó la Línea de Crédito de Liquidez (LCL) y flexibilizó los requerim ientos de liquidez en materia de descalce de plazos. A la fecha, todas estas medidas se encuentran operativas. A febrero, la inflación anual subió a cerca de 4% y la medida subyacente se mantuvo levemente sobre 2,5%. El nuevo escenario que se ha ido confi gurando reduce de forma relevante las presiones inflacionarias de mediano plazo, dada la apertura de la brecha de actividad que se está produciendo. A ello se suma la significativa caída del precio"
+      },
+      {
+        "chunk_id": 1,
+        "name": "2022_julio",
+        "rrf_score": 0.038,
+        "text_preview": "que sorprendió con un incremento mayor al esperado y ha comunicado que las alzas continuarán hasta lograr controlar la inflación. Las condiciones financieras se han estrec hado tanto para economías desarrolladas como emergentes, resaltando las caídas en las bolsas y una apreciación global del dólar. Las perspectivas de mercado sobre el crecimiento mundial se han deteriorado, acercándose a las proyecciones incluidas en el último IPoM. Por su lado, los precios de las materias primas han descendido más que lo esperado, en parte importante por los temores respecto de una recesión mundial"
+      },
+      {
+        "chunk_id": 8,
+        "name": "2021_mayo",
+        "rrf_score": 0.037,
+        "text_preview": "y los mayores estímulos a la demanda que se han agregado. Esto, unido a un mejor escenario global, reduce los riesgos a la baja y posiciona el desempeño de la economía en torno a la sensibilidad positiva analizada en el IPoM de marzo. Aun así, la convergencia de la inflación a la meta en el horizonte de política sigue requiriendo que el estímulo monetario sea altamente expansivo. Con ello, la TPM se mantendrá en su mínimo de 0,5% por el tiempo necesario para que la recuperación de la economía termine de afianzarse. En cuanto a las medidas"
+      },
+      {
+        "chunk_id": 4,
+        "name": "2020_enero",
+        "rrf_score": 0.037,
+        "text_preview": "ios que continúan percibiéndose como elevados en el co mercio y expectativas de consumidores que persisten en terreno marcadamente pesimista. Esto último, en un contexto donde los datos administrativos muestran un incipiente deterioro del mercado laboral. Respecto de la inversión, las expectativas de los empre sarios continuaron pesimistas y las importaciones de bienes de capital han seguido contrayéndose en términos anuales. El catastro de proyectos de inversión de la CBC no ha mostrado grandes cambios en los montos comprometidos para este año y el próximo. En este escenario, las expectativas"
+      },
+      {
+        "chunk_id": 10,
+        "name": "2021_octubre",
+        "rrf_score": 0.036,
+        "text_preview": "y los costos, así como la significativa depreciación del peso. Además, en los últimos meses el INE ha ido reincorporando a la medición los precios imputados durante la pandemia. En este contexto, las expectativas de inflación han aumentado en todos los plazos. En lo más inmediato, algunas medidas superan las proyecciones del IPoM de septiembre, sobrepasando el 6% para fines de este año. A dos años plazo, la mediana de la EEE y de la Encuesta de Operadores Financieros (EOF) ha subido y permanece por sobre 3% anual."
+      },
+      {
+        "chunk_id": 6,
+        "name": "2021_mayo",
+        "rrf_score": 0.036,
+        "text_preview": "de información señalan un alza importante respecto de los niveles más bajos de mediados del 202 0, aunque presentan diferencias sobre cuánto de la pérdida de empleo asalariado formal se ha recuperado. De todos modos, en este ámbito también se observan diferencias por sectores y tipos de ocupaciones. En este contexto, las expectativas privadas para el crecimiento de este año siguen incrementándose, apuntando mayoritariamente a cifras por sobre 6% (6,2% la mediana de la Encuesta de Expectativas Económicas (EEE) de mayo). La variación anual del IPC total y"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2020_octubre",
+        "rrf_score": 0.035,
+        "text_preview": ", aunque persisten en terreno pesimista. Las expectativas privadas recogidas en la Encuesta de Expectativas Económicas (EEE) de octubre consideran que el PIB caerá 5,5% este año, manteniéndose una alta dispersión en las respuestas. En cuanto al crédito comercial, su tasa de crecimiento anual se mantiene por sobre las observadas a principios de año, como producto del impulso recibido de diversos programas de estímulo. No obstante, su dinamismo se ha reducido en lo más reciente, al mismo tiempo que la variación anual de las colocaciones de consumo sigue contrayéndose y el de"
+      },
+      {
+        "chunk_id": 8,
+        "name": "2022_marzo",
+        "rrf_score": 0.033,
+        "text_preview": "sobre 3% desde hace varios meses, s ituación que seguirá siendo monitoreada por el Consejo. El Consejo estima que, de darse los supuestos del escenario central del IPoM de marzo, futuros aumentos de la TPM serían menores que los realizados en los últimos trimestres. De todos modos, esto dependerá de la evolución del escenario macroeconómico. El IPoM que se publicará mañana contiene los detalles del escenario central, las sensibilidades y riesgos en torno a este, y sus implicancias para la evolución futura de la TPM.</s>"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2022_septiembre",
+        "rrf_score": 0.033,
+        "text_preview": "desempleo no muestra ma yores cambios. La variación anual de los salarios reales se mantiene en niveles negativos. Los indicadores de confianza de los consumidores y de las empresas siguen en terreno pesimista. Comunicado de Prensa La inflación total ha continuado aumentando y se ubicó en 13,1% anual en julio, mientras que la inflación subyacente — medida por el IPC sin volátiles — subió a 10% anual. El dato de IPC de julio sorprendió al alza, principalmente por el mayor aumento de los precios volátiles. Las expectativas de inflación de"
+      }
+    ],
+    "confirmed_related_chunks": [
+      {
+        "chunk_id": 8,
+        "name": "2020_junio",
+        "rrf_score": 0.197,
+        "text_preview": "s semanas atrás. En este contexto, las diversas medidas de expectativas de inflación dan cuenta de retrocesos en la inflación esperada a un año. A dos año s plazo, las expectativas medidas por la Encuesta de Operadores Financieros se ubicaron bajo 3% y en la Encuesta de Expectativas Económicas se mantuvieron en ese valor. El Consejo estima que la evolución de la economía requiere de una intensificación del impulso monetario. Por ello, junto con mantener la TPM en 0,5% —que corresponde a la actual estimación de su mínimo técnico —, decidió ampliar el uso de instrumentos no"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2022_octubre",
+        "rrf_score": 0.182,
+        "text_preview": "<s> Miércoles 12 de octubre de 2022. Reunión de Política Monetaria – octubre 2022 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó aumentar la tasa de interés de política monetaria en 50 puntos base, hasta 11,25%. La decisión fue adoptada por la unanimidad de sus miembros. Las perspectivas de crecimiento mundial y las condiciones financieras internacionales se han deteriorado. La inflación mundial ha seguido dando señales de mayor persistencia, los bancos centrales han continuado elevando sus tasas de referencia y las expectativas de mercado apuntan a un prolon"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2022_junio",
+        "rrf_score": 0.171,
+        "text_preview": "El resto de los componentes subyacentes no mostró mayores d iferencias con lo esperado. Las expectativas de inflación provenientes de las encuestas — EEE y EOF— permanecen por sobre 3% a dos años plazo. Dados los antecedentes contenidos en el IPoM de junio, el Consejo estima que para asegurar la convergencia de la i nflación a 3% en el horizonte de dos años, serán necesarios ajustes adicionales de menor magnitud en la TPM. El Consejo se mantendrá atento a la evolución de la inflación y sus determinantes, pues los riesgos siguen siendo elevado"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2022_diciembre",
+        "rrf_score": 0.151,
+        "text_preview": "<s> Martes 6 de diciembre de 2022. Reunión de Política Monetaria – diciembre 2022 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó mantener la tasa de interés de política monetaria en 11,25%. La decisión fue adoptada por la unanimidad de sus miembros. A pesar del retroceso reciente en algunas economías, las presiones inflacionarias a nivel mundial continúan elevadas. Los bancos centrales de las economías desarrolladas han seguido subiendo sus tasas de referencia y las expectativas de mercado anticipan que su ajuste monetario será prolongado. En este escenario"
+      },
+      {
+        "chunk_id": 7,
+        "name": "2022_marzo",
+        "rrf_score": 0.143,
+        "text_preview": "que las percepciones de los consumidores y los empresarios sobre la situación económica se han vuelto más pesimistas. La inflación anual aumentó hasta 7,8% a febrero, casi un punto porcentual por sobre lo previsto en el IPoM de diciembre, con una diferencia que respondió en parte importante a una mayor inflación subyacente, especialmente de los bienes. Las perspectivas de inflación de corto plazo han vuelto a aumentar, acercando la inflación anual a cifras de 10%. Las expectativas de inflación a dos años plazo permanecen por sobre 3% desde hace varios meses,"
+      },
+      {
+        "chunk_id": 7,
+        "name": "2021_diciembre",
+        "rrf_score": 0.136,
+        "text_preview": "M de septiembre. Diversos indicadores de expectativas de inflación han aumentado en los últimos meses y, si bien prevén una moderación de la misma hacia el 2023, a 24 meses plazo se ubican por sobre 3%. El Consejo prevé que la TPM seguirá aumentando en el corto plazo, ubicándose por sobre su nivel neutral nominal —aquel que es coherente con la meta de inflación de 3%— durante gran parte del horizonte de política monetaria. Esto ayudará a que la economía resuelva los desequilibrios que ha acumulado, los que han contribuido al rápido aumento de la inflación."
+      },
+      {
+        "chunk_id": 11,
+        "name": "2021_octubre",
+        "rrf_score": 0.126,
+        "text_preview": "y permanece por sobre 3% anual. La evolución del escenario macroeconómico ha aumentado los riesgos para la convergencia de la inflación a la meta de 3% dentro del horizonte de política. Si bien la inflación subyacente ha evolucionado dentro de lo previsto, las perspectivas para los próximos meses se han ido elevando, en un contexto en que las expectativas de inflación a dos años pla zo se ubican por sobre la meta de 3%. El Consejo ha decidido adelantar el retiro del estímulo monetario, anticipando que la TPM se ubicará en su nivel neutral antes de lo previsto"
+      },
+      {
+        "chunk_id": 9,
+        "name": "2020_julio",
+        "rrf_score": 0.115,
+        "text_preview": "inflación medidas por la Encuesta de Expectativas Económicas (EEE) y de Operadores Financieros (EOF) no han mostrado mayores cambios. A un año plazo, ambas se ubican por debajo de 3%, mientras que a dos años plazo, la EOF antic ipa un valor de 2,6% y la EEE uno de 3%. El Consejo reitera que mantendrá un elevado impulso monetario por un período prolongado de tiempo, de modo de asegurar el cumplimiento de sus objetivos. En particular, estima que la TPM permanecerá en su mínimo téc nico durante todo el horizont"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2022_septiembre",
+        "rrf_score": 0.113,
+        "text_preview": ". Las expectativas de inflación de las encuestas —EEE y EOF— se han ajustado al alza. Con esta decisión, la TPM se ubica en torno al nivel máximo que considera el escenario central del IPoM de septiembre. Los próximos movimientos de la tasa dependerán de la evolución del escenario macroeconómico y sus implicancias para la convergencia de la inflación a la meta. El Consejo permanecerá especialmente atento a los riesgos al alza para la inflación, tanto por el elevado nivel que ésta ha alcanzado como por el hecho de que las expectativas de inflación a dos años plazo"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2020_septiembre",
+        "rrf_score": 0.094,
+        "text_preview": "las garantías estatales y cambios regulatorios. La s tasas de interés del mercado de crédito no muestran cambios significativos. En julio, la inflación total y subyacente se ubicaron en 2,5% anual, valores similares a los de meses previos. En lo inmediato, la inflación se reducirá algo menos que lo previsto producto del efecto transitorio en el consumo que tiene el conjunto de medidas de apoyo a los ingresos. A mediano plazo, las presiones continúan reducidas. Para dentro de un año, las expectativas de inflación contenidas en la Encuesta de Expectativas Económicas"
+      },
+      {
+        "chunk_id": 8,
+        "name": "2020_diciembre",
+        "rrf_score": 0.087,
+        "text_preview": "Más allá de estos vai venes de corto plazo, a mediano plazo las presiones inflacionarias siguen contenidas, prevaleciendo el cierre paulatino de la amplia brecha de actividad que se abrió en meses pasados. Las expectativas de mercado han recogido la transitoriedad de los movimi entos en los precios, observándose cambios a plazos más cortos y estabilidad en torno a 3% a dos años plazo. El Consejo reitera que mantendrá un elevado impulso monetario por un período prolongado de tiempo, de modo de asegurar la consolidación de la recu peración económica y el cumplimiento de"
+      },
+      {
+        "chunk_id": 2,
+        "name": "2021_agosto",
+        "rrf_score": 0.076,
+        "text_preview": "elevados. Los mercados financ ieros internacionales mantienen un tono positivo, más allá de movimientos asociados a la evolución de la pandemia o a cambios en las expectativas para la política monetaria en EE.UU., observándose nuevas bajas de las tasas de interés de largo plazo y aumen tos de las bolsas en las economías desarrolladas. En Chile, el desempeño de los mercados financieros continúa ampliamente dominado por factores idiosincráticos, entre los que destaca la posibilidad de nuevos retiros masivos de ahorros previsionales. Las tasas de interés del mercado de rent"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2020_enero",
+        "rrf_score": 0.076,
+        "text_preview": "la depreciación idios incrática que el peso ha acumulado desde octubre siguen vigentes. Por otra, las perspectivas para la actividad siguen débiles y su recuperación continúa dependiendo de la respuesta de los agentes económicos al nuevo escenario. Las expectativas de inflación se mantienen en torno a 3% a dos años plazo. La decisión de mantener la TPM en su nivel actual es coherente con preservar la expansividad de la política monetaria, en línea con el mensaje entregado por el Consejo en diciembre, considerada la evolución de l escenario macro y el conjunto de medidas extraordinarias adoptad"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2022_julio",
+        "rrf_score": 0.073,
+        "text_preview": "en niveles negativos. Los indicadores de confianza de los consumidores y de las empresas siguen en terreno negativo. La inflación total ha seguido aumentando y alcanzó 12,5% anual en junio, mientras que el componente subyacente subió a 9,9% anual. Los últimos datos de inflación han estado prácticamente en línea con lo previsto en el IPoM de junio, con sorpresas acotadas a productos específicos, mayormente volátiles. Las expectativas de inflación de las encuestas —EEE y EOF— se han ajustado al alza. El escenario macroeconómico presenta riesgos elevados. El de"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2022_diciembre",
+        "rrf_score": 0.061,
+        "text_preview": "la baja creación de empleo, la caída de los salarios reales y el pesimismo de los consumidores. En octubre, la inflación total y subyacente se ubicaron en 12,8 y 10,8% a nual, respectivamente. Ambas cifras fueron menores a las del mes previo. En el dato de octubre destacó la desaceleración de los bienes subyacentes, ítems que mostraron una variación negativa durante ese mes. Las expectativas de inflación a dos años plazo continúan por sobre 3%. Comunicado de Prensa La política monetaria ha hecho un ajuste significativo y está propiciando"
+      },
+      {
+        "chunk_id": 4,
+        "name": "2022_enero",
+        "rrf_score": 0.06,
+        "text_preview": "ción efectiva y a expectativas de tasa de política monetaria más e levadas. De todas formas, los niveles de incertidumbre siguen siendo elevados en comparación histórica y las tasas de interés de largo plazo mantienen un diferencial relevante respecto de sus pares externos. En el agregado, los indicadores de actividad y d emanda son coherentes con la parte alta del rango de proyección para el 2021 considerado en el IPoM de diciembre. En noviembre, la actividad aumentó 14,3% anual —0,3% mensual para la serie desestacionalizada—, destacando la contribución de las actividades"
+      },
+      {
+        "chunk_id": 7,
+        "name": "2022_enero",
+        "rrf_score": 0.059,
+        "text_preview": "impulsada tanto por los precios de los bienes —que sorprendieron al alza— como de los servicios. En el componente volátil, continuó destacando la contribución de los combustibles y la evolución de algunos ítems puntuales. Las expectativas privadas de inflación permanecen sobre 3% a dos años plazo. Los riesgos para la evolución de la inflación siguen siendo significativos y su eventual concreción se torna especialmente relevante en un contexto en que tanto la variación anual del IPC como sus perspectivas ya son elevadas. En particular, la evolución reciente de la actividad y de la inflación"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2020_enero",
+        "rrf_score": 0.056,
+        "text_preview": ". En este escenario, las expectativas de crecimiento de la EEE de enero disminuyeron hasta 1,2 y 2,5% anual para este año y el próximo, respectivamente. En los últimos meses, la inflación anual subió a 3% y la medida subyacente se mantuvo en torno a 2,5%. Ambo s registros estuvieron por debajo de lo esperado en el IPoM de diciembre. La evolución de la inflación sigue estando expuesta a fuerzas contrapuestas, cuya incidencia relativa aún es incierta. Por una parte, las presiones inherentes a la depreciación idios in"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2022_mayo",
+        "rrf_score": 0.054,
+        "text_preview": "se revisa a la baja para el período 2022 -2025. En el mercado laboral, el aumento del empleo se ha ido ralentizando desde fines d el año pasado, en un contexto en que distintos indicadores dan cuenta de una Comunicado de Prensa demanda menos dinámica y una oferta que, aunque con alguna mejoría, sigue acotada. Las expectativas de consumidores (IPEC) y empresas (IMCE) han seguido deteriorándose. La inflación de marzo fue significativamente mayor a lo previsto en el último IPoM, con lo que variación anual del IPC subió a 9,4% —7,"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2022_octubre",
+        "rrf_score": 0.053,
+        "text_preview": ". La inflación subyacente, en cambio, aumentó hasta 11,1% anual. Respecto del IPoM, la inflación acumulada en los últimos dos meses ha sido superior a lo previsto, principalmente por el mayor aumento de los precios de algunos alimentos. Las expectativas de inflación a dos años plazo continúan por sobre 3%. Comunicado de Prensa El Consejo estima que la TPM ha llegado al nivel máximo del ciclo iniciado en julio de 2021 y que se mantendrá en este valor por el tiempo necesario para asegurar la convergencia de la inflación a la meta en el horizonte de política"
+      },
+      {
+        "chunk_id": 7,
+        "name": "2021_marzo",
+        "rrf_score": 0.052,
+        "text_preview": "La variación anual del IPC subyacente —sin volátiles— se ha mantenido estable respecto de diciembre. Respecto de las expectativas, a un año plazo, la mediana de la Encuesta de Expectativas Económicas (EEE) permanece en 3%, en tanto la Encuesta de Operadores Financieros (EOF) subió a 3,2%. A dos años plazo, ambas encuestas continúan en 3%. El Consejo considera que, si bien las perspectivas para la economía han mejorado, la convergencia de la inflación a la meta en el horizonte de política"
+      },
+      {
+        "chunk_id": 7,
+        "name": "2021_octubre",
+        "rrf_score": 0.052,
+        "text_preview": "privadas para el crecimiento de este año han seguido incrementándose, hasta 11% en la Encuesta de Expectativas Económicas (EEE) de octubre. Para los años 2022 y 20 23, el desempeño esperado de la economía se reduce de forma importante, a cifras del orden de 2% en cada uno. La confianza empresarial (IMCE) se ubica en terreno optimista, considerándose mayores contrataciones en el corto plazo, aunque también muestra aum entos de costos y escasez de inventarios. En los consumidores (IPEC), la confianza registra una leve caída, afectada especialmente por el aumento de la infla"
+      },
+      {
+        "chunk_id": 7,
+        "name": "2021_enero",
+        "rrf_score": 0.052,
+        "text_preview": "seguirá prevaleciendo el cierre paulatin o de la brecha de actividad, conteniendo las presiones inflacionarias a ese horizonte. Respecto de las expectativas de mercado, tanto a uno y dos años plazo, la Encuesta de Expectativas Económicas (EEE) y la Encuesta de Operadores Financieros (EOF) se ubican en 3% anual. El Consejo reitera que mantendrá un a política monetaria altamente expansiva, combinando una TPM en su mínimo de 0,5% y medidas no convencionales. En particular, la TPM seguirá en ese nivel durante gran parte del horizont"
+      },
+      {
+        "chunk_id": 2,
+        "name": "2021_enero",
+        "rrf_score": 0.049,
+        "text_preview": "de los fluj os de capital hacia las economías emergentes, mejoras generalizadas de las bolsas y aumentos de los precios de las materias primas, resaltando la fuerte recuperación del petróleo y el alza del cobre hasta los US$3,6 la libra. Los mercados financieros local es, en general, se han acoplado al tono más positivo de sus pares internacionales. Resaltan las ganancias que acumula el IPSA y la apreciación del peso respecto de sus niveles promedio del año pasado . En esta última ha influido en gran parte la sostenida r ecuperación"
+      },
+      {
+        "chunk_id": 3,
+        "name": "2021_agosto",
+        "rrf_score": 0.048,
+        "text_preview": "s de interés del mercado de renta fija consignan alzas adicionales desde la Reunión pasada, sobre todo en la parte corta de la curva nominal. Las tasas a 10 años también subieron, ampliando la distancia con sus pares externos. Esto contrasta con la caíd a significativa de los rendimientos en UF de más corto plazo, ligado al incremento de las expectativas de inflación, especialmente tras la sorpresa en el dato del IPC de julio. El tipo de cambio mantuvo una tendencia al alza, con lo que el peso acumuló una depreciación cercana a 5% respecto del dólar desde"
+      },
+      {
+        "chunk_id": 8,
+        "name": "2020_octubre",
+        "rrf_score": 0.048,
+        "text_preview": "mercado, a un año plazo la mediana de la EEE prevé una inflación de 2,7% anual y la de la Encuesta de Operadores Financieros (EOF) una de 2,5% anual, mientras que a dos años plazo continúan en torno a 3%. El Consejo reitera que mant endrá un elevado impulso monetario por un período prolongado de tiempo, de modo de asegurar el cumplimiento de sus objetivos. En particular, prevé que la TPM seguirá en su nivel mínimo durante gran parte del horizonte de política monetaria de dos años y ma ntendrá las medidas no convencionales vigentes"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.042,
+        "text_preview": "se suma la significativa caída del precio del petróleo, que contrarresta las presiones de costos der ivadas de la depreciación cambiaria. Las expectativas de inflación de mercado conocidas en los últimos días han reducido los valores esperados a un año plazo, mientras que a dos años plazo se mantienen en 3%. La decisión del Consejo de ubicar la TPM en su mínimo técnico de 0,5% se enmarca en un escenario en que las presiones inflacionarias de mediano plazo se han reducido de manera sustantiva y en que la superación de la crisis sanitaria tendrá efectos importantes en la actividad y el empleo"
+      },
+      {
+        "chunk_id": 7,
+        "name": "2020_septiembre",
+        "rrf_score": 0.042,
+        "text_preview": "de Expectativas Económicas (EEE) se mantienen en 2,5% y en 2,3% en la Encuesta de Operadores Financieros (EOF). A dos años, ambas encuestas se ubican en torno a 3%. El Consejo reitera que mantendrá un elevado impulso monetario por un período prolongado de tiempo, de modo d e asegurar el cumplimiento de sus objetivos. En particular, prevé que la TPM seguirá en su nivel mínimo durante gran parte del horizonte de política monetaria de dos años y mantendrá las actuales medidas no convencionales. En particular, continuará con el programa"
+      },
+      {
+        "chunk_id": 9,
+        "name": "2020_mayo",
+        "rrf_score": 0.041,
+        "text_preview": ". A marzo, la inflación anual bajó a 3,7% y la medida subyacente se mantuvo en torno a 2,5%. Las presiones inflacionarias de mediano plazo continúan contenidas en concordancia con una mayor apertura de las brechas de actividad como consecuencia de la emergencia sanitaria, que, sumada a la caída del precio del petróleo desde comienzos de año, contrarrestan las presiones de costos de la depreciación cambiaria acumulada . A un año plazo, las medidas de expectativas de inflación se ajustaron a la baja, mientras que a dos años continúan en torno a 3"
+      },
+      {
+        "chunk_id": 10,
+        "name": "2021_julio",
+        "rrf_score": 0.041,
+        "text_preview": ", manteniéndose algo por sobre 3% anual. Respecto de las expectativas, a un año plazo la mediana de la Encuesta de Expectativas Económicas (EEE) y la de Operadores Financieros (EOF) subió hasta 3,3 y 3,4% anual. A dos años plazo, ambas encuestas permanecen en torno a 3% anual. El Consejo estima que el conjunto de antecedentes conforma una trayectoria de la economía similar a la prevista en el escenario base del IPoM de junio. Así, la brecha de actividad continuará cerrándose rápidamente, d e la mano de un"
+      },
+      {
+        "chunk_id": 8,
+        "name": "2020_julio",
+        "rrf_score": 0.041,
+        "text_preview": "de los hogares disminuyó sustancialmente, tanto para consumo como vivienda. En empresas, sigue resaltando un aumento en la demanda por fondos para cubrir necesidades de capital de trabajo y una caída en los requeridos para financiar proyectos de inversión. A junio, la inflación anual bajó a 2,6% y la medida subyacente —IPC sin volátiles — se redujo a 2,5%. Las presiones inflacionarias continúan reducidas ante el abrupto aumento de la brecha de actividad en los últimos meses. En este c ontexto, las expectativas de inflación medidas por la Encu"
+      },
+      {
+        "chunk_id": 4,
+        "name": "2020_enero",
+        "rrf_score": 0.037,
+        "text_preview": "ios que continúan percibiéndose como elevados en el co mercio y expectativas de consumidores que persisten en terreno marcadamente pesimista. Esto último, en un contexto donde los datos administrativos muestran un incipiente deterioro del mercado laboral. Respecto de la inversión, las expectativas de los empre sarios continuaron pesimistas y las importaciones de bienes de capital han seguido contrayéndose en términos anuales. El catastro de proyectos de inversión de la CBC no ha mostrado grandes cambios en los montos comprometidos para este año y el próximo. En este escenario, las expectativas"
+      },
+      {
+        "chunk_id": 10,
+        "name": "2021_octubre",
+        "rrf_score": 0.036,
+        "text_preview": "y los costos, así como la significativa depreciación del peso. Además, en los últimos meses el INE ha ido reincorporando a la medición los precios imputados durante la pandemia. En este contexto, las expectativas de inflación han aumentado en todos los plazos. En lo más inmediato, algunas medidas superan las proyecciones del IPoM de septiembre, sobrepasando el 6% para fines de este año. A dos años plazo, la mediana de la EEE y de la Encuesta de Operadores Financieros (EOF) ha subido y permanece por sobre 3% anual."
+      },
+      {
+        "chunk_id": 6,
+        "name": "2021_mayo",
+        "rrf_score": 0.036,
+        "text_preview": "de información señalan un alza importante respecto de los niveles más bajos de mediados del 202 0, aunque presentan diferencias sobre cuánto de la pérdida de empleo asalariado formal se ha recuperado. De todos modos, en este ámbito también se observan diferencias por sectores y tipos de ocupaciones. En este contexto, las expectativas privadas para el crecimiento de este año siguen incrementándose, apuntando mayoritariamente a cifras por sobre 6% (6,2% la mediana de la Encuesta de Expectativas Económicas (EEE) de mayo). La variación anual del IPC total y"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2020_octubre",
+        "rrf_score": 0.035,
+        "text_preview": ", aunque persisten en terreno pesimista. Las expectativas privadas recogidas en la Encuesta de Expectativas Económicas (EEE) de octubre consideran que el PIB caerá 5,5% este año, manteniéndose una alta dispersión en las respuestas. En cuanto al crédito comercial, su tasa de crecimiento anual se mantiene por sobre las observadas a principios de año, como producto del impulso recibido de diversos programas de estímulo. No obstante, su dinamismo se ha reducido en lo más reciente, al mismo tiempo que la variación anual de las colocaciones de consumo sigue contrayéndose y el de"
+      },
+      {
+        "chunk_id": 5,
+        "name": "2022_septiembre",
+        "rrf_score": 0.033,
+        "text_preview": "desempleo no muestra ma yores cambios. La variación anual de los salarios reales se mantiene en niveles negativos. Los indicadores de confianza de los consumidores y de las empresas siguen en terreno pesimista. Comunicado de Prensa La inflación total ha continuado aumentando y se ubicó en 13,1% anual en julio, mientras que la inflación subyacente — medida por el IPC sin volátiles — subió a 10% anual. El dato de IPC de julio sorprendió al alza, principalmente por el mayor aumento de los precios volátiles. Las expectativas de inflación de"
+      }
+    ]
+  },
+  {
+    "query": "What non-conventional pandemic support measures were introduced, then later withdrawn or maintained, across 2020 and 2021?",
+    "query_es": "¿Qué medidas de apoyo no convencionales durante la pandemia fueron introducidas y posteriormente retiradas o mantenidas a lo largo de 2020 y 2021?",
+    "difficulty": "hard",
+    "expected_comunicados": [
+      "2020_marzo_a",
+      "2020_marzo_b",
+      "2020_junio",
+      "2021_marzo"
+    ],
+    "candidates": [
+      {
+        "chunk_id": 5,
+        "name": "2021_marzo",
+        "rrf_score": 0.25,
+        "text_preview": "aplicación de mayores restricciones sanitarias afectará el desempeño de la economía en lo inmediato. Sin embargo, su efecto será menor al observado previamente, pues las empresas han ido adaptándose para operar en estas condiciones y el Gobierno ha propuesto nuevas medidas de apoyo a los hogares. Con todo, las perspecti vas de crecimiento para el 2021 han aumentado respecto de lo previsto a fines del año pasado de la mano del mayor punto de partida, el avance del proceso de vacunación y el mejoramiento de las condiciones externas. La inflación total ha continuado en torn o a 3% anual, con vaiv"
+      },
+      {
+        "chunk_id": 2,
+        "name": "2020_junio",
+        "rrf_score": 0.238,
+        "text_preview": "las expectativas privadas de crecimiento durante este año se han corregido a la baja. En este contexto, el reciente Plan de Emergencia acordado po r el Gobierno y la Comisión de Hacienda ampliada será un importante aporte para mitigar los negativos efectos económicos de la pandemia, tanto por las medidas consideradas como por su perspectiva de mediano plazo. En el escenario externo destaca la flexib ilización de las medidas de confinamiento en varios países tras la caída en sus índices de contagio y muertes. Esta reapertura gradual ha llevado a una leve mejora de ciertos indicadores de corto p"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2021_marzo",
+        "rrf_score": 0.207,
+        "text_preview": "<s> Martes 30 de marzo de 2021 Reunión de Política Monetaria – marzo 2021 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó mantener la tasa de interés de política monetaria en 0,50%. Asimismo, no realizó cambios en las medidas no convencionales de apoyo a la liquidez y el crédito. La decisión fue adoptada por la unanimidad de sus miembros. En el plano externo, el cierre del 2020 mostró indicadores por sobre lo previsto, probablemente asociado a una mejor adaptación de la economía mundial a la pandemia, en un contexto en que la situación sanitaria es comple"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_junio",
+        "rrf_score": 0.175,
+        "text_preview": "<s> Martes 16 de junio de 2020 Reunión de Política Monetaria – junio 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó, por unanimidad de sus miembros, mantener la tasa de interés de política monetaria en 0,50%. Asimismo, acordó ampliar las medidas no convencionales de apoyo a la liquidez y el crédito. Los efectos de la pandemia de Covid -19 se han seguido prolongando e intensificando, en particular por la necesidad de decretar cuarentenas e n comunas del país que abarcan a casi la mitad de la población nacional"
+      },
+      {
+        "chunk_id": 1,
+        "name": "2021_marzo",
+        "rrf_score": 0.167,
+        "text_preview": "que la situación sanitaria es compleja en algunas regiones y el proceso de vacunación sigue avanzado a velocidades dispares entre países. Los estímulos monetarios y fiscales cont inúan siendo muy importantes. Destaca a este respecto, el paquete fiscal aprobado en EE.UU. hace unas se manas sobre el que se aprecia alguna preocupación por su magnitud y potencial efecto en la inflación. Los precios de las materias primas han aumentado, incluido el del cobre. En este contexto, el escenario externo ha mejorado para Chile, por las mejores pe rspectivas para los principales socios comerciales"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2020_marzo_a",
+        "rrf_score": 0.167,
+        "text_preview": "Cuarto, se extenderá el plazo del programa de venta de divisas hasta el 9 de enero de 2021. Los detalles operacionales y las fechas específicas de la puesta en marcha de estas medidas serán dados a conocer en los próximos días. El Consejo estima que este conjunto de medidas facilitará el ajuste de la economía al nuevo escenario que enfrenta, mitigando su impacto en hogares y empresas. Futuros cambios en la política monetaria o en las medidas adicionales dependerán de la evolución del panorama macroeconómico, el adecuado funcionamiento de los mercados financieros y el cumplimiento de los objeti"
+      },
+      {
+        "chunk_id": 1,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.167,
+        "text_preview": "incertidumbre sobre la magnitud del impacto económico de la pandemia ha impulsado un aumento sustantivo de la aversión al riesgo en los mercados. Ello se ha visto reflejado e n una elevada demanda por activos seguros y de corta duración, una escalada de los indicadores de volatilidad y de riesgo, caídas generalizadas de las bolsas, salidas de capitales desde las economías emergentes, una depreciación transversal de las monedas frente al dólar estadounidense y un fuerte descenso del precio de las materias primas, incluido el cobre. Las autoridades monetarias y fiscales han puesto en"
+      },
+      {
+        "chunk_id": 2,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.153,
+        "text_preview": "ias y fiscales han puesto en marcha cuantiosos planes de estímulo para hacer frente a estos deterioros, lo que ha atenuado la r eacción de los mercados en lo más reciente. Si bien los indicadores de actividad de enero y febrero dieron cuenta de una recuperación más rápida que la prevista en el IPoM de diciembre, el brusco cambio en el escenario macroeconómico que está provocando e l Covid-19, incluida la propagación de la pandemia a Chile, lleva a estimar que la economía comenzó un proceso de contracción severa en la segunda mitad de marzo que se extende"
+      },
+      {
+        "chunk_id": 11,
+        "name": "2020_junio",
+        "rrf_score": 0.142,
+        "text_preview": "seguirá evaluando opciones para intensificar d icho impulso y apoyar la estabilidad financiera, a través de instrumentos no convencionales. El Informe de Política Monetaria de junio, que contiene las proyecciones y análisis que sustentan estas decisiones del Consejo, se publicará mañana miércoles 17 d e junio a las 8:30 horas.</s>"
+      },
+      {
+        "chunk_id": 4,
+        "name": "2021_marzo",
+        "rrf_score": 0.139,
+        "text_preview": "as permanecen bajas en perspectiva histórica. En lo interno, los datos de fines del 2020 y comienzos del 2021 evidencian un crecimiento de la economía superior al previsto en el IPoM de diciembre. El comercio continuó siendo el sect or que muestra la mayor recuperación, seguido por la industria. Aunque a un ritmo más lento, los servicios y la construcción también se recuperaron respecto de sus peores niveles de mediados del año. En el mercado laboral se observó un aumento de las horas trabajadas y del empleo, aunque su evolución va rezagada respecto de la actividad. La aplicación de mayores re"
+      },
+      {
+        "chunk_id": 3,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.131,
+        "text_preview": "mitad de marzo que se extenderá durante el segundo trimestre. El mercado ha ido recortando sus proyecciones d e crecimiento para este año y las estimaciones más recientes apuntan a una caída anual. El Gobierno ha anunciado un importante paquete de estímulo al que se suman la reducción de la TPM y las medidas adoptadas por el Banco para facilitar el acceso al crédi to para personas y empresas. El mercado financiero local se ha alineado con estos desarrollos. Así, se han observado importantes correcciones en el IPSA y el tipo de cambio, mientras la liquidez y las"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.127,
+        "text_preview": "<s> Martes 31 de marzo de 2020 Reunión de Política Monetaria – marzo 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó reducir la tasa de interés de política monetaria en 50 puntos base, hasta 0,50%. La decisión fue adoptada por la unanimidad de sus miembros. El escenario externo ha empeorado significativamente tras la rápida expansión global del Covid -19. Las medidas de control sanitario aplicadas en los distintos países han provocado importantes disrupciones de oferta y demanda, cuyos efectos ya se están observando. La incertidumbre sobre la magnitud"
+      }
+    ],
+    "confirmed_related_chunks": [
+      {
+        "chunk_id": 5,
+        "name": "2021_marzo",
+        "rrf_score": 0.25,
+        "text_preview": "aplicación de mayores restricciones sanitarias afectará el desempeño de la economía en lo inmediato. Sin embargo, su efecto será menor al observado previamente, pues las empresas han ido adaptándose para operar en estas condiciones y el Gobierno ha propuesto nuevas medidas de apoyo a los hogares. Con todo, las perspecti vas de crecimiento para el 2021 han aumentado respecto de lo previsto a fines del año pasado de la mano del mayor punto de partida, el avance del proceso de vacunación y el mejoramiento de las condiciones externas. La inflación total ha continuado en torn o a 3% anual, con vaiv"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2021_marzo",
+        "rrf_score": 0.207,
+        "text_preview": "<s> Martes 30 de marzo de 2021 Reunión de Política Monetaria – marzo 2021 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó mantener la tasa de interés de política monetaria en 0,50%. Asimismo, no realizó cambios en las medidas no convencionales de apoyo a la liquidez y el crédito. La decisión fue adoptada por la unanimidad de sus miembros. En el plano externo, el cierre del 2020 mostró indicadores por sobre lo previsto, probablemente asociado a una mejor adaptación de la economía mundial a la pandemia, en un contexto en que la situación sanitaria es comple"
+      },
+      {
+        "chunk_id": 0,
+        "name": "2020_junio",
+        "rrf_score": 0.175,
+        "text_preview": "<s> Martes 16 de junio de 2020 Reunión de Política Monetaria – junio 2020 En su Reunión de Política Monetaria, el Consejo del Banco Central de Chile acordó, por unanimidad de sus miembros, mantener la tasa de interés de política monetaria en 0,50%. Asimismo, acordó ampliar las medidas no convencionales de apoyo a la liquidez y el crédito. Los efectos de la pandemia de Covid -19 se han seguido prolongando e intensificando, en particular por la necesidad de decretar cuarentenas e n comunas del país que abarcan a casi la mitad de la población nacional"
+      },
+      {
+        "chunk_id": 1,
+        "name": "2021_marzo",
+        "rrf_score": 0.167,
+        "text_preview": "que la situación sanitaria es compleja en algunas regiones y el proceso de vacunación sigue avanzado a velocidades dispares entre países. Los estímulos monetarios y fiscales cont inúan siendo muy importantes. Destaca a este respecto, el paquete fiscal aprobado en EE.UU. hace unas se manas sobre el que se aprecia alguna preocupación por su magnitud y potencial efecto en la inflación. Los precios de las materias primas han aumentado, incluido el del cobre. En este contexto, el escenario externo ha mejorado para Chile, por las mejores pe rspectivas para los principales socios comerciales"
+      },
+      {
+        "chunk_id": 6,
+        "name": "2020_marzo_a",
+        "rrf_score": 0.167,
+        "text_preview": "Cuarto, se extenderá el plazo del programa de venta de divisas hasta el 9 de enero de 2021. Los detalles operacionales y las fechas específicas de la puesta en marcha de estas medidas serán dados a conocer en los próximos días. El Consejo estima que este conjunto de medidas facilitará el ajuste de la economía al nuevo escenario que enfrenta, mitigando su impacto en hogares y empresas. Futuros cambios en la política monetaria o en las medidas adicionales dependerán de la evolución del panorama macroeconómico, el adecuado funcionamiento de los mercados financieros y el cumplimiento de los objeti"
+      },
+      {
+        "chunk_id": 2,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.153,
+        "text_preview": "ias y fiscales han puesto en marcha cuantiosos planes de estímulo para hacer frente a estos deterioros, lo que ha atenuado la r eacción de los mercados en lo más reciente. Si bien los indicadores de actividad de enero y febrero dieron cuenta de una recuperación más rápida que la prevista en el IPoM de diciembre, el brusco cambio en el escenario macroeconómico que está provocando e l Covid-19, incluida la propagación de la pandemia a Chile, lleva a estimar que la economía comenzó un proceso de contracción severa en la segunda mitad de marzo que se extende"
+      },
+      {
+        "chunk_id": 11,
+        "name": "2020_junio",
+        "rrf_score": 0.142,
+        "text_preview": "seguirá evaluando opciones para intensificar d icho impulso y apoyar la estabilidad financiera, a través de instrumentos no convencionales. El Informe de Política Monetaria de junio, que contiene las proyecciones y análisis que sustentan estas decisiones del Consejo, se publicará mañana miércoles 17 d e junio a las 8:30 horas.</s>"
+      }
+    ]
+  }
+]
