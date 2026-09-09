@@ -1,4 +1,5 @@
 import json
+import pandas as pd
 import numpy as np
 from lib.retrieve import retrieve_chunks
 from lib.retrieve import hybrid_rank
@@ -44,44 +45,56 @@ def build_candidate_review(embedder, gold_queries, corpus_embedded, bm25, key_to
 
     return output
 
-def evaluate_retrieval(embedder, gold_queries, corpus_embedded, bm25, key_to_idx, threshold, k, k_rrf):
-    precisions, recalls, rrs = [], [], []
+def evaluate_retrieval(embedder, gold_queries, corpus_embedded, bm25, key_to_idx, params, config,use_date_filter=True):
+
+    k=params["k"]
+    threshold = params["threshold"]
+    k_rrf = params["k_rrf"]
+    rerank_n = params["rerank_n"]
+    abstained, precisions, recalls, rrs = [], {}, {}, {}
 
     
+    rows = []
+
 
     for query in gold_queries:
-        if len(query['confirmed_related_chunks']) < 1:
-            #if no gold responses because all queries are irrelevant, metrics lists should contain 0s, so that their length isn't 0 and average doesn't give divide by zero error
-            precisions.append(0.0)
-            recalls.append(0.0)
-            rrs.append(0.0)
-            continue
-        
         gold = gold_ids(query)
-        # print("gold", gold)
-        retrieved = retrieved_ids(embedder, query["query"], query["query_es"],corpus_embedded, bm25, key_to_idx, threshold=threshold, k=k, k_rrf=k_rrf)
-        # print("retrieved", retrieved)
 
+        
+        retrieved = retrieved_ids(embedder, query["query"], query["query_es"],corpus_embedded, bm25, key_to_idx, threshold=threshold, k=k, k_rrf=k_rrf, rerank_n=rerank_n, config=config, use_date_filter=use_date_filter)
+        if not gold:
+            abstained.append(len(retrieved) == 0)
+            continue
 
-
+        difficulty = query["difficulty"]
         p = precision_at_k(retrieved, gold, k)
         rec = recall_at_k(retrieved, gold, k)
         rr = reciprocal_rank(retrieved, gold)
 
-        precisions.append(p)
+        if difficulty == 'irrelevant':
+            continue
+
+        precisions.setdefault(difficulty,[]).append(p)
         if rec is not None:
-            recalls.append(rec)
+            recalls.setdefault(difficulty,[]).append(rec)
         if rr is not None:
-            rrs.append(rr)
+            rrs.setdefault(difficulty,[]).append(rr)
 
-        print(f"{query['query'][:60]:60} | P@{k}={p:.2f}  R@{k}={'N/A' if rec is None else f'{rec:.2f}'}  RR={'N/A' if rr is None else f'{rr:.2f}'}")
+        
 
+    for d in ["easy", "medium", "hard"]:
+        if d not in precisions:
+            continue
+        rows.append({
+            "config": config, "tier": d,
+            f"P@{k}": sum(precisions[d]) / len(precisions[d]),
+            f"R@{k}": sum(recalls[d]) / len(recalls[d]),
+            "MRR":    sum(rrs[d]) / len(rrs[d]),
+        })
 
-    print(f"\nMean Precision@{k}: {sum(precisions)/len(precisions):.3f}")
-    print(f"Mean Recall@{k}:    {sum(recalls)/len(recalls):.3f}")
-    print(f"MRR:                {sum(rrs)/len(rrs):.3f}")
-
-    return precisions, recalls, rrs
+    if abstained:
+        print(f"Abstention accuracy: {sum(abstained)}/{len(abstained)}")
+    return pd.DataFrame(rows)
 
 def find_candidates_in_comunicado(embedder, query, query_es, expected_comunicados, corpus_embedded, bm25, key_to_idx, n_max, k_rrf):
     query_vec = embedder.encode(query, normalize_embeddings=True)
@@ -126,9 +139,9 @@ def gold_ids(r):
     return {f"{c['name']}_{c['chunk_id']}" for c in r["confirmed_related_chunks"]}
 
 
-def retrieved_ids(embedder, query, query_es, corpus_embedded, bm25, key_to_idx, threshold, k, k_rrf):
+def retrieved_ids(embedder, query, query_es, corpus_embedded, bm25, key_to_idx, threshold, k, k_rrf, rerank_n, config, use_date_filter):
     """Run the REAL, unrestricted retrieve() and return ranked chunk ids."""
-    hits = retrieve_chunks(embedder, query, query_es, corpus_embedded, bm25, key_to_idx,threshold=threshold, k=k, k_rrf=k_rrf)
+    hits = retrieve_chunks(embedder, query, query_es, corpus_embedded, bm25, key_to_idx,threshold=threshold, k=k, k_rrf=k_rrf, rerank_n = rerank_n, config=config, use_date_filter=use_date_filter)
     return [f"{c['name']}_{c['chunk_id']}" for c in hits]
 
 def precision_at_k(retrieved, gold, k):
@@ -155,3 +168,20 @@ def reciprocal_rank(retrieved, gold):
         if rid in gold:
             return 1.0/rank
     return 0.0
+
+def display_results(k, precisions, recalls, rrs):
+    rows = []
+    for d in ["easy", "medium", "hard"]:
+        if d not in precisions:
+            continue
+        rows.append({
+            "tier":      d,
+            "n":         len(precisions[d]),
+            f"P@{k}":    sum(precisions[d]) / len(precisions[d]),
+            f"R@{k}":    sum(recalls[d]) / len(recalls[d]) if recalls.get(d) else None,
+            "MRR":       sum(rrs[d]) / len(rrs[d]) if rrs.get(d) else None,
+        })
+
+    results = pd.DataFrame(rows).set_index("tier").round(3)
+    print(results)
+    return results

@@ -25,7 +25,7 @@
   },
   {
     "query": "What was the policy interest rate in March 2016?",
-    "query_es": "\u00bfCu\u00e1l fue la tasa de inter\u00e9s de pol\u00edtica monetaria en marzo de 2016?",
+    "query_es": "\u00bfCu\u00e1l era la tasa de inter\u00e9s de pol\u00edtica monetaria en marzo de 2016?",
     "difficulty": "easy",
     "expected_comunicados": [
       "2016_marzo"
@@ -141,7 +141,7 @@
   },
   {
     "query": "What was the Council's reasoning for raising rates in January 2022?",
-    "query_es": "\u00bfCu\u00e1l fue el razonamiento del Consejo para subir las tasas en enero de 2022?",
+    "query_es": "\u00bfCu\u00e1l fue el razonamiento del Consejo para aumentar las tasas en enero de 2022?",
     "difficulty": "medium",
     "expected_comunicados": [
       "2022_enero"
@@ -156,14 +156,14 @@
       {
         "chunk_id": 4,
         "name": "2022_enero",
-        "rrf_score": 0.258,
+        "rrf_score": 0.267,
         "text_preview": "ci\u00f3n efectiva y a expectativas de tasa de pol\u00edtica monetaria m\u00e1s e levadas. De todas formas, los niveles de incertidumbre siguen siendo elevados en comparaci\u00f3n hist\u00f3rica y las tasas de inter\u00e9s de largo plazo mantienen un diferencial relevante respecto de sus pares externos. En el agregado, los indicadores de actividad y d emanda son coherentes con la parte alta del rango de proyecci\u00f3n para el 2021 considerado en el IPoM de diciembre. En noviembre, la actividad aument\u00f3 14,3% anual \u20140,3% mensual para la serie desestacionalizada\u2014, destacando la contribuci\u00f3n de las actividades"
       },
       {
-        "chunk_id": 3,
+        "chunk_id": 8,
         "name": "2022_enero",
-        "rrf_score": 0.243,
-        "text_preview": "factores externos como int ernos, aunque con predominio de estos \u00faltimos, posiblemente asociado a una disminuci\u00f3n de la incertidumbre interna. Desde la Reuni\u00f3n previa, el peso se apreci\u00f3 cerca de 5%, la bolsa subi\u00f3 en torno a 5%, las tasas de inter\u00e9s de largo plazo, aunque con vaive nes, se ubican en niveles similares y el riesgo pa\u00eds (CDS) retrocedi\u00f3 cerca de 10 puntos base (pb). Por otro lado, las tasas de inter\u00e9s de corto plazo subieron, en respuesta a la mayor inflaci\u00f3n efectiva y a expectativas de tasa"
+        "rrf_score": 0.25,
+        "text_preview": "la actividad y de la inflaci\u00f3n se ubica algo por encima de lo previsto en el IPoM de diciembre y las presiones inflacionarias derivadas del escenario internacional han aumentado. La decisi\u00f3n del Consejo es coherente con una trayectoria de pol\u00edtica monetaria que, en el corto plazo, se ubicar\u00eda en torno al borde superior del corredor de tasa considerado en el IPoM pasado. Una nueva evaluaci\u00f3n de este se realizar\u00e1 en el pr\u00f3ximo IPoM.</s>"
       }
     ],
     "confirmed_related_chunks": []
@@ -933,7 +933,7 @@
   },
   {
     "query": "What non-conventional pandemic support measures were introduced, then later withdrawn or maintained, across 2020 and 2021?",
-    "query_es": "\u00bfQu\u00e9 medidas de apoyo no convencionales durante la pandemia fueron introducidas y posteriormente retiradas o mantenidas a lo largo de 2020 y 2021?",
+    "query_es": "\u00bfQu\u00e9 medidas de apoyo pand\u00e9mico no convencionales fueron introducidas y posteriormente retiradas o mantenidas durante 2020 y 2021?",
     "difficulty": "hard",
     "expected_comunicados": [
       "2020_marzo_a",
@@ -951,7 +951,7 @@
       {
         "chunk_id": 2,
         "name": "2020_junio",
-        "rrf_score": 0.238,
+        "rrf_score": 0.214,
         "text_preview": "las expectativas privadas de crecimiento durante este a\u00f1o se han corregido a la baja. En este contexto, el reciente Plan de Emergencia acordado po r el Gobierno y la Comisi\u00f3n de Hacienda ampliada ser\u00e1 un importante aporte para mitigar los negativos efectos econ\u00f3micos de la pandemia, tanto por las medidas consideradas como por su perspectiva de mediano plazo. En el escenario externo destaca la flexib ilizaci\u00f3n de las medidas de confinamiento en varios pa\u00edses tras la ca\u00edda en sus \u00edndices de contagio y muertes. Esta reapertura gradual ha llevado a una leve mejora de ciertos indicadores de corto p"
       },
       {
@@ -969,7 +969,7 @@
       {
         "chunk_id": 1,
         "name": "2021_marzo",
-        "rrf_score": 0.167,
+        "rrf_score": 0.168,
         "text_preview": "que la situaci\u00f3n sanitaria es compleja en algunas regiones y el proceso de vacunaci\u00f3n sigue avanzado a velocidades dispares entre pa\u00edses. Los est\u00edmulos monetarios y fiscales cont in\u00faan siendo muy importantes. Destaca a este respecto, el paquete fiscal aprobado en EE.UU. hace unas se manas sobre el que se aprecia alguna preocupaci\u00f3n por su magnitud y potencial efecto en la inflaci\u00f3n. Los precios de las materias primas han aumentado, incluido el del cobre. En este contexto, el escenario externo ha mejorado para Chile, por las mejores pe rspectivas para los principales socios comerciales"
       },
       {
@@ -979,22 +979,16 @@
         "text_preview": "Cuarto, se extender\u00e1 el plazo del programa de venta de divisas hasta el 9 de enero de 2021. Los detalles operacionales y las fechas espec\u00edficas de la puesta en marcha de estas medidas ser\u00e1n dados a conocer en los pr\u00f3ximos d\u00edas. El Consejo estima que este conjunto de medidas facilitar\u00e1 el ajuste de la econom\u00eda al nuevo escenario que enfrenta, mitigando su impacto en hogares y empresas. Futuros cambios en la pol\u00edtica monetaria o en las medidas adicionales depender\u00e1n de la evoluci\u00f3n del panorama macroecon\u00f3mico, el adecuado funcionamiento de los mercados financieros y el cumplimiento de los objeti"
       },
       {
-        "chunk_id": 1,
-        "name": "2020_marzo_b",
-        "rrf_score": 0.167,
-        "text_preview": "incertidumbre sobre la magnitud del impacto econ\u00f3mico de la pandemia ha impulsado un aumento sustantivo de la aversi\u00f3n al riesgo en los mercados. Ello se ha visto reflejado e n una elevada demanda por activos seguros y de corta duraci\u00f3n, una escalada de los indicadores de volatilidad y de riesgo, ca\u00eddas generalizadas de las bolsas, salidas de capitales desde las econom\u00edas emergentes, una depreciaci\u00f3n transversal de las monedas frente al d\u00f3lar estadounidense y un fuerte descenso del precio de las materias primas, incluido el cobre. Las autoridades monetarias y fiscales han puesto en"
-      },
-      {
-        "chunk_id": 2,
-        "name": "2020_marzo_b",
-        "rrf_score": 0.153,
-        "text_preview": "ias y fiscales han puesto en marcha cuantiosos planes de est\u00edmulo para hacer frente a estos deterioros, lo que ha atenuado la r eacci\u00f3n de los mercados en lo m\u00e1s reciente. Si bien los indicadores de actividad de enero y febrero dieron cuenta de una recuperaci\u00f3n m\u00e1s r\u00e1pida que la prevista en el IPoM de diciembre, el brusco cambio en el escenario macroecon\u00f3mico que est\u00e1 provocando e l Covid-19, incluida la propagaci\u00f3n de la pandemia a Chile, lleva a estimar que la econom\u00eda comenz\u00f3 un proceso de contracci\u00f3n severa en la segunda mitad de marzo que se extende"
-      },
-      {
         "chunk_id": 11,
         "name": "2020_junio",
         "rrf_score": 0.142,
         "text_preview": "seguir\u00e1 evaluando opciones para intensificar d icho impulso y apoyar la estabilidad financiera, a trav\u00e9s de instrumentos no convencionales. El Informe de Pol\u00edtica Monetaria de junio, que contiene las proyecciones y an\u00e1lisis que sustentan estas decisiones del Consejo, se publicar\u00e1 ma\u00f1ana mi\u00e9rcoles 17 d e junio a las 8:30 horas.</s>"
+      },
+      {
+        "chunk_id": 1,
+        "name": "2020_marzo_b",
+        "rrf_score": 0.139,
+        "text_preview": "incertidumbre sobre la magnitud del impacto econ\u00f3mico de la pandemia ha impulsado un aumento sustantivo de la aversi\u00f3n al riesgo en los mercados. Ello se ha visto reflejado e n una elevada demanda por activos seguros y de corta duraci\u00f3n, una escalada de los indicadores de volatilidad y de riesgo, ca\u00eddas generalizadas de las bolsas, salidas de capitales desde las econom\u00edas emergentes, una depreciaci\u00f3n transversal de las monedas frente al d\u00f3lar estadounidense y un fuerte descenso del precio de las materias primas, incluido el cobre. Las autoridades monetarias y fiscales han puesto en"
       },
       {
         "chunk_id": 4,
@@ -1005,14 +999,20 @@
       {
         "chunk_id": 3,
         "name": "2020_marzo_b",
-        "rrf_score": 0.131,
+        "rrf_score": 0.134,
         "text_preview": "mitad de marzo que se extender\u00e1 durante el segundo trimestre. El mercado ha ido recortando sus proyecciones d e crecimiento para este a\u00f1o y las estimaciones m\u00e1s recientes apuntan a una ca\u00edda anual. El Gobierno ha anunciado un importante paquete de est\u00edmulo al que se suman la reducci\u00f3n de la TPM y las medidas adoptadas por el Banco para facilitar el acceso al cr\u00e9di to para personas y empresas. El mercado financiero local se ha alineado con estos desarrollos. As\u00ed, se han observado importantes correcciones en el IPSA y el tipo de cambio, mientras la liquidez y las"
       },
       {
-        "chunk_id": 0,
+        "chunk_id": 8,
+        "name": "2021_marzo",
+        "rrf_score": 0.13,
+        "text_preview": "meta en el horizonte de pol\u00edtica requiere que la pol\u00edtica monetaria siga siendo altamente expansiva. Con esto, la TPM se mantendr\u00e1 en su m\u00ednimo de 0,5% hasta que la recup eraci\u00f3n de la econom\u00eda se afiance y se vaya propagando a los componentes del gasto m\u00e1s rezagados, lo que a\u00fan tomar\u00e1 varios trimestres. El Consejo reit era que futuros cambios en la pol\u00edtica monetaria depender\u00e1n de la evoluci\u00f3n del panorama macroecon\u00f3mico y sus implicancias para la evoluci\u00f3n de la inflaci\u00f3n. Las medidas no convencionales seguir\u00e1n operando en las condiciones vigentes, complementando la"
+      },
+      {
+        "chunk_id": 2,
         "name": "2020_marzo_b",
         "rrf_score": 0.127,
-        "text_preview": "<s> Martes 31 de marzo de 2020 Reuni\u00f3n de Pol\u00edtica Monetaria \u2013 marzo 2020 En su Reuni\u00f3n de Pol\u00edtica Monetaria, el Consejo del Banco Central de Chile acord\u00f3 reducir la tasa de inter\u00e9s de pol\u00edtica monetaria en 50 puntos base, hasta 0,50%. La decisi\u00f3n fue adoptada por la unanimidad de sus miembros. El escenario externo ha empeorado significativamente tras la r\u00e1pida expansi\u00f3n global del Covid -19. Las medidas de control sanitario aplicadas en los distintos pa\u00edses han provocado importantes disrupciones de oferta y demanda, cuyos efectos ya se est\u00e1n observando. La incertidumbre sobre la magnitud"
+        "text_preview": "ias y fiscales han puesto en marcha cuantiosos planes de est\u00edmulo para hacer frente a estos deterioros, lo que ha atenuado la r eacci\u00f3n de los mercados en lo m\u00e1s reciente. Si bien los indicadores de actividad de enero y febrero dieron cuenta de una recuperaci\u00f3n m\u00e1s r\u00e1pida que la prevista en el IPoM de diciembre, el brusco cambio en el escenario macroecon\u00f3mico que est\u00e1 provocando e l Covid-19, incluida la propagaci\u00f3n de la pandemia a Chile, lleva a estimar que la econom\u00eda comenz\u00f3 un proceso de contracci\u00f3n severa en la segunda mitad de marzo que se extende"
       }
     ],
     "confirmed_related_chunks": []

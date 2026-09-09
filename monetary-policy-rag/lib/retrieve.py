@@ -1,4 +1,6 @@
+import json
 import numpy as np
+import pandas as pd
 import re
 from itertools import product
 import textwrap
@@ -11,7 +13,11 @@ from nltk.stem.snowball import SnowballStemmer
 
 from lib.generate import generate_response
 
+from sentence_transformers import CrossEncoder
+
 import regex as re
+
+reranker = CrossEncoder('cross-encoder/mmarco-mMiniLMv2-L12-H384-v1')
 
 #create dict to map month names to integers
 MONTHS = {
@@ -32,8 +38,13 @@ pattern = rf"({meses_pattern})\s+de\s+(\d{{4}})"
 
 
 
-def retrieve_chunks(embedder, query, query_es, embeddings, bm25, key_to_idx, threshold, k, k_rrf, per_comunicado_n=3):
+def retrieve_chunks(embedder, query, query_es, embeddings, bm25, key_to_idx, threshold, k, k_rrf, rerank_n, config, use_date_filter=True, per_comunicado_n=5):
+    print("\n********* CONFIG: ",config, "*********\n")
     query_dates = parse_query_date(query)
+    if not query_dates:
+        import anthropic
+        client = anthropic.Anthropic()
+        query_dates = resolve_query_dates(client, query)
         
     #embed query
 
@@ -57,10 +68,12 @@ def retrieve_chunks(embedder, query, query_es, embeddings, bm25, key_to_idx, thr
         #calculate similarity of query with each comunicado
 
         #if filtered certain query dates, only calculate cos similarity for query dates
-        if len(query_dates) > 0:
-            date_match = any((comunicado_year, comunicado_month_num) == d for d in query_dates)
-            if not date_match:
-                continue   # this continue is on the OUTER loop — skips the whole comunicado
+
+        if use_date_filter == True:
+            if len(query_dates) > 0:
+                date_match = any((comunicado_year, comunicado_month_num) == d for d in query_dates)
+                if not date_match:
+                    continue   # this continue is on the OUTER loop — skips the whole comunicado
         
         
         cos_sim = np.dot(query_vec, emb)
@@ -80,27 +93,40 @@ def retrieve_chunks(embedder, query, query_es, embeddings, bm25, key_to_idx, thr
     #flatten grouped dict into list for hybrid rank 
 
     all_chunks = []
-    for name, chunks in grouped.items():
-        all_chunks.extend(chunks) #still pointing to dict in grouped
-
-
-    #pass list of chunks to get rrf score for each chunk, adds rrf to each chunk in the all_chunks, and thus grouped
-    hybrid_rank(all_chunks, query_es, bm25, key_to_idx, k_rrf=k_rrf)
-
     all_top_chunks = []
 
-    #for each comunicado in grouped, get the top 'per_comunicado_n'ranked by the rrf score
     for name, chunks in grouped.items():
-        top_n = sorted(chunks, key=lambda c: c['rrf'], reverse=True)[:per_comunicado_n]
+        all_chunks.extend(chunks) #still pointing to dict in grouped
+        top_n = sorted(chunks, key=lambda c: c['score'], reverse=True)[:per_comunicado_n]
         all_top_chunks.extend(top_n)
+    all_top_chunks = sorted(all_top_chunks, key=lambda c: c['score'], reverse=True)
 
-        # for c in all_top_chunks:
-        #     display_chunk(comunicado=c['comunicado'], chunk_id=c['chunk_id'], text=c['decoded'], score = c['score'])
-    #all_top_chunks contains the top 3 for each comunicado, now we can sort the whole list by chunk rrfs
-    all_top_chunks = sorted(all_top_chunks, key=lambda c: c['rrf'], reverse=True)
+    #pass list of chunks to get rrf score for each chunk, adds rrf to each chunk in the all_chunks, and thus grouped
+    if config in ["plus_hybrid","plus_rerank", "plus_rerank_blend"]:
+        hybrid_rank(all_chunks, query_es, bm25, key_to_idx, k_rrf=k_rrf)
 
-    #grab the highest rrf 'k'chunks
-    return all_top_chunks[:k]  
+        all_top_chunks = []
+
+        #for each comunicado in grouped, get the top 'per_comunicado_n'ranked by the rrf score
+        for name, chunks in grouped.items():
+            top_n = sorted(chunks, key=lambda c: c['rrf'], reverse=True)[:per_comunicado_n]
+            all_top_chunks.extend(top_n)
+            #all_top_chunks contains the top 3 for each comunicado, now we can sort the whole list by chunk rrfs
+        all_top_chunks = sorted(all_top_chunks, key=lambda c: c['rrf'], reverse=True)
+
+    #grab the highest 50 rrf 'k'chunks
+
+        if config == "plus_rerank":
+            return rerank(query_es, all_top_chunks[:rerank_n], k)
+
+
+        if config == "plus_rerank_blend":
+            # in retrieve_chunks, before the rerank call
+            return rerank_blend(query_es, all_top_chunks[:rerank_n], k, k_rrf)
+
+    return all_top_chunks[:k]
+
+    
 
 
         
@@ -140,17 +166,60 @@ def parse_query_date(query: str) -> list[tuple[int, int]]:
     pares = list(product(years, mes_nums))
     return pares
 
+def resolve_query_dates(client, query, corpus_range=(2016, 2026)):
+    """
+    LLM fallback for queries with temporal scope the regex can't parse
+    ('pandemic-era cuts', 'the last tightening cycle').
+    Returns list of (year, month) tuples, or [] if the query has no
+    temporal scope at all.
+    """
+    lo, hi = corpus_range
+    prompt = f"""The corpus is Banco Central de Chile monetary policy press releases, {lo}-{hi}.
+
+    Query: {query}
+
+    If the query refers to a time period — explicitly or implicitly — return the
+    year range it covers. Return ONLY JSON, no preamble:
+    {{"start_year": <int>, "end_year": <int>}}
+    If the query has no temporal scope, return {{"start_year": null, "end_year": null}}"""
+
+    response = client.messages.create(
+        model="claude-sonnet-4-6",
+        max_tokens=100,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    raw = response.content[0].text.strip()
+
+    try:
+        parsed = json.loads(raw)
+    except json.JSONDecodeError:
+        return []                      # malformed -> fall back to no filter
+
+    start, end = parsed.get("start_year"), parsed.get("end_year")
+    if start is None or end is None:
+        return []
+
+    # clamp to corpus range so a hallucinated 1998 can't produce an empty pool
+    start, end = max(start, lo), min(end, hi)
+    if start > end:
+        return []
+
+    years = range(start, end + 1)
+    return list(product(years, range(1, 13)))
+
 def hybrid_rank(candidates, query, bm25, key_to_idx, k_rrf=5):
     query_tokens = tokenize_stem(query.lower())
     bm25_scores = bm25.get_scores(query_tokens)
 
-    print(query, "\n")
     for c in candidates:
         key = c['name'] + "_" + str(c['chunk_id'])
         idx = key_to_idx[key]
         c['bm25_score'] = bm25_scores[idx]        
 
     sim_sort = sorted(candidates, key=lambda c:c['score'], reverse=True)
+
+    #store results for sim_sort
+
     bm25_sort = sorted(candidates, key=lambda c: c['bm25_score'], reverse=True)
 
     for i, c in enumerate(sim_sort, start=1):
@@ -168,6 +237,25 @@ def hybrid_rank(candidates, query, bm25, key_to_idx, k_rrf=5):
 
     return rrf_sort
 
+def rerank(query_es, candidates, top_k):
+    """ candiddates: list of chunk dicts. Returns top_k ordered by cross-encoder score"""
+    pairs = [(query_es, c['decoded']) for c in candidates]
+    scores = reranker.predict(pairs)
+    ranked = sorted(zip(candidates, scores), key = lambda x: x[1], reverse=True)
+    return [c for c, s in ranked[:top_k]]
+
+def rerank_blend(query_es, candidates, top_k, k_rrf):
+    pairs  = [(query_es, c['decoded']) for c in candidates]
+    scores = reranker.predict(pairs)
+
+    # rank by cross-encoder score, best = rank 1
+    order = sorted(range(len(candidates)), key=lambda i: scores[i], reverse=True)
+    for rank, i in enumerate(order, start=1):
+        candidates[i]['ce_rank']  = rank
+        candidates[i]['ce_score'] = float(scores[i])
+        candidates[i]['blended']  = candidates[i]['rrf'] + 1/(k_rrf + rank)
+
+    return sorted(candidates, key=lambda c: c['blended'], reverse=True)[:top_k]
 
 def tokenize_stem(text):
     stemmer = SnowballStemmer('spanish')
