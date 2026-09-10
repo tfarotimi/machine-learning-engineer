@@ -2,11 +2,9 @@
 
 ## The Problem
 
-The Banco Central de Chile conducts recurring meetings during which macroeconomic conditions of the economy are discussed and decisions are taken on the evolution of the Monetary Policy Rate. The project aims to configure a pipeline to query the corpus of communiqués in order to answer questions about monetary policy.
+The Banco Central de Chile conducts recurring meetings during which macroeconomic conditions of the economy are discussed and decisions are taken on the evolution of the Monetary Policy Rate. The project aims to configure a pipeline to query the corpus of press releases from Banco Central de Chile between the years 2016 and 2026 in order to answer questions about monetary policy.
 
-## Data
-
-The corpus consists of press releases from Banco Central de Chile between the years 2016 and 2026.
+## Methodology
 
 The process employed to build the pipeline involved the following:
 
