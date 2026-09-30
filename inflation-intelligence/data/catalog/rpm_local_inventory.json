@@ -1,0 +1,660 @@
+[
+  {
+    "path": "data/chile_banco_central/2016_abril.pdf",
+    "publication_date": "2016-04-12",
+    "pages": 1,
+    "text_characters": 1876,
+    "sha256": "37b15e83c7e5aff26691e8b4c056a21acd55f567462d8699d026da9d7482e86a"
+  },
+  {
+    "path": "data/chile_banco_central/2016_agosto.pdf",
+    "publication_date": "2016-08-11",
+    "pages": 1,
+    "text_characters": 1791,
+    "sha256": "cd9c9c412a9b6868fe9f228d9abad2c27d1d962056ee32880f0242bce2f8d803"
+  },
+  {
+    "path": "data/chile_banco_central/2016_diciembre.pdf",
+    "publication_date": "2016-12-13",
+    "pages": 1,
+    "text_characters": 2036,
+    "sha256": "cd84582fbe4188084ab77617b6b3f960242ee814becd43316f167e7a93264e63"
+  },
+  {
+    "path": "data/chile_banco_central/2016_enero.pdf",
+    "publication_date": "2016-01-14",
+    "pages": 1,
+    "text_characters": 1943,
+    "sha256": "39fb89dc8da223434d6781467d0256f631f06f67becb84e850d4dc371022ddb5"
+  },
+  {
+    "path": "data/chile_banco_central/2016_febrero.pdf",
+    "publication_date": "2016-02-11",
+    "pages": 1,
+    "text_characters": 1954,
+    "sha256": "21c86d9672bf49a0107987ffe5ae47c32593396e247067e31cd9a1191034792b"
+  },
+  {
+    "path": "data/chile_banco_central/2016_julio.pdf",
+    "publication_date": "2016-07-14",
+    "pages": 1,
+    "text_characters": 2044,
+    "sha256": "a07994d7de9e4d9d55f28cae10e7095f48b2b5599cb61139eff36e971f227f56"
+  },
+  {
+    "path": "data/chile_banco_central/2016_junio.pdf",
+    "publication_date": "2016-06-16",
+    "pages": 1,
+    "text_characters": 1938,
+    "sha256": "dbccda1333a1e78e33623c8bbaf46ce7a2aaee110d977d2e5032efb2a61262dc"
+  },
+  {
+    "path": "data/chile_banco_central/2016_marzo.pdf",
+    "publication_date": "2016-03-17",
+    "pages": 1,
+    "text_characters": 2039,
+    "sha256": "efc94c9a9b4c31791820ca682f29710e7be7737e9f0daacc23f3b3ed10bc3b2d"
+  },
+  {
+    "path": "data/chile_banco_central/2016_mayo.pdf",
+    "publication_date": "2016-05-17",
+    "pages": 1,
+    "text_characters": 1867,
+    "sha256": "d8ab371de705a901e8f6237f0762e03df7ff217cfc6860e71e7019c0e61de40c"
+  },
+  {
+    "path": "data/chile_banco_central/2016_noviembre.pdf",
+    "publication_date": "2016-11-17",
+    "pages": 1,
+    "text_characters": 1853,
+    "sha256": "d755e80e2cb8cc07e9f4d6b18ca9521e10e127f1fa9a42924deeaf5dc9869886"
+  },
+  {
+    "path": "data/chile_banco_central/2016_octubre.pdf",
+    "publication_date": "2016-10-18",
+    "pages": 1,
+    "text_characters": 1527,
+    "sha256": "a4a46b0fcc9c1cd01072bb62d258e55eace5c998f5c5d396d0cf566b6386c078"
+  },
+  {
+    "path": "data/chile_banco_central/2016_septiembre.pdf",
+    "publication_date": "2016-09-15",
+    "pages": 1,
+    "text_characters": 1716,
+    "sha256": "fcfcce46d12ea651475bbabfed8a26e9f6ffc1e237b9ee2a84233271db0e2bbc"
+  },
+  {
+    "path": "data/chile_banco_central/2017_abril.pdf",
+    "publication_date": "2017-04-13",
+    "pages": 1,
+    "text_characters": 1519,
+    "sha256": "873b7d1e4d192144b8f4407d0769796bf20f5b35b9104a11c550c564b49c373c"
+  },
+  {
+    "path": "data/chile_banco_central/2017_diciembre.pdf",
+    "publication_date": "2017-12-14",
+    "pages": 1,
+    "text_characters": 2129,
+    "sha256": "00ac4c782955ee0ba069f8a79c9cd12cbe32816344713839c5def12603161140"
+  },
+  {
+    "path": "data/chile_banco_central/2017_enero.pdf",
+    "publication_date": "2017-01-19",
+    "pages": 1,
+    "text_characters": 1912,
+    "sha256": "8b1aca5bc2121d1ff4f8477f2c2f54b910fc3b4ee5319cbc3ce87fae4adcb3f6"
+  },
+  {
+    "path": "data/chile_banco_central/2017_febrero.pdf",
+    "publication_date": "2017-02-14",
+    "pages": 1,
+    "text_characters": 1628,
+    "sha256": "48461ee1a96ae8647b4e7131295e7e8fb171687513e3126f548f59e9be069aa6"
+  },
+  {
+    "path": "data/chile_banco_central/2017_julio.pdf",
+    "publication_date": "2017-07-13",
+    "pages": 1,
+    "text_characters": 1712,
+    "sha256": "df5f215de4fef03902d14210241def5da9ba2739cc80577c0d16a0cfa0b2a9c5"
+  },
+  {
+    "path": "data/chile_banco_central/2017_junio.pdf",
+    "publication_date": "2017-06-15",
+    "pages": 1,
+    "text_characters": 1457,
+    "sha256": "4f7405e05de34a566ceeb6528d3cfe37f08e1b8eeb0e608ac546e1486cb36e47"
+  },
+  {
+    "path": "data/chile_banco_central/2017_marzo.pdf",
+    "publication_date": "2017-03-16",
+    "pages": 1,
+    "text_characters": 1685,
+    "sha256": "72b645b0af20a58a51453f34d183952e2f2336100c2018800098feb263f8b0ec"
+  },
+  {
+    "path": "data/chile_banco_central/2017_mayo.pdf",
+    "publication_date": "2017-05-18",
+    "pages": 1,
+    "text_characters": 1502,
+    "sha256": "2d412c2b6edc45f26d30a1ce8738f8a62a8a87bd87467aa0a3030d431f194dbd"
+  },
+  {
+    "path": "data/chile_banco_central/2017_noviembre.pdf",
+    "publication_date": "2017-11-14",
+    "pages": 1,
+    "text_characters": 1969,
+    "sha256": "240fa6bb8e64790de3f9a74dcd9969b6f8b9bb59e77140366b63d327ef238db6"
+  },
+  {
+    "path": "data/chile_banco_central/2017_octubre.pdf",
+    "publication_date": "2017-10-19",
+    "pages": 1,
+    "text_characters": 2039,
+    "sha256": "c79e5fcdea2de3d86de683c687ad545022d5fb2211b8bbc66d87aef5ee82c174"
+  },
+  {
+    "path": "data/chile_banco_central/2017_septiembre.pdf",
+    "publication_date": "2017-09-14",
+    "pages": 1,
+    "text_characters": 2068,
+    "sha256": "e32080e419b5c66c97e5aede307daa03d29cf588d6c2e4c91e280db9ea0421d3"
+  },
+  {
+    "path": "data/chile_banco_central/2018_diciembre.pdf",
+    "publication_date": "2018-12-04",
+    "pages": 2,
+    "text_characters": 4335,
+    "sha256": "cd69e15acb4bf9f8685768596223dbcb8bfb73e038a00e39b8477043d24f9c27"
+  },
+  {
+    "path": "data/chile_banco_central/2018_febrero.pdf",
+    "publication_date": "2018-02-01",
+    "pages": 2,
+    "text_characters": 6100,
+    "sha256": "1fa2b2eb382c532498fdc6e9ab3b09a652b01363c6e3352f9fe757a41f9b66b9"
+  },
+  {
+    "path": "data/chile_banco_central/2018_julio.pdf",
+    "publication_date": "2018-07-24",
+    "pages": 2,
+    "text_characters": 5267,
+    "sha256": "fee7244ffe457136a5d0284214122620af99ec6f4b229eb4d61b2b73704f60f4"
+  },
+  {
+    "path": "data/chile_banco_central/2018_junio.pdf",
+    "publication_date": "2018-06-13",
+    "pages": 2,
+    "text_characters": 5813,
+    "sha256": "753ca25302638da733a2f431ebb4d1dd0165d5f77bff79edd147b20fa6d9d137"
+  },
+  {
+    "path": "data/chile_banco_central/2018_marzo.pdf",
+    "publication_date": "2018-03-20",
+    "pages": 2,
+    "text_characters": 5991,
+    "sha256": "beb4da8f7110ac3b847413d724cec2a20dd04beae7967b6bd28a475da8ff6d37"
+  },
+  {
+    "path": "data/chile_banco_central/2018_mayo.pdf",
+    "publication_date": "2018-05-03",
+    "pages": 2,
+    "text_characters": 6305,
+    "sha256": "aa07e3ebda4cdafff2eebe72d54cca9d87088d8676175ab0d0655ac51100c28d"
+  },
+  {
+    "path": "data/chile_banco_central/2018_octubre.pdf",
+    "publication_date": "2018-10-18",
+    "pages": 2,
+    "text_characters": 5298,
+    "sha256": "ce235a78c135855174126ac0a3794ea32419890c9ec1d150a13ec61c74f523e1"
+  },
+  {
+    "path": "data/chile_banco_central/2018_septiembre.pdf",
+    "publication_date": "2018-09-04",
+    "pages": 2,
+    "text_characters": 4877,
+    "sha256": "bb8013110b44a059679f3f8c0233d99b9f4735f68fd70942353234e5694b637f"
+  },
+  {
+    "path": "data/chile_banco_central/2019_diciembre.pdf",
+    "publication_date": "2019-12-04",
+    "pages": 2,
+    "text_characters": 4548,
+    "sha256": "57681f79e69395c704cad6f625774747abce9f5b0a67334b8a9209f03d858ae7"
+  },
+  {
+    "path": "data/chile_banco_central/2019_enero.pdf",
+    "publication_date": "2019-01-30",
+    "pages": 2,
+    "text_characters": 5154,
+    "sha256": "b9af7c645c725bc627f1f1fa8710e56e744fe910f588104e230c7ffd21d9083d"
+  },
+  {
+    "path": "data/chile_banco_central/2019_julio.pdf",
+    "publication_date": "2019-07-18",
+    "pages": 2,
+    "text_characters": 5693,
+    "sha256": "661bdfad5dafa77631ad8a5c6a022b9d68690e692e690e9d6a4ebd857ab4746f"
+  },
+  {
+    "path": "data/chile_banco_central/2019_junio.pdf",
+    "publication_date": "2019-06-07",
+    "pages": 2,
+    "text_characters": 5964,
+    "sha256": "52d613b3efb8dba40e689679a91ad6606636ed1b80cff55ed234df1d9fa83beb"
+  },
+  {
+    "path": "data/chile_banco_central/2019_marzo.pdf",
+    "publication_date": "2019-03-29",
+    "pages": 2,
+    "text_characters": 4865,
+    "sha256": "8285f8769a1074caba307333e1705cce371328f32b3165991954429ab1511d49"
+  },
+  {
+    "path": "data/chile_banco_central/2019_mayo.pdf",
+    "publication_date": "2019-05-09",
+    "pages": 2,
+    "text_characters": 4454,
+    "sha256": "573abcadab65e1e2b45ab68bc68f94009a3334b4d1e8f220470a31eebc7c9086"
+  },
+  {
+    "path": "data/chile_banco_central/2019_octubre.pdf",
+    "publication_date": "2019-10-23",
+    "pages": 2,
+    "text_characters": 3331,
+    "sha256": "8ade7d3a79d9097792bf994b3ffe2d9d97de9997dbf37f8453e9b58b2d624ace"
+  },
+  {
+    "path": "data/chile_banco_central/2019_septiembre.pdf",
+    "publication_date": "2019-09-03",
+    "pages": 2,
+    "text_characters": 4873,
+    "sha256": "fab0c4f396d5e20b3dba72a1a82a93626adc61e063b47ed59f34c758602bac78"
+  },
+  {
+    "path": "data/chile_banco_central/2020_diciembre.pdf",
+    "publication_date": "2020-12-07",
+    "pages": 2,
+    "text_characters": 6391,
+    "sha256": "fe08886e9ee4cbaed9f149a8525baf19f343c1a051041f5a1727d44131a43b6b"
+  },
+  {
+    "path": "data/chile_banco_central/2020_enero.pdf",
+    "publication_date": "2020-01-29",
+    "pages": 2,
+    "text_characters": 4644,
+    "sha256": "ff8da1cd087fc5a40c056db6c80fe0dcfba5aaf5131cb48343d4704f23aee3dc"
+  },
+  {
+    "path": "data/chile_banco_central/2020_julio.pdf",
+    "publication_date": "2020-07-15",
+    "pages": 2,
+    "text_characters": 6246,
+    "sha256": "97a46a87758398ebab1347fadcc48a66ca51af816eb41bafc44aec9168c0f3de"
+  },
+  {
+    "path": "data/chile_banco_central/2020_junio.pdf",
+    "publication_date": "2020-06-16",
+    "pages": 2,
+    "text_characters": 6904,
+    "sha256": "01bc7844064dbe76987dd3f78a8ba2fd25e32f419a9b2e399841ae00df28b4bb"
+  },
+  {
+    "path": "data/chile_banco_central/2020_marzo_a.pdf",
+    "publication_date": "2020-03-16",
+    "pages": 2,
+    "text_characters": 4494,
+    "sha256": "1e77ad29947b7498e7d51fa9102d0f09a8a6b206cd74c38f0976abf687e7c64d"
+  },
+  {
+    "path": "data/chile_banco_central/2020_marzo_b.pdf",
+    "publication_date": "2020-03-31",
+    "pages": 2,
+    "text_characters": 5180,
+    "sha256": "87f7b734e63e165547d2a84a53fb4568e8f712bda711f25a10e6620e1a5d5adc"
+  },
+  {
+    "path": "data/chile_banco_central/2020_mayo.pdf",
+    "publication_date": "2020-05-06",
+    "pages": 2,
+    "text_characters": 6470,
+    "sha256": "22752460d8a785cf004e2b2db26088e19fcbe46bba1bada26d37a9edf1ccc286"
+  },
+  {
+    "path": "data/chile_banco_central/2020_octubre.pdf",
+    "publication_date": "2020-10-15",
+    "pages": 2,
+    "text_characters": 5569,
+    "sha256": "553fe52cc6f4952db37fb0c3f13408f07d38c142b7fc7a2f10fc692fefdb84ca"
+  },
+  {
+    "path": "data/chile_banco_central/2020_septiembre.pdf",
+    "publication_date": "2020-09-01",
+    "pages": 2,
+    "text_characters": 5443,
+    "sha256": "8257309fb9d8d55ff06155dfcb7721f2e2e46ccfeffa65bda983e3da3689b412"
+  },
+  {
+    "path": "data/chile_banco_central/2021_agosto.pdf",
+    "publication_date": "2021-08-31",
+    "pages": 2,
+    "text_characters": 6078,
+    "sha256": "0864acdb6b3b1f46b69124f6c2aa2d039bb46534a30be8125596686f06aa7bca"
+  },
+  {
+    "path": "data/chile_banco_central/2021_diciembre.pdf",
+    "publication_date": "2021-12-14",
+    "pages": 2,
+    "text_characters": 5152,
+    "sha256": "61474757e56a4bbcf979dd3c8fed516a406a8f05274c8d3f10d6e01dc415a003"
+  },
+  {
+    "path": "data/chile_banco_central/2021_enero.pdf",
+    "publication_date": "2021-01-27",
+    "pages": 2,
+    "text_characters": 5848,
+    "sha256": "ebed7dd9bba90823e0db4d40da7daaf3791675f20dc30ef8d6cc67bbe5eedf8c"
+  },
+  {
+    "path": "data/chile_banco_central/2021_julio.pdf",
+    "publication_date": "2021-07-14",
+    "pages": 2,
+    "text_characters": 7039,
+    "sha256": "182ca301acb65b4aa6ac79255317e30487fc3a66d36603d0c28f6e6a8d688638"
+  },
+  {
+    "path": "data/chile_banco_central/2021_junio.pdf",
+    "publication_date": "2021-06-08",
+    "pages": 2,
+    "text_characters": 5552,
+    "sha256": "b2d68a6cd259d7bec5f6d02d7491c2f1cc887c51dda14523f3322c185b7824cc"
+  },
+  {
+    "path": "data/chile_banco_central/2021_marzo.pdf",
+    "publication_date": "2021-03-30",
+    "pages": 2,
+    "text_characters": 5668,
+    "sha256": "34d36e491b148e073950aacf100a4e43ede442ba73f98b8537bed55f9c85edf6"
+  },
+  {
+    "path": "data/chile_banco_central/2021_mayo.pdf",
+    "publication_date": "2021-05-13",
+    "pages": 2,
+    "text_characters": 5704,
+    "sha256": "179ffb23bc52f43ea54eb3646b2d9703c8fe0e8551abba64b532fda22ca88b21"
+  },
+  {
+    "path": "data/chile_banco_central/2021_octubre.pdf",
+    "publication_date": "2021-10-13",
+    "pages": 3,
+    "text_characters": 7213,
+    "sha256": "815620aa20cfa844f8ee49599e8ce5e0bfa8f8b565636d23affa5ff9e3f49b1f"
+  },
+  {
+    "path": "data/chile_banco_central/2022_diciembre.pdf",
+    "publication_date": "2022-12-06",
+    "pages": 2,
+    "text_characters": 3827,
+    "sha256": "5f5e3c4012c18bfee0942fa72f62aa2088d2349798e48563e31d4048c8446d2f"
+  },
+  {
+    "path": "data/chile_banco_central/2022_enero.pdf",
+    "publication_date": "2022-01-26",
+    "pages": 2,
+    "text_characters": 4997,
+    "sha256": "45a5c573796373fa3146ab2d3b21263ecb6594dd4a68ef6a8cfe26394560a569"
+  },
+  {
+    "path": "data/chile_banco_central/2022_julio.pdf",
+    "publication_date": "2022-07-13",
+    "pages": 2,
+    "text_characters": 4874,
+    "sha256": "8db2ab40248f17f7e704a3b0100959b6aafbc16abdee8955e13a17ed2b0231d2"
+  },
+  {
+    "path": "data/chile_banco_central/2022_junio.pdf",
+    "publication_date": "2022-06-07",
+    "pages": 2,
+    "text_characters": 4406,
+    "sha256": "9e2e8eb72ac8542b7f6af88452cee1d176114079e027fbc3f23272b988854d86"
+  },
+  {
+    "path": "data/chile_banco_central/2022_marzo.pdf",
+    "publication_date": "2022-03-29",
+    "pages": 2,
+    "text_characters": 5210,
+    "sha256": "ada8f80d516553356ce34f23c9dc4ba21d61121dfa58804a918e867f0b89de85"
+  },
+  {
+    "path": "data/chile_banco_central/2022_mayo.pdf",
+    "publication_date": "2022-05-05",
+    "pages": 2,
+    "text_characters": 4525,
+    "sha256": "05d8c86acc82fb4a7fbfd48784cdff3a50791cc7566c8884ee0f5093f2e2c558"
+  },
+  {
+    "path": "data/chile_banco_central/2022_octubre.pdf",
+    "publication_date": "2022-10-12",
+    "pages": 2,
+    "text_characters": 3971,
+    "sha256": "ed84f49c9cc3b94be458dee0ae9347b21bb8e25af80eb974949e5c4273f25b2f"
+  },
+  {
+    "path": "data/chile_banco_central/2022_septiembre.pdf",
+    "publication_date": "2022-09-06",
+    "pages": 2,
+    "text_characters": 4417,
+    "sha256": "fdd29e5b2e41d59b7b935a965b8f7904bc5789b8cdbc301a8e53dd9941c10897"
+  },
+  {
+    "path": "data/chile_banco_central/2023_abril.pdf",
+    "publication_date": "2023-04-04",
+    "pages": 2,
+    "text_characters": 4764,
+    "sha256": "7036899b8e60d82f326f4dea94e39e9ff8fbaae643e98a308dcb839c402aa980"
+  },
+  {
+    "path": "data/chile_banco_central/2023_diciembre.pdf",
+    "publication_date": "2023-12-19",
+    "pages": 2,
+    "text_characters": 5382,
+    "sha256": "54ef6945ae31ff0cab2cd7daf11ebcc1b1bb3bcb2211b1351571d0fcb1f2d80f"
+  },
+  {
+    "path": "data/chile_banco_central/2023_enero.pdf",
+    "publication_date": "2023-01-26",
+    "pages": 2,
+    "text_characters": 3981,
+    "sha256": "ca07640c39763053fcb38ae0079219cbb5c9f328a6eedc0302eaf10560942a03"
+  },
+  {
+    "path": "data/chile_banco_central/2023_julio.pdf",
+    "publication_date": "2023-07-28",
+    "pages": 2,
+    "text_characters": 5062,
+    "sha256": "5b6d549b3c65b4df7172f0a2fb19a429027de457856396e726ac899839500305"
+  },
+  {
+    "path": "data/chile_banco_central/2023_junio.pdf",
+    "publication_date": "2023-06-19",
+    "pages": 2,
+    "text_characters": 4626,
+    "sha256": "f91c174c7ceba16cec03132d72773b70290db78c6e25ae847cd769639750d797"
+  },
+  {
+    "path": "data/chile_banco_central/2023_mayo.pdf",
+    "publication_date": "2023-05-12",
+    "pages": 2,
+    "text_characters": 3754,
+    "sha256": "5de6b15e55ac6dfef1f465a7c978a97b467402e72b092d4712275b0a21d45e8d"
+  },
+  {
+    "path": "data/chile_banco_central/2023_octubre.pdf",
+    "publication_date": "2023-10-26",
+    "pages": 2,
+    "text_characters": 4727,
+    "sha256": "a4dd7042fc35e543d86e844c0dda0d6a1dcdcefd6efe51eaf92f913cde695614"
+  },
+  {
+    "path": "data/chile_banco_central/2023_septiembre.pdf",
+    "publication_date": "2023-09-05",
+    "pages": 2,
+    "text_characters": 5137,
+    "sha256": "8d3ada2e13251b1e4254bda9b626f9a6b7bf0a079a868324804ad43aa7c98b42"
+  },
+  {
+    "path": "data/chile_banco_central/2024_abril.pdf",
+    "publication_date": "2024-04-02",
+    "pages": 2,
+    "text_characters": 5061,
+    "sha256": "3eb077796775d29352913b130f6af6438cd5bea523b83bab3d6bb75f87c40720"
+  },
+  {
+    "path": "data/chile_banco_central/2024_diciembre.pdf",
+    "publication_date": "2024-12-17",
+    "pages": 2,
+    "text_characters": 4969,
+    "sha256": "25401f4e01af8dad0bed25c7eb40307704c5f2d024f6b7007326248ec7a47fe9"
+  },
+  {
+    "path": "data/chile_banco_central/2024_enero.pdf",
+    "publication_date": "2024-01-31",
+    "pages": 2,
+    "text_characters": 4880,
+    "sha256": "dc41b0abc06ed3378b53ea0d79ef01528ee4a4a190eff76b1c9020df1b908549"
+  },
+  {
+    "path": "data/chile_banco_central/2024_julio.pdf",
+    "publication_date": "2024-07-31",
+    "pages": 2,
+    "text_characters": 4762,
+    "sha256": "5674130cf8394f6ce9d8826a905e17da01e254be99101a5a11d6996358b8b8bd"
+  },
+  {
+    "path": "data/chile_banco_central/2024_junio.pdf",
+    "publication_date": "2024-06-18",
+    "pages": 2,
+    "text_characters": 5655,
+    "sha256": "0ec4a517b4d11b15ed0faff1a6d3bd5e4075fcaf638c7945e8049e28c454e417"
+  },
+  {
+    "path": "data/chile_banco_central/2024_mayo.pdf",
+    "publication_date": "2024-05-23",
+    "pages": 2,
+    "text_characters": 4375,
+    "sha256": "e77e49809080b8176c9b46ce9e2f5cb02148eeeef9cf2e9b9954c5c579c7e333"
+  },
+  {
+    "path": "data/chile_banco_central/2024_octubre.pdf",
+    "publication_date": "2024-10-17",
+    "pages": 2,
+    "text_characters": 4384,
+    "sha256": "7bda46ff8da6a8081442875e997b9fe05222921aa18976e89aa96d767595fd46"
+  },
+  {
+    "path": "data/chile_banco_central/2024_septiembre.pdf",
+    "publication_date": "2024-09-03",
+    "pages": 2,
+    "text_characters": 4665,
+    "sha256": "e0fdbf1505d4a2c074edf7fe3178452ea9249e7573f1d3cce2f16110671814a5"
+  },
+  {
+    "path": "data/chile_banco_central/2025_abril.pdf",
+    "publication_date": "2025-04-29",
+    "pages": 2,
+    "text_characters": 4666,
+    "sha256": "4654070f32992255717a92803cc78d6ed9135789a6e0b40015d4b0d7f9e75cba"
+  },
+  {
+    "path": "data/chile_banco_central/2025_diciembre.pdf",
+    "publication_date": "2025-12-16",
+    "pages": 2,
+    "text_characters": 3559,
+    "sha256": "e75ee788f5e262b7e484c655a9d8b4363f25646af49701ab24b09d5ddd3ef64f"
+  },
+  {
+    "path": "data/chile_banco_central/2025_enero.pdf",
+    "publication_date": "2025-01-28",
+    "pages": 2,
+    "text_characters": 4776,
+    "sha256": "2ab42996572d4e4c497c3e4ea9c821703bf2ec8ab665d68a36e57a88d65c697f"
+  },
+  {
+    "path": "data/chile_banco_central/2025_julio.pdf",
+    "publication_date": "2025-07-29",
+    "pages": 2,
+    "text_characters": 4853,
+    "sha256": "47a274c366e2c69eefd19e14466d4f56de104b924d48cb49b03de3c0a92fb887"
+  },
+  {
+    "path": "data/chile_banco_central/2025_junio.pdf",
+    "publication_date": "2025-06-17",
+    "pages": 2,
+    "text_characters": 4333,
+    "sha256": "43464030ed20270346b9ae05be9d22836848a7579def77531ab93fba148803e3"
+  },
+  {
+    "path": "data/chile_banco_central/2025_marzo.pdf",
+    "publication_date": "2025-03-21",
+    "pages": 2,
+    "text_characters": 4812,
+    "sha256": "84d38552c66df52a4da1bec71f9bdfa5ccd959d69214830b5354ff48f63a37c0"
+  },
+  {
+    "path": "data/chile_banco_central/2025_octubre.pdf",
+    "publication_date": "2025-10-28",
+    "pages": 2,
+    "text_characters": 4475,
+    "sha256": "d40ec0cbfb8e28731f3a1e1cb7af5b9aefdf97d560e34a5a0c829404a27fa2d0"
+  },
+  {
+    "path": "data/chile_banco_central/2025_septiembre.pdf",
+    "publication_date": "2025-09-09",
+    "pages": 2,
+    "text_characters": 4253,
+    "sha256": "d996b984bf866b669dd1c764eca1b709485efcefb744f4be99bc626ff752c53a"
+  },
+  {
+    "path": "data/chile_banco_central/2026_abril.pdf",
+    "publication_date": "2026-04-28",
+    "pages": 2,
+    "text_characters": 4291,
+    "sha256": "e5831938c05ce727e9961934877f1ea32d16606bf3a5a3ad36c3583c19e58baf"
+  },
+  {
+    "path": "data/chile_banco_central/2026_enero.pdf",
+    "publication_date": "2026-01-27",
+    "pages": 2,
+    "text_characters": 3598,
+    "sha256": "e4ed9ee5cf9d83af0f1841bcce43ac0ec394eabe641cd3e6ccd51e9ebee3e430"
+  },
+  {
+    "path": "data/chile_banco_central/2026_julio.pdf",
+    "publication_date": "2026-07-28",
+    "pages": 2,
+    "text_characters": 4078,
+    "sha256": "cc89c2bd1e9fc6901c601519fbb08d76fd4c2d5a7d830d83966ab2e1c960bad9"
+  },
+  {
+    "path": "data/chile_banco_central/2026_junio.pdf",
+    "publication_date": "2026-06-16",
+    "pages": 2,
+    "text_characters": 4233,
+    "sha256": "6445e427373fc332ed095dca4a8423e3e4d66e967fe4e7efa3e254d46a1b21dd"
+  },
+  {
+    "path": "data/chile_banco_central/2026_marzo.pdf",
+    "publication_date": "2026-03-24",
+    "pages": 2,
+    "text_characters": 4607,
+    "sha256": "d1a4de89d5769eef0647251592a1968fd96c870443f43a13f693ce1d1c52c723"
+  },
+  {
+    "path": "data/chile_banco_central/2026_septiembre.pdf",
+    "publication_date": "2026-09-08",
+    "pages": 2,
+    "text_characters": 4668,
+    "sha256": "a7ffac6e4ec2153c5c87e08a48d7ea16f213546a9fdb01f8ff1a9cdf97a711bf"
+  }
+]

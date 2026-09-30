@@ -1,0 +1,101 @@
+[
+  {
+    "path": "data/raw/feasibility_2026-09-10/ipom/projections_2010_2028.xlsx",
+    "sheets": [
+      "Tabla"
+    ],
+    "sha256": "4460637ee3d79180e85fa98b50b5ebc9741015af87df856a8de7500eb0e3a318"
+  },
+  {
+    "path": "data/raw/feasibility_2026-09-10/surveys/eee_history_2026_09.xlsx",
+    "sheets": [
+      "Evolución"
+    ],
+    "sha256": "11834e6d5c1158d29bddf62e5806e293c5652ad2c99b1f78b866cb9adf26e09d"
+  },
+  {
+    "path": "data/raw/feasibility_2026-09-10/surveys/eee_microdata_2026_09.xlsx",
+    "sheets": [
+      "BASE",
+      "Diccionario"
+    ],
+    "sha256": "47b7365d02a8bf06e6fcfb3144bb6bda95ceb4e9d1b23ec2d3cfe0f68720a8b3"
+  },
+  {
+    "path": "data/raw/feasibility_2026-09-10/surveys/eee_results_2026_09.xlsx",
+    "sheets": [
+      "Resumen",
+      "Graf1",
+      "Graf2",
+      "Graf3",
+      "Graf4",
+      "Graf5",
+      "Graf6",
+      "Graf7",
+      "Graf8",
+      "Graf9",
+      "Graf10",
+      "Graf11",
+      "Graf12",
+      "Graf13",
+      "Graf14",
+      "Graf15",
+      "Graf16",
+      "Graf17",
+      "Graf18",
+      "Graf19",
+      "Graf20",
+      "Graf21",
+      "Graf22",
+      "Graf23",
+      "Graf24",
+      "Graf25",
+      "Graf26",
+      "Graf27",
+      "Graf28",
+      "Graf29",
+      "Graf30",
+      "Graf31",
+      "Graf32",
+      "Graf33",
+      "Graf34",
+      "Graf35",
+      "Graf36",
+      "Graf37",
+      "Graf38",
+      "Graf39"
+    ],
+    "sha256": "977d6d2ecd6f7830e1aefad6f04eb09261bd314cdeaac2cc2da1068fbc07236f"
+  },
+  {
+    "path": "data/raw/feasibility_2026-09-10/surveys/eof_results_2026_09.xlsx",
+    "sheets": [
+      "EOF Resultado",
+      "Distribución",
+      "EOF Evolución",
+      "Próx. IPC",
+      "IPC 1mes adelante",
+      "IPC 2meses adelante",
+      "Inflación 12meses adelante",
+      "Inflación 24meses adelante",
+      "Factores Inflación",
+      "Próx. RPM",
+      "1RPM adelante",
+      "2RPM adelante",
+      "3RPM adelante",
+      "4RPM adelante",
+      "RPM 12meses adelante",
+      "RPM 24meses adelante",
+      "Factores TPM",
+      "BTP5 14días adelante",
+      "BTP10 14días adelante",
+      "BTU5 14días adelante",
+      "BTU10 14días adelante",
+      "Factores Renta Fija",
+      "Tipo de Cambio 7días adelante",
+      "Tipo de Cambio 28días adelante",
+      "Factores Tipo de Cambio"
+    ],
+    "sha256": "fc4417f6e996a372bdb37b8d92702bb316a30c6a9f957bc5d2d92b1a43b157c4"
+  }
+]
