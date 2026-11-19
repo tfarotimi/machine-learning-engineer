@@ -1,6 +1,6 @@
 # Labeling codebook
 
-**Status:** draft — updated after the pilot (2026-11-17), not yet frozen
+**Status:** draft — updated after the pilot (2026-11-17) and after dev labeling (2026-11-19). Not yet frozen: the open decisions below must be settled first.
 **Frozen on:** _(date the test set was first labeled)_
 **Corpus:** BCCh RPM **minutes**, 2016–2026. Comunicados are out of scope for the gold set (possible out-of-domain check later).
 **Unit of analysis:** one sentence, read with the previous sentence as context
@@ -8,6 +8,27 @@
 
 Every sentence gets one **stance** and one **sentiment**.
 **Coupling rule:** sentiment is `na` **if and only if** stance is `na`.
+
+---
+
+## Open decisions — settle before labeling test
+
+These came up while labeling dev. Each needs a decision **by the annotator**, written as a rule in the section indicated, before test starts. The wording under "Draft" is a starting point only; rewrite, change or reject it. Once all are settled, delete this section and freeze the codebook.
+
+**D1. Financial asset prices and conditions (→ glossary, and T11 if foreign).**
+The glossary covers the exchange rate and market lending rates, but not equity prices, credit spreads, or the sovereign risk premium. The underlying logic of the existing market-rates entry is: looser financial conditions → more demand → hawkish; tighter → dovish. Complication: in a risk-off episode several of these move together and point in opposite directions (spreads widen → tighter → dovish; peso depreciates → hawkish; volatility → risk_highlighting).
+_Draft:_ Stock prices rising / spreads or the sovereign premium narrowing → looser conditions → hawkish lean; the reverse → dovish lean. A bare report of the move → neutral (T13). Label a direction only when the sentence states or clearly implies the consequence; if the sentence's point is volatility or uncertainty → risk_highlighting. When a sentence names effects in opposite directions, label the one that carries the point (T19).
+_Decision:_
+
+**D2. A sentence that only reports an option being ruled out (→ T7).**
+T7 covers sentences giving the case for or against an option. It does not say how to label a sentence whose whole content is that an option was discarded ("Several Board members ruled out this option"), with the option identified only through context (C1).
+_Question:_ Is ruling out an option an argument against that option's direction, a statement about the decision (T2, judged relative to the alternatives still on the table), or a procedural statement (neutral)?
+_Decision:_
+
+**D3. Decision and guidance in the same sentence (→ S2/S3).**
+S1 says to label by the main claim. When a sentence states this meeting's decision and also guidance about the future path ("keep the TPM unchanged and communicate that normalization would be more gradual"), it is not always obvious which is the main claim.
+_Draft:_ Label by the part that carries new information. A hold or a vote alone is S2 (backward); if the sentence adds guidance about future moves, the guidance is usually the new information → forward (S3).
+_Decision:_
 
 ---
 
@@ -150,7 +171,10 @@ _Example:_ Sobre la decisión de política monetaria, varios Consejeros coincidi
 
 ## Labeling procedure
 
-- Test is labeled **blind**, with this codebook frozen, before any prompt tuning. Train/dev may be pre-labeled and verified.
+- **Test** is labeled **blind**, with this codebook frozen, before any model is run on any split. Record the commit of the frozen codebook in `data/gold/README.md`.
+- **Dev** was labeled blind (decided 2026-11-18; originally it could be pre-labeled and verified). Every method is tuned on dev, so model-influenced dev labels would pull all methods toward the model's reading of this codebook.
+- **Train** was hand-labeled and then reviewed with Claude (see pilot log).
+- During blind labeling, questions about **rules in general** are fine; asking a model about a **specific sentence** is not. Hard cases are noted (`doc_id`, `sent_idx`) and discussed as rules afterwards.
 - Sessions of **≤ 50 sentences**, with breaks. After each session, look at the label distribution: a long streak of one label is a fatigue warning (the pilot had 31 consecutive `backward` labels, 12 of them wrong).
 - The CLI shows English; type `s` to see the Spanish.
 
@@ -161,6 +185,8 @@ _Example:_ Sobre la decisión de política monetaria, varios Consejeros coincidi
 - No intensity scale: "we are hiking now" and "easing is off the table" are both `hawkish`.
 - Labels are made from a machine translation; nuance can be lost (mitigated by `s`).
 - Single annotator; reliability measured by self-agreement only.
+- Train labels were reviewed with Claude, so they partly reflect annotator+Claude conventions; dev and test reflect the annotator alone.
+- Rare classes are thin: dev has 7 `confidence_building`, 5 `risk_highlighting` and 0 `na`. Per-class dev scores for these are noisy, and dev says nothing about `na`.
 
 ---
 
@@ -193,9 +219,34 @@ Pilot: 400 train stances and 50 train sentiments, 2026-11-16/17. Stance review c
 
 ---
 
+## Dev log
+
+Dev: 150 sentences, labeled blind 2026-11-19 in three sessions of 50 (sample is ordered by period: 2016–19, then 2020–21, then 2022–23). No review of individual labels. Fatigue check after each session: longest runs were 10 `backward` (stance) and 6 `hawkish` (sentiment), against 31 in the pilot.
+
+| Stance | n | Sentiment | n |
+|---|---|---|---|
+| backward | 89 | hawkish | 51 |
+| forward | 61 | neutral | 44 |
+| na | 0 | dovish | 43 |
+| | | confidence_building | 7 |
+| | | risk_highlighting | 5 |
+
+Batch-level sentiment swung with the period (dovish-heavy in 2016–19, hawkish-heavy in 2021), consistent with the policy cycle rather than drift.
+
+Corrections, both at the annotator's own request: `minutes_2017_07_13`/89 stance forward → backward (S2); `minutes_2022_07_13`/66 sentiment neutral → dovish. Hard cases raised: D1–D3 above.
+
+---
+
 ## Self-agreement check
 
 _Re-label a sample of the test set after all other labeling is complete, without looking at the first pass, and record Cohen's kappa here. This is the ceiling on what any model can achieve against these labels, and it belongs in the results._
+
+Procedure:
+- Wait **at least one week** after finishing test, so the second pass isn't recall of the first.
+- Do it **before seeing any model output**, so the second pass is not influenced by a model.
+- Draw the sample with a fixed seed; label it with the CLI into a separate file; never edit `test_labels.jsonl` from it.
+- Use ~60 sentences. With 30, the confidence interval on kappa is too wide to say much.
+- Compute kappa with the project's own evaluation code; report stance and sentiment separately, plus the confusion matrix of first vs. second pass.
 
 - Sample size:
 - Date of second pass:
