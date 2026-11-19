@@ -1,16 +1,19 @@
 """Split cleaned document text into sentences."""
 
+import regex as re
+SENTENCE_BREAK = re.compile(r"(?<=\.)\s+(?=[A-ZÁÉÍÓÚÑ¿])")
 
-def split_sentences(text: str) -> list[str]:
-    """Split one cleaned document's text into sentence strings, in order."""
-    raise NotImplementedError
+def to_records(minutes):
+    records = []
+    for doc_id, doc in minutes.items():
+        for i, s in enumerate(SENTENCE_BREAK.split(doc["text"])):
+            records.append({
+                "doc_id": doc_id,
+                "doc_type": doc["doc_type"],
+                "meeting_date": doc["meeting_date"],
+                "sent_idx": i,
+                "sentence": s,
+                "cluster": None, "split": None, "stance": None, "sentiment": None,
+            })
 
-
-def to_records(text, *, doc_id, doc_type, meeting_date):
-    """Segment one document and wrap each sentence in a Sentence record."""
-    raise NotImplementedError
-
-
-def length_summary(sentences: list[str]) -> dict[str, float]:
-    """Length distribution of the segmented sentences."""
-    raise NotImplementedError
+    return records

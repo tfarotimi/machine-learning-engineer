@@ -2,7 +2,7 @@
 
 Usage, from the inflation-intelligence folder:
 
-    python scripts/label.py data/sentences/demo.jsonl data/gold/demo.jsonl
+    python scripts/annotate.py data/sentences/demo.jsonl data/gold/demo.jsonl
 
 The first path is the file of sentences to label. The second is where your
 labels are saved. If the second file already exists, labeling resumes from it,
@@ -48,16 +48,67 @@ def save_records(records, path):
     os.replace(tmp_path, path)
 
 
+def save_one(records, record, path):
+    """Save one record's labels without overwriting anyone else's edits.
+
+    The file is re-read from disk and only this record's stance and sentiment
+    are updated, so corrections made to the file while the tool is open (by
+    another script, or by hand) survive. Writing the whole in-memory list
+    instead would silently undo them.
+    """
+    if not os.path.exists(path):
+        save_records(records, path)
+        return
+    on_disk = load_records(path)
+    key = (record["doc_id"], record["sent_idx"])
+    for r in on_disk:
+        if (r["doc_id"], r["sent_idx"]) == key:
+            r["stance"] = record["stance"]
+            r["sentiment"] = record["sentiment"]
+            break
+    else:
+        raise KeyError(f"{key} not found in {path}")
+    save_records(on_disk, path)
+
+
 # --- screen ----------------------------------------------------------------
 
 
-def show(record, previous):
-    print()
-    print("-" * 70)
-    print(f"{record['doc_id']}  sentence {record['sent_idx']}")
+def context_of(record, previous):
+    # Sample files carry the previous sentence in `context`, saved at sampling
+    # time, because the neighbour itself is usually not in the sample. Fall
+    # back to the in-file lookup for unsampled files such as demo.jsonl.
+    if record.get("context") is not None:
+        return record["context"], record.get("context_en")
     if previous is not None:
-        print(f"  (previous) {previous['sentence']}")
-    print(f"  >>> {record['sentence']}")
+        return previous["sentence"], previous.get("sentence_en")
+    return None, None
+
+
+def clear_screen():
+    # cls on Windows, clear elsewhere. Only the current sentence stays on screen.
+    os.system("cls" if os.name == "nt" else "clear")
+
+
+def show(record, previous, progress=""):
+    """Show the sentence in English, falling back to Spanish if untranslated."""
+    clear_screen()
+    print(f"{progress}   {record['doc_id']}  sentence {record['sent_idx']}   (s = Spanish, q = quit)")
+    print()
+    context, context_en = context_of(record, previous)
+    if context:
+        print(f"  (previous) {context_en or context}")
+    print()
+    print(f"  >>> {record.get('sentence_en') or record['sentence']}")
+    print()
+
+
+def show_spanish(record, previous):
+    """The Spanish original, on demand. It is the authority when in doubt."""
+    context, _ = context_of(record, previous)
+    if context:
+        print(f"  (previous ES) {context}")
+    print(f"  >>> ES  {record['sentence']}")
 
 
 def print_options(options):
@@ -65,8 +116,11 @@ def print_options(options):
         print(f"  {number} {option}")
 
 
-def read_choice(options):
+def read_choice(options, record=None, previous=None):
     response = input("> ").strip().lower()
+    if response == "s" and record is not None:
+        show_spanish(record, previous)
+        return None
     if response == "q":
         print("Saved. Run the same command again to resume.")
         sys.exit(0)
@@ -78,26 +132,30 @@ def read_choice(options):
 # --- labeling --------------------------------------------------------------
 
 
-def stance_label(record, previous):
-    show(record, previous)
+def stance_label(record, previous, progress=""):
+    show(record, previous, progress)
     print("stance:")
     print_options(STANCE)
     while record["stance"] not in STANCE:
-        response = read_choice(STANCE)
+        response = read_choice(STANCE, record, previous)
+        if response is None:
+            continue
         if response in STANCE:
             record["stance"] = response
         else:
             print(f"{response!r} is invalid, provide a correct stance")
 
 
-def sentiment_label(record, previous):
+def sentiment_label(record, previous, progress=""):
     if record["stance"] != NA:
-        show(record, previous)
+        show(record, previous, progress)
         print(f"stance: {record['stance']}")
         print("sentiment:")
         print_options(SENTIMENT_CHOICES)
         while record["sentiment"] not in SENTIMENT or record["sentiment"] == NA:
-            response = read_choice(SENTIMENT_CHOICES)
+            response = read_choice(SENTIMENT_CHOICES, record, previous)
+            if response is None:
+                continue
             if response in SENTIMENT_CHOICES:
                 record["sentiment"] = response
             else:
@@ -106,7 +164,10 @@ def sentiment_label(record, previous):
         record["sentiment"] = NA
 
 
-def label_records(records, out_path):
+def label_records(records, out_path, limit=None):
+    # Only the first `limit` records are labeled, but the whole file is saved,
+    # so raising the limit later picks up where this session stopped.
+    work = records[:limit]
     # Look up any sentence by (doc_id, sent_idx), so we can find the one
     # before it for context.
     by_key = {(r["doc_id"], r["sent_idx"]): r for r in records}
@@ -114,17 +175,17 @@ def label_records(records, out_path):
     def previous_of(record):
         return by_key.get((record["doc_id"], record["sent_idx"] - 1))
 
-    for record in records:
+    for i, record in enumerate(work, start=1):
         if record["stance"] is None:
-            stance_label(record, previous_of(record))
-            save_records(records, out_path)
+            stance_label(record, previous_of(record), f"[stance {i}/{len(work)}]")
+            save_one(records, record, out_path)
 
-    for record in records:
+    for i, record in enumerate(work, start=1):
         if record["sentiment"] is None:
-            sentiment_label(record, previous_of(record))
-            save_records(records, out_path)
+            sentiment_label(record, previous_of(record), f"[sentiment {i}/{len(work)}]")
+            save_one(records, record, out_path)
 
-    for record in records:
+    for record in work:
         if (record["stance"] == NA and record["sentiment"] != NA) or (
             record["sentiment"] == NA and record["stance"] != NA
         ):
@@ -134,7 +195,7 @@ def label_records(records, out_path):
             )
 
     print("na validations passed")
-    print(f"All {len(records)} records labeled. Saved to {out_path}")
+    print(f"{len(work)} records labeled. Saved to {out_path}")
 
 
 # --- entry point -----------------------------------------------------------
@@ -144,6 +205,8 @@ def main():
     parser = argparse.ArgumentParser(description="Hand-label sentences.")
     parser.add_argument("sentences", help="JSONL file of sentences to label")
     parser.add_argument("output", help="JSONL file where labels are saved")
+    parser.add_argument("--limit", type=int, default=None,
+                        help="label only the first N records (default: all)")
     args = parser.parse_args()
 
     if os.path.exists(args.output):
@@ -157,7 +220,7 @@ def main():
         record.setdefault("stance", None)
         record.setdefault("sentiment", None)
 
-    label_records(records, args.output)
+    label_records(records, args.output, limit=args.limit)
 
 
 if __name__ == "__main__":
