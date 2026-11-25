@@ -15,7 +15,7 @@ copied here and committed. The copy in `data/gold/` is the official version.
 |---|---|---|---|
 | `train_labels.jsonl` | 400 | Hand-labeled by the annotator, then reviewed by Claude; the annotator accepted or rejected each proposed correction (stance review changed 63/400, ~16%). Codebook rules were refined during this pass, and labels were re-checked against the final rules. | mutable during development |
 | `dev_labels.jsonl` | 150 | Hand-labeled **blind** (no model pre-labels, no review of individual labels), 2026-11-19, in three sessions of 50. Two corrections made at the annotator's own request, logged below. | frozen; change only with a logged codebook change |
-| `test_labels.jsonl` | 400 | Not yet labeled. Will be hand-labeled blind before any model is run. | **read-only once written** |
+| `test_labels.jsonl` | 400 | Hand-labeled **blind** (no model pre-labels) before any model was run; finished 2026-11-25. One pre-freeze review of the `na` class only, logged below. | **frozen 2026-11-25; read-only** |
 
 All splits: single annotator; labels assigned from the English machine
 translation, with the Spanish original available on request in the tool.
@@ -92,6 +92,19 @@ Example (strings trimmed):
 |---|---|---|---|---|
 | 2026-11-19 | dev | `minutes_2017_07_13` / 89 | stance forward → backward | Annotator re-judged under S2 (decision at this meeting). First applied during labeling but overwritten by the tool (see note); re-applied after copy to gold. |
 | 2026-11-19 | dev | `minutes_2022_07_13` / 66 | sentiment neutral → dovish | Annotator re-judged after viewing wider document context. |
+| 2026-11-25 | test | 14 records (rows 264, 273, 289, 291, 305, 349, 363, 367, 377, 381, 382, 383, 386, 394) | stance/sentiment `na`/`na` → forward/neutral (12) or backward/neutral (2) | Pre-freeze review of the `na` class, see note below. |
+
+Note on the 2026-11-25 test review: after labeling, the annotator suspected
+`na` had been used for sentences with economic content but no clear time
+reference. Claude listed all 15 `na` records and pointed out which codebook
+rules (the `na` definition, S1, S2, S6, S8) applied to each; the annotator
+made every decision. 14 of 15 were relabeled to bring test in line with the
+rules already used for train and dev; one (`minutes_2025_12_16` / 33) stays
+`na`. No model predictions were involved, and no other class was reviewed.
+This is a disclosed deviation from "test is never edited": it happened
+before the freeze and only restored consistency with the existing codebook.
+The pre-review file is kept locally as
+`data/interim/test_labels.before_na_review.jsonl` (not tracked).
 
 Note: `annotate.py`'s `save_one` writes both stance and sentiment of the
 record being labeled, so an external edit to a field of that same record made
@@ -104,6 +117,6 @@ with that record.
 Record the SHA-256 of `test_labels.jsonl` here when it is frozen, and cite
 it in the results so any later run can be shown to have used the same test set.
 
-- `test_labels.jsonl` frozen on: _(date)_
-- Codebook version used for test: _(commit)_
-- SHA-256: _(hash)_
+- `test_labels.jsonl` frozen on: 2026-11-25
+- Codebook version used for test: _(commit that freezes `codebook.md`)_
+- SHA-256: `c5faf29b561b9777e56fa1999491904280f210ad7df4aceb5364f9024a64a304`

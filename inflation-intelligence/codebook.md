@@ -1,34 +1,13 @@
 # Labeling codebook
 
-**Status:** draft — updated after the pilot (2026-11-17) and after dev labeling (2026-11-19). Not yet frozen: the open decisions below must be settled first.
-**Frozen on:** _(date the test set was first labeled)_
+**Status:** frozen — updated after the pilot (2026-11-17) and after dev labeling (2026-11-19); open decisions D1–D3 settled before freezing.
+**Frozen on:** 2026-11-25 (test labels finished and frozen)
 **Corpus:** BCCh RPM **minutes**, 2016–2026. Comunicados are out of scope for the gold set (possible out-of-domain check later).
 **Unit of analysis:** one sentence, read with the previous sentence as context
 **Labels are made from:** the English translation (`sentence_en`). The Spanish original is the authority and is checked (`s` in the CLI) whenever the wording is decisive: *podría* vs *se estima*, *al alza / a la baja*, or English that reads oddly.
 
 Every sentence gets one **stance** and one **sentiment**.
 **Coupling rule:** sentiment is `na` **if and only if** stance is `na`.
-
----
-
-## Open decisions — settle before labeling test
-
-These came up while labeling dev. Each needs a decision **by the annotator**, written as a rule in the section indicated, before test starts. The wording under "Draft" is a starting point only; rewrite, change or reject it. Once all are settled, delete this section and freeze the codebook.
-
-**D1. Financial asset prices and conditions (→ glossary, and T11 if foreign).**
-The glossary covers the exchange rate and market lending rates, but not equity prices, credit spreads, or the sovereign risk premium. The underlying logic of the existing market-rates entry is: looser financial conditions → more demand → hawkish; tighter → dovish. Complication: in a risk-off episode several of these move together and point in opposite directions (spreads widen → tighter → dovish; peso depreciates → hawkish; volatility → risk_highlighting).
-_Draft:_ Stock prices rising / spreads or the sovereign premium narrowing → looser conditions → hawkish lean; the reverse → dovish lean. A bare report of the move → neutral (T13). Label a direction only when the sentence states or clearly implies the consequence; if the sentence's point is volatility or uncertainty → risk_highlighting. When a sentence names effects in opposite directions, label the one that carries the point (T19).
-_Decision:_
-
-**D2. A sentence that only reports an option being ruled out (→ T7).**
-T7 covers sentences giving the case for or against an option. It does not say how to label a sentence whose whole content is that an option was discarded ("Several Board members ruled out this option"), with the option identified only through context (C1).
-_Question:_ Is ruling out an option an argument against that option's direction, a statement about the decision (T2, judged relative to the alternatives still on the table), or a procedural statement (neutral)?
-_Decision:_
-
-**D3. Decision and guidance in the same sentence (→ S2/S3).**
-S1 says to label by the main claim. When a sentence states this meeting's decision and also guidance about the future path ("keep the TPM unchanged and communicate that normalization would be more gradual"), it is not always obvious which is the main claim.
-_Draft:_ Label by the part that carries new information. A hold or a vote alone is S2 (backward); if the sentence adds guidance about future moves, the guidance is usually the new information → forward (S3).
-_Decision:_
 
 ---
 
@@ -59,6 +38,7 @@ _Example:_ Sobre la decisión de política monetaria, varios Consejeros coincidi
 
 - **S1. Mixed past and future.** Label by the main claim. When past evidence supports a conclusion about the outlook ("X has happened, so Y is expected"), the stance is `forward`. Use `backward` only when the sentence describes without concluding about what comes next.
 - **S2. Decisions and options at this meeting → `backward`.** The decision taken now, votes, and the options evaluated at this meeting (including arguments for or against them).
+- **S2b. Decision and guidance in one sentence → `forward`.** When a sentence states this meeting's decision *and* guidance about future moves ("keep the TPM unchanged and communicate that normalization would be more gradual"), the guidance is the new information → `forward` (S3). A decision or vote with no guidance stays `backward` (S2). _(Decided 2026-11-23, D3.)_
 - **S3. Bias and guidance → `forward`.** Signals about future rate moves (*sesgo*), the expected TPM path, how the cutting/hiking cycle will continue.
 - **S4. Expectations.**
   - Expectations of a **future value** (inflation, TPM, GDP over a horizon; EEE, EOF, asset prices, IMCE cost outlook, planned investment) → `forward`, even when the survey was taken in the past. Test: *is the number about a date in the future?*
@@ -127,6 +107,7 @@ _Example:_ Sobre la decisión de política monetaria, varios Consejeros coincidi
 
 **Arguments**
 - **T7. Options: label the argument, not the option.** A sentence laying out the case for an option takes that case's direction. A sentence naming an option's cost or drawback argues against it ("holding goes against the market, which expects a cut" → dovish).
+- **T7b. An option only reported as ruled out → label by what is left standing.** When a sentence's whole content is that one or more options were discarded, label it as a statement about the decision (T2) judged by the option(s) still on the table: only a cut left → dovish, only a hold left → neutral, only a hike left → hawkish. _(Decided 2026-11-25, D2.)_
 - **T8. Discounting flips the direction.** Calling a data point transitory, one-off, unsustainable or limited in effect argues against what it signals. Discounting hawkish data → dovish; discounting dovish data → hawkish. Applies only when the sentence *contradicts* the data; "not yet clear" or "hard to read" is neutral.
 - **T9. "Not yet" is neutral.** Conditionals that state when a move would be justified, without asserting the condition holds, and "will become clearer soon" sentences → neutral. A conditional that states a **consequence/cost** of an option is an argument (T7).
 - **T10. Framing sentences are neutral.** "There were two questions…", "the following elements had to be considered" → neutral; the content comes in the next sentences.
@@ -164,6 +145,7 @@ _Example:_ Sobre la decisión de política monetaria, varios Consejeros coincidi
 - **Real rates:** real ≈ nominal − expected inflation. Falling inflation expectations with an unchanged TPM raise real rates and tighten policy passively.
 - **Exchange rate:** peso appreciation → cheaper imports, weaker exports → dovish. Depreciation → imported inflation → hawkish.
 - **Market rates vs the TPM:** the Bank raising the TPM is hawkish. Market lending rates rising on their own tighten financial conditions → dovish.
+- **Financial asset prices and conditions** (equity prices, credit spreads, the sovereign risk premium): looser conditions → more demand → **hawkish**; tighter → **dovish**. Stocks rising, spreads or the sovereign premium narrowing = looser; the reverse = tighter. A bare report of the move with no characterization → neutral (T13). If the sentence's point is volatility or uncertainty → risk_highlighting. When effects in opposite directions are named (e.g. spreads widen *and* the peso depreciates), label the one that carries the point (T19). For foreign markets, T11 still applies. _(Decided 2026-11-23, D1.)_
 - **confidence_building vs good news:** reassurance about inflation, expectations or stability → confidence_building. Good news about growth, recovery or the pandemic → hawkish (T1).
 - **Higher rates → less spending → lower inflation. Lower rates → more spending → higher inflation.**
 
