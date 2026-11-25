@@ -46,6 +46,27 @@ predictions directory, one file per method, keyed by `(doc_id, sent_idx)`,
 and are joined against gold at evaluation time. Nothing in the evaluation
 path can write into this directory.
 
+## Evaluation rules
+
+Decided 2026-11-25, before any model was run.
+
+- **Headline metric: macro-F1, averaged only over classes the test set can
+  measure.** Stance: {forward, backward}. Sentiment: {hawkish, dovish, neutral,
+  risk_highlighting, confidence_building}. `na` has a single test sentence, so
+  its F1 can only be 0 or 1; inside a macro average that one sentence would
+  move the score by ~0.33 (stance) and swamp real differences between methods.
+- **No sentence is dropped.** Every test sentence, including the `na` one, is
+  scored in accuracy and appears in the confusion matrix. A wrong `na`
+  prediction still counts as a miss (FN) for the true class, so it still
+  lowers the headline macro-F1.
+- **`na` is reported as counts:** how many sentences a method predicted `na`,
+  and whether it got the one true `na` right.
+- **Zero division → 0.** If a method never predicts a class, that class's
+  precision is 0 (so its F1 is 0), and the report flags it. A method gets no
+  credit for a class it never attempts (same as sklearn's `zero_division=0`).
+- Accuracy is reported alongside but not as the headline: always predicting
+  `backward` already scores 74.5% stance accuracy on test.
+
 ## Record format
 
 One JSON object per line. Vocabularies (`STANCE`, `SENTIMENT`) are defined in
